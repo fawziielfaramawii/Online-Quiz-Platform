@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\OnlineQuiz.Api.props" />
+</Project>
