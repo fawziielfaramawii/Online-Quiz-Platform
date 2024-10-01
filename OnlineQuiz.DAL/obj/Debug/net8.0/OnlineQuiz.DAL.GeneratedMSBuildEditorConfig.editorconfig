@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = OnlineQuiz.DAL
-build_property.ProjectDir = C:\Users\elfaramawy\OneDrive\Desktop\DEPI Project\OnlineQuizPlatform\OnlineQuiz\OnlineQuiz.DAL\
+build_property.ProjectDir = C:\Users\elfaramawy\OneDrive\Desktop\Online_Quiz\Online-Quiz-Platform\OnlineQuiz.DAL\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

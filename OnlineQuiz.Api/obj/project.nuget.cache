@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1ZDVVTxAVtI=",
+  "dgSpecHash": "y01AM0fmxAA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\elfaramawy\\OneDrive\\Desktop\\DEPI Project\\OnlineQuizPlatform\\OnlineQuiz\\OnlineQuiz.Api\\OnlineQuiz.Api.csproj",
+  "projectFilePath": "C:\\Users\\elfaramawy\\OneDrive\\Desktop\\Online_Quiz\\Online-Quiz-Platform\\OnlineQuiz.Api\\OnlineQuiz.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\elfaramawy\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\elfaramawy\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
