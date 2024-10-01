@@ -1,0 +1,30 @@
+C:\Users\elfaramawy\OneDrive\Desktop\OnlineQuizPlatform\OnlineQuiz\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.csproj.AssemblyReference.cache
+C:\Users\elfaramawy\OneDrive\Desktop\OnlineQuizPlatform\OnlineQuiz\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\elfaramawy\OneDrive\Desktop\OnlineQuizPlatform\OnlineQuiz\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.AssemblyInfoInputs.cache
+C:\Users\elfaramawy\OneDrive\Desktop\OnlineQuizPlatform\OnlineQuiz\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.AssemblyInfo.cs
+C:\Users\elfaramawy\OneDrive\Desktop\OnlineQuizPlatform\OnlineQuiz\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.csproj.CoreCompileInputs.cache
+C:\Users\elfaramawy\OneDrive\Desktop\OnlineQuizPlatform\OnlineQuiz\OnlineQuiz.DAL\bin\Debug\net8.0\OnlineQuiz.DAL.deps.json
+C:\Users\elfaramawy\OneDrive\Desktop\OnlineQuizPlatform\OnlineQuiz\OnlineQuiz.DAL\bin\Debug\net8.0\OnlineQuiz.DAL.runtimeconfig.json
+C:\Users\elfaramawy\OneDrive\Desktop\OnlineQuizPlatform\OnlineQuiz\OnlineQuiz.DAL\bin\Debug\net8.0\OnlineQuiz.DAL.dll
+C:\Users\elfaramawy\OneDrive\Desktop\OnlineQuizPlatform\OnlineQuiz\OnlineQuiz.DAL\bin\Debug\net8.0\OnlineQuiz.DAL.pdb
+C:\Users\elfaramawy\OneDrive\Desktop\OnlineQuizPlatform\OnlineQuiz\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.dll
+C:\Users\elfaramawy\OneDrive\Desktop\OnlineQuizPlatform\OnlineQuiz\OnlineQuiz.DAL\obj\Debug\net8.0\refint\OnlineQuiz.DAL.dll
+C:\Users\elfaramawy\OneDrive\Desktop\OnlineQuizPlatform\OnlineQuiz\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.pdb
+C:\Users\elfaramawy\OneDrive\Desktop\OnlineQuizPlatform\OnlineQuiz\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.genruntimeconfig.cache
+C:\Users\elfaramawy\OneDrive\Desktop\OnlineQuizPlatform\OnlineQuiz\OnlineQuiz.DAL\obj\Debug\net8.0\ref\OnlineQuiz.DAL.dll
+C:\Users\elfaramawy\OneDrive\Desktop\DEPI Project\OnlineQuizPlatform\OnlineQuiz\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.csproj.AssemblyReference.cache
+C:\Users\elfaramawy\OneDrive\Desktop\DEPI Project\OnlineQuizPlatform\OnlineQuiz\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\elfaramawy\OneDrive\Desktop\DEPI Project\OnlineQuizPlatform\OnlineQuiz\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.AssemblyInfoInputs.cache
+C:\Users\elfaramawy\OneDrive\Desktop\DEPI Project\OnlineQuizPlatform\OnlineQuiz\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.AssemblyInfo.cs
+C:\Users\elfaramawy\OneDrive\Desktop\DEPI Project\OnlineQuizPlatform\OnlineQuiz\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.csproj.CoreCompileInputs.cache
+C:\Users\elfaramawy\OneDrive\Desktop\DEPI Project\OnlineQuizPlatform\OnlineQuiz\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.dll
+C:\Users\elfaramawy\OneDrive\Desktop\DEPI Project\OnlineQuizPlatform\OnlineQuiz\OnlineQuiz.DAL\obj\Debug\net8.0\refint\OnlineQuiz.DAL.dll
+C:\Users\elfaramawy\OneDrive\Desktop\DEPI Project\OnlineQuizPlatform\OnlineQuiz\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.pdb
+C:\Users\elfaramawy\OneDrive\Desktop\DEPI Project\OnlineQuizPlatform\OnlineQuiz\OnlineQuiz.DAL\bin\Debug\net8.0\OnlineQuiz.DAL.deps.json
+C:\Users\elfaramawy\OneDrive\Desktop\DEPI Project\OnlineQuizPlatform\OnlineQuiz\OnlineQuiz.DAL\bin\Debug\net8.0\OnlineQuiz.DAL.runtimeconfig.json
+C:\Users\elfaramawy\OneDrive\Desktop\DEPI Project\OnlineQuizPlatform\OnlineQuiz\OnlineQuiz.DAL\bin\Debug\net8.0\OnlineQuiz.DAL.dll
+C:\Users\elfaramawy\OneDrive\Desktop\DEPI Project\OnlineQuizPlatform\OnlineQuiz\OnlineQuiz.DAL\bin\Debug\net8.0\OnlineQuiz.DAL.pdb
+C:\Users\elfaramawy\OneDrive\Desktop\DEPI Project\OnlineQuizPlatform\OnlineQuiz\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.genruntimeconfig.cache
+C:\Users\elfaramawy\OneDrive\Desktop\DEPI Project\OnlineQuizPlatform\OnlineQuiz\OnlineQuiz.DAL\obj\Debug\net8.0\ref\OnlineQuiz.DAL.dll
+C:\Users\elfaramawy\OneDrive\Desktop\DEPI Project\OnlineQuizPlatform\OnlineQuiz\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.sourcelink.json
+C:\Users\elfaramawy\OneDrive\Desktop\OnlineQuizPlatform\OnlineQuiz\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.sourcelink.json
