@@ -1,12 +1,122 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\elfaramawy\\OneDrive\\Desktop\\Online_Quiz\\Online-Quiz-Platform\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\karee\\Desktop\\\u061BProjectDEPI\\Online-Quiz-Platform\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{30842FE6-4BD1-4960-8A00-398A4903C0BF}|OnlineQuiz.DAL\\OnlineQuiz.DAL.csproj|c:\\users\\karee\\desktop\\\u061Bprojectdepi\\online-quiz-platform\\onlinequiz.dal\\repositoryies\\base\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30842FE6-4BD1-4960-8A00-398A4903C0BF}|OnlineQuiz.DAL\\OnlineQuiz.DAL.csproj|solutionrelative:onlinequiz.dal\\repositoryies\\base\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30842FE6-4BD1-4960-8A00-398A4903C0BF}|OnlineQuiz.DAL\\OnlineQuiz.DAL.csproj|c:\\users\\karee\\desktop\\\u061Bprojectdepi\\online-quiz-platform\\onlinequiz.dal\\repositoryies\\base\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30842FE6-4BD1-4960-8A00-398A4903C0BF}|OnlineQuiz.DAL\\OnlineQuiz.DAL.csproj|solutionrelative:onlinequiz.dal\\repositoryies\\base\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{616AF085-367C-4B5C-9EBC-E0BECD3E117A}|OnlineQuiz.Api\\OnlineQuiz.Api.csproj|c:\\users\\karee\\desktop\\\u061Bprojectdepi\\online-quiz-platform\\onlinequiz.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{616AF085-367C-4B5C-9EBC-E0BECD3E117A}|OnlineQuiz.Api\\OnlineQuiz.Api.csproj|solutionrelative:onlinequiz.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{616AF085-367C-4B5C-9EBC-E0BECD3E117A}|OnlineQuiz.Api\\OnlineQuiz.Api.csproj|c:\\users\\karee\\desktop\\\u061Bprojectdepi\\online-quiz-platform\\onlinequiz.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{616AF085-367C-4B5C-9EBC-E0BECD3E117A}|OnlineQuiz.Api\\OnlineQuiz.Api.csproj|solutionrelative:onlinequiz.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\karee\\Desktop\\\u061BProjectDEPI\\Online-Quiz-Platform\\OnlineQuiz.DAL\\Repositoryies\\Base\\Repository.cs",
+              "RelativeDocumentMoniker": "OnlineQuiz.DAL\\Repositoryies\\Base\\Repository.cs",
+              "ToolTip": "C:\\Users\\karee\\Desktop\\\u061BProjectDEPI\\Online-Quiz-Platform\\OnlineQuiz.DAL\\Repositoryies\\Base\\Repository.cs",
+              "RelativeToolTip": "OnlineQuiz.DAL\\Repositoryies\\Base\\Repository.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAiwCYAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T13:05:17.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\karee\\Desktop\\\u061BProjectDEPI\\Online-Quiz-Platform\\OnlineQuiz.DAL\\Repositoryies\\Base\\IRepository.cs",
+              "RelativeDocumentMoniker": "OnlineQuiz.DAL\\Repositoryies\\Base\\IRepository.cs",
+              "ToolTip": "C:\\Users\\karee\\Desktop\\\u061BProjectDEPI\\Online-Quiz-Platform\\OnlineQuiz.DAL\\Repositoryies\\Base\\IRepository.cs",
+              "RelativeToolTip": "OnlineQuiz.DAL\\Repositoryies\\Base\\IRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T13:04:46.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\karee\\Desktop\\\u061BProjectDEPI\\Online-Quiz-Platform\\OnlineQuiz.Api\\Program.cs",
+              "RelativeDocumentMoniker": "OnlineQuiz.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\karee\\Desktop\\\u061BProjectDEPI\\Online-Quiz-Platform\\OnlineQuiz.Api\\Program.cs",
+              "RelativeToolTip": "OnlineQuiz.Api\\Program.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAIwB4AAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T13:12:44.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\karee\\Desktop\\\u061BProjectDEPI\\Online-Quiz-Platform\\OnlineQuiz.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "OnlineQuiz.Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\karee\\Desktop\\\u061BProjectDEPI\\Online-Quiz-Platform\\OnlineQuiz.Api\\appsettings.json",
+              "RelativeToolTip": "OnlineQuiz.Api\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAB+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-02T11:55:09.154Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

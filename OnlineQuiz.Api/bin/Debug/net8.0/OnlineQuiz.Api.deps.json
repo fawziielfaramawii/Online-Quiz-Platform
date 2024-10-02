@@ -1104,10 +1104,7 @@
           "OnlineQuiz.DAL": "1.0.0"
         },
         "runtime": {
-          "OnlineQuiz.BLL.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "OnlineQuiz.BLL.dll": {}
         }
       },
       "OnlineQuiz.DAL/1.0.0": {
@@ -1119,10 +1116,7 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0"
         },
         "runtime": {
-          "OnlineQuiz.DAL.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "OnlineQuiz.DAL.dll": {}
         }
       }
     }
