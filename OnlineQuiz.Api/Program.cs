@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
 using OnlineQuiz.DAL.Data.DBHelper;
 using OnlineQuiz.DAL.Data.Models;
+using OnlineQuiz.DAL.Repositoryies.Base;
 
 namespace OnlineQuiz.Api
 {
@@ -25,6 +26,10 @@ namespace OnlineQuiz.Api
             {
                 options.UseSqlServer(builder.Configuration.GetConnectionString("cs"));
             });
+
+            //GenericRepository
+            builder.Services.AddScoped(typeof(IRepository<>),typeof(Repository<>));
+
 
             
             //Identity
