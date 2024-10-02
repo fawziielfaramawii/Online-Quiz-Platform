@@ -436,3 +436,4 @@ C:\Users\karee\Desktop\؛ProjectDEPI\Online-Quiz-Platform\OnlineQuiz.Api\obj\Deb
 C:\Users\karee\Desktop\؛ProjectDEPI\Online-Quiz-Platform\OnlineQuiz.Api\obj\Debug\net8.0\OnlineQuiz.Api.pdb
 C:\Users\karee\Desktop\؛ProjectDEPI\Online-Quiz-Platform\OnlineQuiz.Api\obj\Debug\net8.0\OnlineQuiz.Api.genruntimeconfig.cache
 C:\Users\karee\Desktop\؛ProjectDEPI\Online-Quiz-Platform\OnlineQuiz.Api\obj\Debug\net8.0\ref\OnlineQuiz.Api.dll
+C:\Users\karee\Desktop\؛ProjectDEPI\Online-Quiz-Platform\OnlineQuiz.Api\bin\Debug\net8.0\AutoMapper.dll
