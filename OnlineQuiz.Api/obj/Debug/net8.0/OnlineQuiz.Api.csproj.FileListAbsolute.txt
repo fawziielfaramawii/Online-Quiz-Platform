@@ -584,3 +584,4 @@ C:\Users\elfaramawy\OneDrive\Desktop\Online_Quiz\Online-Quiz-Platform\OnlineQuiz
 C:\Users\elfaramawy\OneDrive\Desktop\Online_Quiz\Online-Quiz-Platform\OnlineQuiz.Api\obj\Debug\net8.0\OnlineQuiz.Api.pdb
 C:\Users\elfaramawy\OneDrive\Desktop\Online_Quiz\Online-Quiz-Platform\OnlineQuiz.Api\obj\Debug\net8.0\OnlineQuiz.Api.genruntimeconfig.cache
 C:\Users\elfaramawy\OneDrive\Desktop\Online_Quiz\Online-Quiz-Platform\OnlineQuiz.Api\obj\Debug\net8.0\ref\OnlineQuiz.Api.dll
+C:\Users\elfaramawy\OneDrive\Desktop\Online_Quiz\Online-Quiz-Platform\OnlineQuiz.Api\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

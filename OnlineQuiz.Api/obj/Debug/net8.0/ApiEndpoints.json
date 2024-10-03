@@ -1,5 +1,37 @@
 [
   {
+    "ContainingType": "OnlineQuiz.Api.Controllers.AccountsController",
+    "Method": "Login",
+    "RelativePath": "api/Accounts/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDto",
+        "Type": "OnlineQuiz.BLL.Dtos.Accounts.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OnlineQuiz.Api.Controllers.AccountsController",
+    "Method": "Register",
+    "RelativePath": "api/Accounts/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registerDto",
+        "Type": "OnlineQuiz.BLL.Dtos.Accounts.RegisterDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "OnlineQuiz.Api.Controllers.TrackController",
     "Method": "GetAllTracks",
     "RelativePath": "api/Track",
