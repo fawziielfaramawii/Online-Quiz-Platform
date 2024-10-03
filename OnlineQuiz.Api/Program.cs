@@ -4,6 +4,10 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
 using OnlineQuiz.DAL.Data.DBHelper;
 using OnlineQuiz.DAL.Data.Models;
+using OnlineQuiz.DAL.Repositoryies.Base;
+using OnlineQuiz.DAL.Repositoryies.TrackRepository;
+using OnlineQuiz.BLL.AutoMapper.TrackMapper;
+using OnlineQuiz.BLL.Managers.Track;
 
 namespace OnlineQuiz.Api
 {
@@ -24,9 +28,19 @@ namespace OnlineQuiz.Api
             builder.Services.AddDbContext<QuizContext>(options =>
             {
                 options.UseSqlServer(builder.Configuration.GetConnectionString("cs"));
+
             });
 
-            
+            builder.Services.AddAutoMapper(map => map.AddProfile(new TrackMapper()));
+
+            //GenericRepository
+            builder.Services.AddScoped(typeof(IRepository<>),typeof(Repository<>));
+            builder.Services.AddScoped<ITrackRepository, TrackRepository>();
+            //TrackAutoMapper
+           
+            builder.Services.AddScoped<ITrackManager, TrackManager>();
+
+
             //Identity
             builder.Services.AddIdentity<Users, Microsoft.AspNetCore.Identity.IdentityRole>(options =>
             {

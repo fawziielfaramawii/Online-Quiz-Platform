@@ -49,4 +49,24 @@ namespace OnlineQuiz.DAL.Data.Configuration
           
         }
     }
+
+    public class TrueAndFalseQuizEntityTypeConfiguration : IEntityTypeConfiguration<TrueAndFalseQuiz>
+    {
+        public void Configure(EntityTypeBuilder<TrueAndFalseQuiz> builder)
+        {
+           
+            builder.ToTable("TrueAndFalseQuizzes");
+
+        }
+    }
+
+    public class MultipleChoicesQuizEntityTypeConfiguration : IEntityTypeConfiguration<MultipleChoicesQuiz>
+    {
+        public void Configure(EntityTypeBuilder<MultipleChoicesQuiz> builder)
+        {
+           
+            builder.ToTable("MultipleChoicesQuizzes");
+
+        }
+    }
 }

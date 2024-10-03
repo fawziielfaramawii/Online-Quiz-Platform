@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using OnlineQuiz.DAL.Data.Configuration;
 using OnlineQuiz.DAL.Data.Models;
 using System;
 using System.Collections.Generic;
@@ -22,7 +23,23 @@ namespace OnlineQuiz.DAL.Data.DBHelper
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+      
+
             base.OnModelCreating(modelBuilder);
+            modelBuilder.ApplyConfiguration(new AnswersEntityTypeConfiguration());
+            modelBuilder.ApplyConfiguration(new AttemptsEntityTypeConfiguration());
+            modelBuilder.ApplyConfiguration(new InstructorEntityTypeConfiguration());
+            modelBuilder.ApplyConfiguration(new OptionEntityTypeConfiguration());
+            modelBuilder.ApplyConfiguration(new QuestionsEntityTypeConfiguration());
+            modelBuilder.ApplyConfiguration(new QuizzesEntityTypeConfiguration());
+            modelBuilder.ApplyConfiguration(new TracksEntityTypeConfiguration());
+            modelBuilder.ApplyConfiguration(new UsersEntityTypeConfiguration());
+
+            modelBuilder.ApplyConfiguration(new TrueAndFalseQuizEntityTypeConfiguration());
+            modelBuilder.ApplyConfiguration(new MultipleChoicesQuizEntityTypeConfiguration());
+
+            modelBuilder.ApplyConfiguration(new MultipleChoicesQuestionEntityTypeConfiguration());
+            modelBuilder.ApplyConfiguration(new TrueAndFalseQuestionEntityTypeConfiguration());
         }
 
         public DbSet<Users> users { get; set; }

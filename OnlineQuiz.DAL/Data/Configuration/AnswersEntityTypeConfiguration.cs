@@ -19,11 +19,11 @@ namespace OnlineQuiz.DAL.Data.Configuration
          
             builder.Property(a => a.SubmittedAnswer)
                    .IsRequired()
-                   .HasMaxLength(100); 
-            
+                   .HasMaxLength(100);
+
             builder.Property(a => a.IsCorrect)
-                   .IsRequired().
-                   HasDefaultValueSql("false");
+                    .IsRequired()
+                    .HasDefaultValue(0);
 
         }
     }

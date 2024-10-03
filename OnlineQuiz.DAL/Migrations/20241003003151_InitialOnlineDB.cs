@@ -6,11 +6,17 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace OnlineQuiz.DAL.Migrations
 {
     /// <inheritdoc />
-    public partial class IntialQuizDB : Migration
+    public partial class InitialOnlineDB : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateSequence(
+                name: "QuestionsSequence");
+
+            migrationBuilder.CreateSequence(
+                name: "QuizzesSequence");
+
             migrationBuilder.CreateTable(
                 name: "AspNetRoles",
                 columns: table => new
@@ -31,22 +37,22 @@ namespace OnlineQuiz.DAL.Migrations
                 {
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     Age = table.Column<int>(type: "int", nullable: false),
-                    Gender = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Adress = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ImgUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Gender = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: false),
+                    Adress = table.Column<string>(type: "nvarchar(1000)", maxLength: 1000, nullable: false),
+                    ImgUrl = table.Column<string>(type: "nvarchar(1000)", maxLength: 1000, nullable: false),
                     UserType = table.Column<int>(type: "int", nullable: false),
                     Discriminator = table.Column<string>(type: "nvarchar(13)", maxLength: 13, nullable: false),
-                    InstructorIsApproved = table.Column<bool>(type: "bit", nullable: true),
+                    InstructorIsApproved = table.Column<bool>(type: "bit", nullable: true, defaultValue: false),
                     Grade = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    UserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
+                    UserName = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     NormalizedUserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
-                    Email = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
+                    Email = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: false),
                     NormalizedEmail = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     EmailConfirmed = table.Column<bool>(type: "bit", nullable: false),
                     PasswordHash = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     SecurityStamp = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     ConcurrencyStamp = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    PhoneNumber = table.Column<string>(type: "nvarchar(11)", maxLength: 11, nullable: false),
                     PhoneNumberConfirmed = table.Column<bool>(type: "bit", nullable: false),
                     TwoFactorEnabled = table.Column<bool>(type: "bit", nullable: false),
                     LockoutEnd = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
@@ -64,7 +70,7 @@ namespace OnlineQuiz.DAL.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Name = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -178,6 +184,30 @@ namespace OnlineQuiz.DAL.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "attempts",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    StartTime = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    EndTime = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Score = table.Column<double>(type: "float", nullable: false),
+                    StateForExam = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    QuizId = table.Column<int>(type: "int", nullable: false),
+                    StudentId = table.Column<string>(type: "nvarchar(450)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_attempts", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_attempts_AspNetUsers_StudentId",
+                        column: x => x.StudentId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "InstructorStudent",
                 columns: table => new
                 {
@@ -201,33 +231,31 @@ namespace OnlineQuiz.DAL.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Quizzes",
+                name: "MultipleChoicesQuizzes",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Tittle = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Id = table.Column<int>(type: "int", nullable: false, defaultValueSql: "NEXT VALUE FOR [QuizzesSequence]"),
+                    Tittle = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(1000)", maxLength: 1000, nullable: false),
                     QuizDegree = table.Column<int>(type: "int", nullable: false),
-                    CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValueSql: "GETDATE()"),
                     ExpireDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     ExamTime = table.Column<int>(type: "int", nullable: false),
                     IsAvailable = table.Column<bool>(type: "bit", nullable: false),
                     TracksId = table.Column<int>(type: "int", nullable: false),
-                    InstructorId = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    Discriminator = table.Column<string>(type: "nvarchar(21)", maxLength: 21, nullable: false)
+                    InstructorId = table.Column<string>(type: "nvarchar(450)", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Quizzes", x => x.Id);
+                    table.PrimaryKey("PK_MultipleChoicesQuizzes", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Quizzes_AspNetUsers_InstructorId",
+                        name: "FK_MultipleChoicesQuizzes_AspNetUsers_InstructorId",
                         column: x => x.InstructorId,
                         principalTable: "AspNetUsers",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Quizzes_tracks_TracksId",
+                        name: "FK_MultipleChoicesQuizzes_tracks_TracksId",
                         column: x => x.TracksId,
                         principalTable: "tracks",
                         principalColumn: "Id",
@@ -235,69 +263,35 @@ namespace OnlineQuiz.DAL.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "attempts",
+                name: "TrueAndFalseQuizzes",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    StartTime = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    EndTime = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Score = table.Column<double>(type: "float", nullable: false),
-                    StateForExam = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    QuizId = table.Column<int>(type: "int", nullable: false),
-                    StudentId = table.Column<string>(type: "nvarchar(450)", nullable: false)
+                    Id = table.Column<int>(type: "int", nullable: false, defaultValueSql: "NEXT VALUE FOR [QuizzesSequence]"),
+                    Tittle = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(1000)", maxLength: 1000, nullable: false),
+                    QuizDegree = table.Column<int>(type: "int", nullable: false),
+                    CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValueSql: "GETDATE()"),
+                    ExpireDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    ExamTime = table.Column<int>(type: "int", nullable: false),
+                    IsAvailable = table.Column<bool>(type: "bit", nullable: false),
+                    TracksId = table.Column<int>(type: "int", nullable: false),
+                    InstructorId = table.Column<string>(type: "nvarchar(450)", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_attempts", x => x.Id);
+                    table.PrimaryKey("PK_TrueAndFalseQuizzes", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_attempts_AspNetUsers_StudentId",
-                        column: x => x.StudentId,
+                        name: "FK_TrueAndFalseQuizzes_AspNetUsers_InstructorId",
+                        column: x => x.InstructorId,
                         principalTable: "AspNetUsers",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_attempts_Quizzes_QuizId",
-                        column: x => x.QuizId,
-                        principalTable: "Quizzes",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Questions",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Tittle = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    CorrectAnswer = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    QuizId = table.Column<int>(type: "int", nullable: false),
-                    Discriminator = table.Column<string>(type: "nvarchar(34)", maxLength: 34, nullable: false),
-                    CorrectOptionId = table.Column<int>(type: "int", nullable: true),
-                    MultipleChoicesQuizId = table.Column<int>(type: "int", nullable: true),
-                    IsTrue = table.Column<bool>(type: "bit", nullable: true),
-                    TrueAndFalseQuizId = table.Column<int>(type: "int", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Questions", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Questions_Quizzes_MultipleChoicesQuizId",
-                        column: x => x.MultipleChoicesQuizId,
-                        principalTable: "Quizzes",
-                        principalColumn: "Id");
-                    table.ForeignKey(
-                        name: "FK_Questions_Quizzes_QuizId",
-                        column: x => x.QuizId,
-                        principalTable: "Quizzes",
+                        name: "FK_TrueAndFalseQuizzes_tracks_TracksId",
+                        column: x => x.TracksId,
+                        principalTable: "tracks",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_Questions_Quizzes_TrueAndFalseQuizId",
-                        column: x => x.TrueAndFalseQuizId,
-                        principalTable: "Quizzes",
-                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
@@ -306,8 +300,8 @@ namespace OnlineQuiz.DAL.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    SubmittedAnswer = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    IsCorrect = table.Column<bool>(type: "bit", nullable: false),
+                    SubmittedAnswer = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
+                    IsCorrect = table.Column<bool>(type: "bit", nullable: false, defaultValue: false),
                     AttemptId = table.Column<int>(type: "int", nullable: false),
                     QuestionId = table.Column<int>(type: "int", nullable: false)
                 },
@@ -315,17 +309,53 @@ namespace OnlineQuiz.DAL.Migrations
                 {
                     table.PrimaryKey("PK_answers", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_answers_Questions_QuestionId",
-                        column: x => x.QuestionId,
-                        principalTable: "Questions",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
                         name: "FK_answers_attempts_AttemptId",
                         column: x => x.AttemptId,
                         principalTable: "attempts",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "MultipleChoicesQuestions",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false, defaultValueSql: "NEXT VALUE FOR [QuestionsSequence]"),
+                    Tittle = table.Column<string>(type: "nvarchar(3000)", maxLength: 3000, nullable: false),
+                    CorrectAnswer = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    QuizId = table.Column<int>(type: "int", nullable: false),
+                    CorrectOptionId = table.Column<int>(type: "int", nullable: false),
+                    MultipleChoicesQuizId = table.Column<int>(type: "int", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_MultipleChoicesQuestions", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_MultipleChoicesQuestions_MultipleChoicesQuizzes_MultipleChoicesQuizId",
+                        column: x => x.MultipleChoicesQuizId,
+                        principalTable: "MultipleChoicesQuizzes",
+                        principalColumn: "Id");
+                });
+
+            migrationBuilder.CreateTable(
+                name: "TrueAndFalseQuestions",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false, defaultValueSql: "NEXT VALUE FOR [QuestionsSequence]"),
+                    Tittle = table.Column<string>(type: "nvarchar(3000)", maxLength: 3000, nullable: false),
+                    CorrectAnswer = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    QuizId = table.Column<int>(type: "int", nullable: false),
+                    IsTrue = table.Column<bool>(type: "bit", nullable: false),
+                    TrueAndFalseQuizId = table.Column<int>(type: "int", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_TrueAndFalseQuestions", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_TrueAndFalseQuestions_TrueAndFalseQuizzes_TrueAndFalseQuizId",
+                        column: x => x.TrueAndFalseQuizId,
+                        principalTable: "TrueAndFalseQuizzes",
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
@@ -334,7 +364,7 @@ namespace OnlineQuiz.DAL.Migrations
                 {
                     OptionId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    OptionText = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    OptionText = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false),
                     QuestionId = table.Column<int>(type: "int", nullable: false),
                     MultipleChoicesQuestionId = table.Column<int>(type: "int", nullable: true)
                 },
@@ -342,16 +372,10 @@ namespace OnlineQuiz.DAL.Migrations
                 {
                     table.PrimaryKey("PK_Options", x => x.OptionId);
                     table.ForeignKey(
-                        name: "FK_Options_Questions_MultipleChoicesQuestionId",
+                        name: "FK_Options_MultipleChoicesQuestions_MultipleChoicesQuestionId",
                         column: x => x.MultipleChoicesQuestionId,
-                        principalTable: "Questions",
+                        principalTable: "MultipleChoicesQuestions",
                         principalColumn: "Id");
-                    table.ForeignKey(
-                        name: "FK_Options_Questions_QuestionId",
-                        column: x => x.QuestionId,
-                        principalTable: "Questions",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
@@ -419,6 +443,26 @@ namespace OnlineQuiz.DAL.Migrations
                 column: "StudentsId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_MultipleChoicesQuestions_MultipleChoicesQuizId",
+                table: "MultipleChoicesQuestions",
+                column: "MultipleChoicesQuizId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_MultipleChoicesQuestions_QuizId",
+                table: "MultipleChoicesQuestions",
+                column: "QuizId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_MultipleChoicesQuizzes_InstructorId",
+                table: "MultipleChoicesQuizzes",
+                column: "InstructorId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_MultipleChoicesQuizzes_TracksId",
+                table: "MultipleChoicesQuizzes",
+                column: "TracksId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Options_MultipleChoicesQuestionId",
                 table: "Options",
                 column: "MultipleChoicesQuestionId");
@@ -429,28 +473,23 @@ namespace OnlineQuiz.DAL.Migrations
                 column: "QuestionId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Questions_MultipleChoicesQuizId",
-                table: "Questions",
-                column: "MultipleChoicesQuizId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Questions_QuizId",
-                table: "Questions",
+                name: "IX_TrueAndFalseQuestions_QuizId",
+                table: "TrueAndFalseQuestions",
                 column: "QuizId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Questions_TrueAndFalseQuizId",
-                table: "Questions",
+                name: "IX_TrueAndFalseQuestions_TrueAndFalseQuizId",
+                table: "TrueAndFalseQuestions",
                 column: "TrueAndFalseQuizId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Quizzes_InstructorId",
-                table: "Quizzes",
+                name: "IX_TrueAndFalseQuizzes_InstructorId",
+                table: "TrueAndFalseQuizzes",
                 column: "InstructorId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Quizzes_TracksId",
-                table: "Quizzes",
+                name: "IX_TrueAndFalseQuizzes_TracksId",
+                table: "TrueAndFalseQuizzes",
                 column: "TracksId");
         }
 
@@ -482,22 +521,34 @@ namespace OnlineQuiz.DAL.Migrations
                 name: "Options");
 
             migrationBuilder.DropTable(
+                name: "TrueAndFalseQuestions");
+
+            migrationBuilder.DropTable(
                 name: "attempts");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");
 
             migrationBuilder.DropTable(
-                name: "Questions");
+                name: "MultipleChoicesQuestions");
 
             migrationBuilder.DropTable(
-                name: "Quizzes");
+                name: "TrueAndFalseQuizzes");
+
+            migrationBuilder.DropTable(
+                name: "MultipleChoicesQuizzes");
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");
 
             migrationBuilder.DropTable(
                 name: "tracks");
+
+            migrationBuilder.DropSequence(
+                name: "QuestionsSequence");
+
+            migrationBuilder.DropSequence(
+                name: "QuizzesSequence");
         }
     }
 }

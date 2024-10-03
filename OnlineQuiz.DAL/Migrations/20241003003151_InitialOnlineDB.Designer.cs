@@ -12,8 +12,8 @@ using OnlineQuiz.DAL.Data.DBHelper;
 namespace OnlineQuiz.DAL.Migrations
 {
     [DbContext(typeof(QuizContext))]
-    [Migration("20241001130422_IntialQuizDB")]
-    partial class IntialQuizDB
+    [Migration("20241003003151_InitialOnlineDB")]
+    partial class InitialOnlineDB
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,6 +24,10 @@ namespace OnlineQuiz.DAL.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+
+            modelBuilder.HasSequence("QuestionsSequence");
+
+            modelBuilder.HasSequence("QuizzesSequence");
 
             modelBuilder.Entity("InstructorStudent", b =>
                 {
@@ -185,14 +189,17 @@ namespace OnlineQuiz.DAL.Migrations
                         .HasColumnType("int");
 
                     b.Property<bool>("IsCorrect")
-                        .HasColumnType("bit");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(false);
 
                     b.Property<int>("QuestionId")
                         .HasColumnType("int");
 
                     b.Property<string>("SubmittedAnswer")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.HasKey("Id");
 
@@ -253,7 +260,8 @@ namespace OnlineQuiz.DAL.Migrations
 
                     b.Property<string>("OptionText")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
 
                     b.Property<int>("QuestionId")
                         .HasColumnType("int");
@@ -271,56 +279,50 @@ namespace OnlineQuiz.DAL.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasDefaultValueSql("NEXT VALUE FOR [QuestionsSequence]");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseSequence(b.Property<int>("Id"));
 
                     b.Property<string>("CorrectAnswer")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Discriminator")
-                        .IsRequired()
-                        .HasMaxLength(34)
-                        .HasColumnType("nvarchar(34)");
 
                     b.Property<int>("QuizId")
                         .HasColumnType("int");
 
                     b.Property<string>("Tittle")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(3000)
+                        .HasColumnType("nvarchar(3000)");
 
                     b.HasKey("Id");
 
                     b.HasIndex("QuizId");
 
-                    b.ToTable("Questions");
+                    b.ToTable((string)null);
 
-                    b.HasDiscriminator<string>("Discriminator").HasValue("Questions");
-
-                    b.UseTphMappingStrategy();
+                    b.UseTpcMappingStrategy();
                 });
 
             modelBuilder.Entity("OnlineQuiz.DAL.Data.Models.Quizzes", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasDefaultValueSql("NEXT VALUE FOR [QuizzesSequence]");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseSequence(b.Property<int>("Id"));
 
                     b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("GETDATE()");
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Discriminator")
-                        .IsRequired()
-                        .HasMaxLength(21)
-                        .HasColumnType("nvarchar(21)");
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
 
                     b.Property<int>("ExamTime")
                         .HasColumnType("int");
@@ -340,7 +342,8 @@ namespace OnlineQuiz.DAL.Migrations
 
                     b.Property<string>("Tittle")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
 
                     b.Property<int>("TracksId")
                         .HasColumnType("int");
@@ -351,11 +354,9 @@ namespace OnlineQuiz.DAL.Migrations
 
                     b.HasIndex("TracksId");
 
-                    b.ToTable("Quizzes");
+                    b.ToTable((string)null);
 
-                    b.HasDiscriminator<string>("Discriminator").HasValue("Quizzes");
-
-                    b.UseTphMappingStrategy();
+                    b.UseTpcMappingStrategy();
                 });
 
             modelBuilder.Entity("OnlineQuiz.DAL.Data.Models.Tracks", b =>
@@ -368,7 +369,8 @@ namespace OnlineQuiz.DAL.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
 
                     b.HasKey("Id");
 
@@ -385,7 +387,8 @@ namespace OnlineQuiz.DAL.Migrations
 
                     b.Property<string>("Adress")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
 
                     b.Property<int>("Age")
                         .HasColumnType("int");
@@ -400,6 +403,7 @@ namespace OnlineQuiz.DAL.Migrations
                         .HasColumnType("nvarchar(13)");
 
                     b.Property<string>("Email")
+                        .IsRequired()
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
 
@@ -408,11 +412,13 @@ namespace OnlineQuiz.DAL.Migrations
 
                     b.Property<string>("Gender")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
 
                     b.Property<string>("ImgUrl")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
 
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("bit");
@@ -432,7 +438,9 @@ namespace OnlineQuiz.DAL.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PhoneNumber")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(11)
+                        .HasColumnType("nvarchar(11)");
 
                     b.Property<bool>("PhoneNumberConfirmed")
                         .HasColumnType("bit");
@@ -444,8 +452,9 @@ namespace OnlineQuiz.DAL.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("UserName")
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<int>("UserType")
                         .HasColumnType("int");
@@ -479,7 +488,7 @@ namespace OnlineQuiz.DAL.Migrations
 
                     b.HasIndex("MultipleChoicesQuizId");
 
-                    b.HasDiscriminator().HasValue("MultipleChoicesQuestion");
+                    b.ToTable("MultipleChoicesQuestions", (string)null);
                 });
 
             modelBuilder.Entity("OnlineQuiz.DAL.Data.Models.TrueAndFalseQuestion", b =>
@@ -494,21 +503,21 @@ namespace OnlineQuiz.DAL.Migrations
 
                     b.HasIndex("TrueAndFalseQuizId");
 
-                    b.HasDiscriminator().HasValue("TrueAndFalseQuestion");
+                    b.ToTable("TrueAndFalseQuestions", (string)null);
                 });
 
             modelBuilder.Entity("OnlineQuiz.DAL.Data.Models.MultipleChoicesQuiz", b =>
                 {
                     b.HasBaseType("OnlineQuiz.DAL.Data.Models.Quizzes");
 
-                    b.HasDiscriminator().HasValue("MultipleChoicesQuiz");
+                    b.ToTable("MultipleChoicesQuizzes", (string)null);
                 });
 
             modelBuilder.Entity("OnlineQuiz.DAL.Data.Models.TrueAndFalseQuiz", b =>
                 {
                     b.HasBaseType("OnlineQuiz.DAL.Data.Models.Quizzes");
 
-                    b.HasDiscriminator().HasValue("TrueAndFalseQuiz");
+                    b.ToTable("TrueAndFalseQuizzes", (string)null);
                 });
 
             modelBuilder.Entity("OnlineQuiz.DAL.Data.Models.Instructor", b =>
@@ -516,7 +525,9 @@ namespace OnlineQuiz.DAL.Migrations
                     b.HasBaseType("OnlineQuiz.DAL.Data.Models.Users");
 
                     b.Property<bool>("InstructorIsApproved")
-                        .HasColumnType("bit");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(false);
 
                     b.HasDiscriminator().HasValue("Instructor");
                 });

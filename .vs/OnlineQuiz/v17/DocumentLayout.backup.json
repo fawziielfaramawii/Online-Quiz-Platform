@@ -1,12 +1,139 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\elfaramawy\\OneDrive\\Desktop\\Online_Quiz\\Online-Quiz-Platform\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\elfaramawy\\OneDrive\\Desktop\\Online_Quiz\\Online-Quiz-Platform\\OnlineQuiz.DAL\\Migrations\\20241003003151_InitialOnlineDB.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:OnlineQuiz.DAL\\Migrations\\20241003003151_InitialOnlineDB.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30842FE6-4BD1-4960-8A00-398A4903C0BF}|OnlineQuiz.DAL\\OnlineQuiz.DAL.csproj|c:\\users\\elfaramawy\\onedrive\\desktop\\online_quiz\\online-quiz-platform\\onlinequiz.dal\\data\\dbhelper\\quizcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30842FE6-4BD1-4960-8A00-398A4903C0BF}|OnlineQuiz.DAL\\OnlineQuiz.DAL.csproj|solutionrelative:onlinequiz.dal\\data\\dbhelper\\quizcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30842FE6-4BD1-4960-8A00-398A4903C0BF}|OnlineQuiz.DAL\\OnlineQuiz.DAL.csproj|c:\\users\\elfaramawy\\onedrive\\desktop\\online_quiz\\online-quiz-platform\\onlinequiz.dal\\data\\configuration\\quizzesentitytypeconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30842FE6-4BD1-4960-8A00-398A4903C0BF}|OnlineQuiz.DAL\\OnlineQuiz.DAL.csproj|solutionrelative:onlinequiz.dal\\data\\configuration\\quizzesentitytypeconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30842FE6-4BD1-4960-8A00-398A4903C0BF}|OnlineQuiz.DAL\\OnlineQuiz.DAL.csproj|c:\\users\\elfaramawy\\onedrive\\desktop\\online_quiz\\online-quiz-platform\\onlinequiz.dal\\data\\configuration\\answersentitytypeconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30842FE6-4BD1-4960-8A00-398A4903C0BF}|OnlineQuiz.DAL\\OnlineQuiz.DAL.csproj|solutionrelative:onlinequiz.dal\\data\\configuration\\answersentitytypeconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30842FE6-4BD1-4960-8A00-398A4903C0BF}|OnlineQuiz.DAL\\OnlineQuiz.DAL.csproj|c:\\users\\elfaramawy\\onedrive\\desktop\\online_quiz\\online-quiz-platform\\onlinequiz.dal\\data\\configuration\\questionsentitytypeconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30842FE6-4BD1-4960-8A00-398A4903C0BF}|OnlineQuiz.DAL\\OnlineQuiz.DAL.csproj|solutionrelative:onlinequiz.dal\\data\\configuration\\questionsentitytypeconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30842FE6-4BD1-4960-8A00-398A4903C0BF}|OnlineQuiz.DAL\\OnlineQuiz.DAL.csproj|c:\\users\\elfaramawy\\onedrive\\desktop\\online_quiz\\online-quiz-platform\\onlinequiz.dal\\data\\models\\questions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30842FE6-4BD1-4960-8A00-398A4903C0BF}|OnlineQuiz.DAL\\OnlineQuiz.DAL.csproj|solutionrelative:onlinequiz.dal\\data\\models\\questions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30842FE6-4BD1-4960-8A00-398A4903C0BF}|OnlineQuiz.DAL\\OnlineQuiz.DAL.csproj|c:\\users\\elfaramawy\\onedrive\\desktop\\online_quiz\\online-quiz-platform\\onlinequiz.dal\\data\\models\\quizzes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30842FE6-4BD1-4960-8A00-398A4903C0BF}|OnlineQuiz.DAL\\OnlineQuiz.DAL.csproj|solutionrelative:onlinequiz.dal\\data\\models\\quizzes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20241003003151_InitialOnlineDB.cs",
+              "DocumentMoniker": "C:\\Users\\elfaramawy\\OneDrive\\Desktop\\Online_Quiz\\Online-Quiz-Platform\\OnlineQuiz.DAL\\Migrations\\20241003003151_InitialOnlineDB.cs",
+              "RelativeDocumentMoniker": "OnlineQuiz.DAL\\Migrations\\20241003003151_InitialOnlineDB.cs",
+              "ToolTip": "C:\\Users\\elfaramawy\\OneDrive\\Desktop\\Online_Quiz\\Online-Quiz-Platform\\OnlineQuiz.DAL\\Migrations\\20241003003151_InitialOnlineDB.cs",
+              "RelativeToolTip": "OnlineQuiz.DAL\\Migrations\\20241003003151_InitialOnlineDB.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T00:31:52.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Questions.cs",
+              "DocumentMoniker": "C:\\Users\\elfaramawy\\OneDrive\\Desktop\\Online_Quiz\\Online-Quiz-Platform\\OnlineQuiz.DAL\\Data\\Models\\Questions.cs",
+              "RelativeDocumentMoniker": "OnlineQuiz.DAL\\Data\\Models\\Questions.cs",
+              "ToolTip": "C:\\Users\\elfaramawy\\OneDrive\\Desktop\\Online_Quiz\\Online-Quiz-Platform\\OnlineQuiz.DAL\\Data\\Models\\Questions.cs",
+              "RelativeToolTip": "OnlineQuiz.DAL\\Data\\Models\\Questions.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAAwD8AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T00:27:18.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "QuestionsEntityTypeConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\elfaramawy\\OneDrive\\Desktop\\Online_Quiz\\Online-Quiz-Platform\\OnlineQuiz.DAL\\Data\\Configuration\\QuestionsEntityTypeConfiguration.cs",
+              "RelativeDocumentMoniker": "OnlineQuiz.DAL\\Data\\Configuration\\QuestionsEntityTypeConfiguration.cs",
+              "ToolTip": "C:\\Users\\elfaramawy\\OneDrive\\Desktop\\Online_Quiz\\Online-Quiz-Platform\\OnlineQuiz.DAL\\Data\\Configuration\\QuestionsEntityTypeConfiguration.cs",
+              "RelativeToolTip": "OnlineQuiz.DAL\\Data\\Configuration\\QuestionsEntityTypeConfiguration.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAADAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T00:26:56.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Quizzes.cs",
+              "DocumentMoniker": "C:\\Users\\elfaramawy\\OneDrive\\Desktop\\Online_Quiz\\Online-Quiz-Platform\\OnlineQuiz.DAL\\Data\\Models\\Quizzes.cs",
+              "RelativeDocumentMoniker": "OnlineQuiz.DAL\\Data\\Models\\Quizzes.cs",
+              "ToolTip": "C:\\Users\\elfaramawy\\OneDrive\\Desktop\\Online_Quiz\\Online-Quiz-Platform\\OnlineQuiz.DAL\\Data\\Models\\Quizzes.cs",
+              "RelativeToolTip": "OnlineQuiz.DAL\\Data\\Models\\Quizzes.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAIwCUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T00:21:05.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "QuizzesEntityTypeConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\elfaramawy\\OneDrive\\Desktop\\Online_Quiz\\Online-Quiz-Platform\\OnlineQuiz.DAL\\Data\\Configuration\\QuizzesEntityTypeConfiguration.cs",
+              "RelativeDocumentMoniker": "OnlineQuiz.DAL\\Data\\Configuration\\QuizzesEntityTypeConfiguration.cs",
+              "ToolTip": "C:\\Users\\elfaramawy\\OneDrive\\Desktop\\Online_Quiz\\Online-Quiz-Platform\\OnlineQuiz.DAL\\Data\\Configuration\\QuizzesEntityTypeConfiguration.cs",
+              "RelativeToolTip": "OnlineQuiz.DAL\\Data\\Configuration\\QuizzesEntityTypeConfiguration.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAwCgAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T00:20:33.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AnswersEntityTypeConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\elfaramawy\\OneDrive\\Desktop\\Online_Quiz\\Online-Quiz-Platform\\OnlineQuiz.DAL\\Data\\Configuration\\AnswersEntityTypeConfiguration.cs",
+              "RelativeDocumentMoniker": "OnlineQuiz.DAL\\Data\\Configuration\\AnswersEntityTypeConfiguration.cs",
+              "ToolTip": "C:\\Users\\elfaramawy\\OneDrive\\Desktop\\Online_Quiz\\Online-Quiz-Platform\\OnlineQuiz.DAL\\Data\\Configuration\\AnswersEntityTypeConfiguration.cs",
+              "RelativeToolTip": "OnlineQuiz.DAL\\Data\\Configuration\\AnswersEntityTypeConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T00:20:28.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "QuizContext.cs",
+              "DocumentMoniker": "C:\\Users\\elfaramawy\\OneDrive\\Desktop\\Online_Quiz\\Online-Quiz-Platform\\OnlineQuiz.DAL\\Data\\DBHelper\\QuizContext.cs",
+              "RelativeDocumentMoniker": "OnlineQuiz.DAL\\Data\\DBHelper\\QuizContext.cs",
+              "ToolTip": "C:\\Users\\elfaramawy\\OneDrive\\Desktop\\Online_Quiz\\Online-Quiz-Platform\\OnlineQuiz.DAL\\Data\\DBHelper\\QuizContext.cs",
+              "RelativeToolTip": "OnlineQuiz.DAL\\Data\\DBHelper\\QuizContext.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAwCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T00:16:04.847Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
