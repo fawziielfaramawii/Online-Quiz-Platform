@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using OnlineQuiz.BLL.Dtos.StudentDtos;
 using OnlineQuiz.BLL.Dtos.Track;
 using OnlineQuiz.DAL.Data.Models;
 using System;
@@ -15,6 +16,7 @@ namespace OnlineQuiz.BLL.AutoMapper.TrackMapper
         {
            
                 CreateMap<Tracks, TrackDto>().ReverseMap();
+                CreateMap<Student,StudentReadDto>();
             
         }
     }

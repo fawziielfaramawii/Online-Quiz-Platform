@@ -1,12 +1,88 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\elfaramawy\\OneDrive\\Desktop\\Online_Quiz\\Online-Quiz-Platform\\",
-  "Documents": [],
+  "WorkspaceRootPath": "A:\\C#_Projects\\Online-Quiz-Platform\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{30842FE6-4BD1-4960-8A00-398A4903C0BF}|OnlineQuiz.DAL\\OnlineQuiz.DAL.csproj|a:\\c#_projects\\online-quiz-platform\\onlinequiz.dal\\data\\models\\attempts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30842FE6-4BD1-4960-8A00-398A4903C0BF}|OnlineQuiz.DAL\\OnlineQuiz.DAL.csproj|solutionrelative:onlinequiz.dal\\data\\models\\attempts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30842FE6-4BD1-4960-8A00-398A4903C0BF}|OnlineQuiz.DAL\\OnlineQuiz.DAL.csproj|a:\\c#_projects\\online-quiz-platform\\onlinequiz.dal\\data\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30842FE6-4BD1-4960-8A00-398A4903C0BF}|OnlineQuiz.DAL\\OnlineQuiz.DAL.csproj|solutionrelative:onlinequiz.dal\\data\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BFB8A2A-7FB4-46FC-A8A7-7DE9B20FFB38}|OnlineQuiz.BLL\\OnlineQuiz.BLL.csproj|a:\\c#_projects\\online-quiz-platform\\onlinequiz.bll\\dtos\\studentdtos\\studentadddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BFB8A2A-7FB4-46FC-A8A7-7DE9B20FFB38}|OnlineQuiz.BLL\\OnlineQuiz.BLL.csproj|solutionrelative:onlinequiz.bll\\dtos\\studentdtos\\studentadddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BFB8A2A-7FB4-46FC-A8A7-7DE9B20FFB38}|OnlineQuiz.BLL\\OnlineQuiz.BLL.csproj|a:\\c#_projects\\online-quiz-platform\\onlinequiz.bll\\dtos\\studentdtos\\studentreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BFB8A2A-7FB4-46FC-A8A7-7DE9B20FFB38}|OnlineQuiz.BLL\\OnlineQuiz.BLL.csproj|solutionrelative:onlinequiz.bll\\dtos\\studentdtos\\studentreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Attempts.cs",
+              "DocumentMoniker": "A:\\C#_Projects\\Online-Quiz-Platform\\OnlineQuiz.DAL\\Data\\Models\\Attempts.cs",
+              "RelativeDocumentMoniker": "OnlineQuiz.DAL\\Data\\Models\\Attempts.cs",
+              "ToolTip": "A:\\C#_Projects\\Online-Quiz-Platform\\OnlineQuiz.DAL\\Data\\Models\\Attempts.cs",
+              "RelativeToolTip": "OnlineQuiz.DAL\\Data\\Models\\Attempts.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAzwBYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T14:15:06.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StudentAddDto.cs",
+              "DocumentMoniker": "A:\\C#_Projects\\Online-Quiz-Platform\\OnlineQuiz.BLL\\Dtos\\StudentDtos\\StudentAddDto.cs",
+              "RelativeDocumentMoniker": "OnlineQuiz.BLL\\Dtos\\StudentDtos\\StudentAddDto.cs",
+              "ToolTip": "A:\\C#_Projects\\Online-Quiz-Platform\\OnlineQuiz.BLL\\Dtos\\StudentDtos\\StudentAddDto.cs",
+              "RelativeToolTip": "OnlineQuiz.BLL\\Dtos\\StudentDtos\\StudentAddDto.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T14:13:39.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Users.cs",
+              "DocumentMoniker": "A:\\C#_Projects\\Online-Quiz-Platform\\OnlineQuiz.DAL\\Data\\Models\\Users.cs",
+              "RelativeDocumentMoniker": "OnlineQuiz.DAL\\Data\\Models\\Users.cs",
+              "ToolTip": "A:\\C#_Projects\\Online-Quiz-Platform\\OnlineQuiz.DAL\\Data\\Models\\Users.cs",
+              "RelativeToolTip": "OnlineQuiz.DAL\\Data\\Models\\Users.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAkwCcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T14:10:48.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StudentReadDto.cs",
+              "DocumentMoniker": "A:\\C#_Projects\\Online-Quiz-Platform\\OnlineQuiz.BLL\\Dtos\\StudentDtos\\StudentReadDto.cs",
+              "RelativeDocumentMoniker": "OnlineQuiz.BLL\\Dtos\\StudentDtos\\StudentReadDto.cs",
+              "ToolTip": "A:\\C#_Projects\\Online-Quiz-Platform\\OnlineQuiz.BLL\\Dtos\\StudentDtos\\StudentReadDto.cs",
+              "RelativeToolTip": "OnlineQuiz.BLL\\Dtos\\StudentDtos\\StudentReadDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T14:10:45.561Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

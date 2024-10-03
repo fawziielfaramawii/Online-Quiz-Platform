@@ -16,17 +16,9 @@ namespace OnlineQuiz.DAL.Data.Models
         Student= 1 ,
         Instructor = 2,
         Admin = 3
-    }
-        
-
-
-    
-
+    }        
     public class Users : IdentityUser
     {
-
-
-  
         [Range(5, 120)]
         public int Age { get; set; }
 
@@ -37,13 +29,8 @@ namespace OnlineQuiz.DAL.Data.Models
         [DataType(DataType.ImageUrl)]
         public string ImgUrl { get; set; }
         
-        public Type UserType { get; set; }
-
-      
-
-   
+        public Type UserType { get; set; } 
     }
-
     public class Student:Users
     {
         public string  Grade { get; set; }

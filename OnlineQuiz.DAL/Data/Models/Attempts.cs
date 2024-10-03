@@ -21,8 +21,6 @@ namespace OnlineQuiz.DAL.Data.Models
         //For Student
         public string  StudentId { get; set; }
         public Student Student { get; set; }
-
-
         //For Answers
         public ICollection<Answers> Answers { get; set; } = new HashSet<Answers>();
 

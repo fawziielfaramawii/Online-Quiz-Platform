@@ -8,6 +8,7 @@ using OnlineQuiz.DAL.Repositoryies.Base;
 using OnlineQuiz.DAL.Repositoryies.TrackRepository;
 using OnlineQuiz.BLL.AutoMapper.TrackMapper;
 using OnlineQuiz.BLL.Managers.Track;
+using OnlineQuiz.DAL.Repositoryies.StudentReposatory;
 
 namespace OnlineQuiz.Api
 {
@@ -37,8 +38,9 @@ namespace OnlineQuiz.Api
             builder.Services.AddScoped(typeof(IRepository<>),typeof(Repository<>));
             builder.Services.AddScoped<ITrackRepository, TrackRepository>();
             //TrackAutoMapper
-           
             builder.Services.AddScoped<ITrackManager, TrackManager>();
+            //register Student Repo
+            builder.Services.AddScoped<IStudentRepo, StudentRepo>();
 
 
             //Identity
