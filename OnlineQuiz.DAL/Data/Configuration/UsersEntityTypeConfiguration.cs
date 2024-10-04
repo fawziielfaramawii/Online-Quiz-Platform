@@ -23,20 +23,16 @@ namespace OnlineQuiz.DAL.Data.Configuration
                 builder.Property(u => u.Email)
                       .IsRequired();
 
-            builder.Property(u => u.Age)
-                  .IsRequired();
-                      
+            builder.Property(u => u.Age);
+                                      
 
             builder.Property(u => u.Gender)
-                .IsRequired()
                  .HasMaxLength(10);
 
             builder.Property(u => u.PhoneNumber)
-               .IsRequired()
                .HasMaxLength(11);
 
             builder.Property(u => u.Adress)
-              .IsRequired()
                .HasMaxLength(1000);
 
             builder.Property(u => u.ImgUrl)

@@ -35,20 +35,14 @@ namespace OnlineQuiz.DAL.Data.DBHelper
             modelBuilder.ApplyConfiguration(new TracksEntityTypeConfiguration());
             modelBuilder.ApplyConfiguration(new UsersEntityTypeConfiguration());
 
-            modelBuilder.ApplyConfiguration(new TrueAndFalseQuizEntityTypeConfiguration());
-            modelBuilder.ApplyConfiguration(new MultipleChoicesQuizEntityTypeConfiguration());
-
-            modelBuilder.ApplyConfiguration(new MultipleChoicesQuestionEntityTypeConfiguration());
-            modelBuilder.ApplyConfiguration(new TrueAndFalseQuestionEntityTypeConfiguration());
+         
         }
 
         public DbSet<Users> users { get; set; }
         public DbSet<Student> Students { get; set; }
         public DbSet<Instructor> Instructors { get; set; }
-        public DbSet<MultipleChoicesQuiz> multipleChoicesQuizzes { get; set; }
-        public DbSet<TrueAndFalseQuiz> trueAndFalseQuizzes { get; set; }
-        public DbSet<MultipleChoicesQuestion> multipleChoicesQuestions { get; set; }
-        public DbSet<TrueAndFalseQuestion> trueAndFalseQuestions { get; set; }
+        public DbSet<Quizzes> quizzes { get; set; }
+        public DbSet<Questions> questions { get; set; }
         public DbSet<Answers> answers { get; set; }
         public DbSet<Attempts> attempts { get; set; }
         public DbSet<Tracks> tracks { get; set; }
