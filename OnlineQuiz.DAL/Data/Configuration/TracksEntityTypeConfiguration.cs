@@ -20,7 +20,6 @@ namespace OnlineQuiz.DAL.Data.Configuration
                    .IsRequired()
                    .HasMaxLength(200); // يمكنك تعيين الطول الأقصى حسب احتياجاتك
 
-           
         }
     }
 }

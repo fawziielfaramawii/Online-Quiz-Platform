@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace OnlineQuiz.DAL.Repositoryies.TrackRepository
 {
-    public interface ITrackRepository  : IRepository<Tracks>
+    public interface ITrackRepository  : IRepository<Tracks,int>
     {
         //any specific methods for Track here if needed
     }

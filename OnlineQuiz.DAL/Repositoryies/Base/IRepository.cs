@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace OnlineQuiz.DAL.Repositoryies.Base
 {
-    public interface IRepository<T> where T : class
+    public interface IRepository<T,U> where T : class
     {
         // Get all entities
         IEnumerable<T> GetAll();
 
         // Get a single entity by its ID
-        T GetById(int id);
+        T GetById(U id);
 
         // Add a new entity
         void Add(T entity);
@@ -21,7 +21,7 @@ namespace OnlineQuiz.DAL.Repositoryies.Base
         void Update(T entity);
 
         // Delete an entity by ID
-        void DeleteById(int id);
+        void DeleteById(U id);
 
 
     }

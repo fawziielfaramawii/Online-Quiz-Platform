@@ -10,19 +10,12 @@ namespace OnlineQuiz.BLL.Managers.Student
     public interface IStudentManager
     {
         IEnumerable<StudentReadDto> GetAll();
-
-        // Get a single entity by its ID
-        StudentReadDto GetById(int id);
-
-        // Add a new entity
-        void Add(StudentAddDto entity);
-
-        // Update an existing entity
-        void Update(StudentUpdateDto entity);
-
-        // Delete an entity by ID
-        void DeleteById(int id);
-        //Get list of student BY grade
+        StudentReadDto GetById(string id);
+        void Add(StudentAddDto Studententity);
+        void Update(StudentUpdateDto Studententity);
+        void DeleteById(string id);
         IEnumerable<StudentReadDto> GetStudentsByGrade(string grade);
+        public StudentDetailesDto GetByIdWithDetails(string studentId);
+
     }
 }

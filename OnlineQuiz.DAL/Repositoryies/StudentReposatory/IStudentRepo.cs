@@ -8,8 +8,9 @@ using System.Threading.Tasks;
 
 namespace OnlineQuiz.DAL.Repositoryies.StudentReposatory
 {
-    public interface IStudentRepo :IRepository<Student>
+    public interface IStudentRepo :IRepository<Student,string>
     {
         IEnumerable<Student> GetStudentsByGrade(string grade);
+        public Student GetByIdWithDetails(string studentId);
     }
 }

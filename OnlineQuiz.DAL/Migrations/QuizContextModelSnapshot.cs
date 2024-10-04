@@ -38,7 +38,7 @@ namespace OnlineQuiz.DAL.Migrations
 
                     b.HasIndex("StudentsId");
 
-                    b.ToTable("InstructorStudent");
+                    b.ToTable("InstructorStudent", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -204,7 +204,7 @@ namespace OnlineQuiz.DAL.Migrations
 
                     b.HasIndex("QuestionId");
 
-                    b.ToTable("answers");
+                    b.ToTable("answers", (string)null);
                 });
 
             modelBuilder.Entity("OnlineQuiz.DAL.Data.Models.Attempts", b =>
@@ -241,7 +241,7 @@ namespace OnlineQuiz.DAL.Migrations
 
                     b.HasIndex("StudentId");
 
-                    b.ToTable("attempts");
+                    b.ToTable("attempts", (string)null);
                 });
 
             modelBuilder.Entity("OnlineQuiz.DAL.Data.Models.Option", b =>
@@ -269,7 +269,7 @@ namespace OnlineQuiz.DAL.Migrations
 
                     b.HasIndex("QuestionId");
 
-                    b.ToTable("Options");
+                    b.ToTable("Options", (string)null);
                 });
 
             modelBuilder.Entity("OnlineQuiz.DAL.Data.Models.Questions", b =>
@@ -371,7 +371,7 @@ namespace OnlineQuiz.DAL.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("tracks");
+                    b.ToTable("tracks", (string)null);
                 });
 
             modelBuilder.Entity("OnlineQuiz.DAL.Data.Models.Users", b =>

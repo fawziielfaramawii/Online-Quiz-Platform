@@ -21,25 +21,19 @@ namespace OnlineQuiz.DAL.Data.Models
     {
         [Range(5, 120)]
         public int Age { get; set; }
-
         public string Gender { get; set; }
-
         public string Adress { get; set; }
 
         [DataType(DataType.ImageUrl)]
         public string ImgUrl { get; set; }
-        
         public Type UserType { get; set; } 
     }
     public class Student:Users
     {
         public string  Grade { get; set; }
         public ICollection<Instructor> Instructors { get; set; } = new HashSet<Instructor>();
-
         //Student With Attempts
         public ICollection<Attempts> Attempts { get; set; } = new HashSet<Attempts>();
-
-
     }
 
 

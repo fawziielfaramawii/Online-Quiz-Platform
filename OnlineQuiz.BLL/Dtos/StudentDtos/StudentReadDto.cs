@@ -10,8 +10,10 @@ namespace OnlineQuiz.BLL.Dtos.StudentDtos
 {
     public class StudentReadDto
     {
-        public string Name { get; set; }
+        public string UserName { get; set; }
         public string Grade { get; set; }  
         public string ImgUrl { get; set; }
+
+
     }
 }

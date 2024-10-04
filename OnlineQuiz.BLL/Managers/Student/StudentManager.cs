@@ -1,4 +1,7 @@
-﻿using OnlineQuiz.BLL.Dtos.StudentDtos;
+﻿
+using AutoMapper;
+using OnlineQuiz.BLL.Dtos.StudentDtos;
+using OnlineQuiz.DAL.Data.Models;
 using OnlineQuiz.DAL.Repositoryies.Base;
 using OnlineQuiz.DAL.Repositoryies.StudentReposatory;
 using System;
@@ -12,40 +15,50 @@ namespace OnlineQuiz.BLL.Managers.Student
     public class StudentManager :IStudentManager
     {
         private readonly IStudentRepo _studentRepo;
-
-        public StudentManager(IStudentRepo studentRepo)
+        private readonly IMapper _mapper;
+        public StudentManager(IStudentRepo studentRepo,IMapper mapper)
         {
             _studentRepo = studentRepo;
+            _mapper = mapper;
         }
-
-        public void Add(StudentAddDto entity)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void DeleteById(int id)
-        {
-            throw new NotImplementedException();
-        }
-
         public IEnumerable<StudentReadDto> GetAll()
         {
-            throw new NotImplementedException();
+          return  _mapper.Map<List<StudentReadDto>>(_studentRepo.GetAll());
         }
-
-        public StudentReadDto GetById(int id)
+        public StudentReadDto GetById(string id)
         {
-            throw new NotImplementedException();
+            var student = _mapper.Map<StudentReadDto>(_studentRepo.GetById(id));
+            return student;
         }
-
+        public void Add(StudentAddDto Studententity)
+        {
+            var student = _mapper.Map<OnlineQuiz.DAL.Data.Models.Student>(Studententity);
+            _studentRepo.Add(student);     
+        }
+        public void Update(StudentUpdateDto Studententity)
+        {
+            var StudentModel = _studentRepo.GetById(Studententity.Id);
+            _studentRepo.Update
+                (_mapper.Map<StudentUpdateDto,OnlineQuiz.DAL.Data.Models.Student>
+                (Studententity,StudentModel));
+        }
+        public void DeleteById(string id)
+        {
+             _studentRepo.DeleteById(id);
+        }
         public IEnumerable<StudentReadDto> GetStudentsByGrade(string grade)
         {
-            throw new NotImplementedException();
+            return _mapper.Map<List<StudentReadDto>>(_studentRepo.GetStudentsByGrade(grade));
         }
-
-        public void Update(StudentUpdateDto entity)
+        public StudentDetailesDto GetByIdWithDetails(string studentId)
         {
-            throw new NotImplementedException();
+            var student =  _studentRepo.GetByIdWithDetails(studentId); 
+
+            if (student == null)
+                return null;
+            // Map to DTO
+            var studentDto = _mapper.Map<StudentDetailesDto>(student);
+            return studentDto;
         }
     }
 }

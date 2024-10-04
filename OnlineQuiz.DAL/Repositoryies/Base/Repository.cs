@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace OnlineQuiz.DAL.Repositoryies.Base
 {
-    public class Repository<T> : IRepository<T> where T : class
+    public class Repository<T,U> : IRepository<T,U> where T : class
     {
 
         private readonly QuizContext _context;
@@ -16,14 +16,14 @@ namespace OnlineQuiz.DAL.Repositoryies.Base
         public Repository(QuizContext context)
         {
             _context = context;
-        }
+        }  
 
         public IEnumerable<T> GetAll()
         {
             return _context.Set<T>().AsNoTracking().ToList();
         }
 
-        public T GetById(int id)
+        public T GetById(U id)
         {
             return _context.Set<T>().Find(id);
         }
@@ -36,11 +36,10 @@ namespace OnlineQuiz.DAL.Repositoryies.Base
 
         public void Update(T entity)
         {
-          
             _context.SaveChanges();
         }
 
-        public void DeleteById(int id)
+        public void DeleteById(U id)
         {
             var entity = _context.Set<T>().Find(id);
             if (entity != null)
