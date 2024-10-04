@@ -45,28 +45,9 @@ namespace OnlineQuiz.DAL.Data.Configuration
                 .HasForeignKey(q => q.InstructorId)
                 .OnDelete(DeleteBehavior.Cascade); // Optional: Configure delete behavior
 
-            builder.UseTpcMappingStrategy();
           
         }
     }
 
-    public class TrueAndFalseQuizEntityTypeConfiguration : IEntityTypeConfiguration<TrueAndFalseQuiz>
-    {
-        public void Configure(EntityTypeBuilder<TrueAndFalseQuiz> builder)
-        {
-           
-            builder.ToTable("TrueAndFalseQuizzes");
-
-        }
-    }
-
-    public class MultipleChoicesQuizEntityTypeConfiguration : IEntityTypeConfiguration<MultipleChoicesQuiz>
-    {
-        public void Configure(EntityTypeBuilder<MultipleChoicesQuiz> builder)
-        {
-           
-            builder.ToTable("MultipleChoicesQuizzes");
-
-        }
-    }
+  
 }

@@ -12,7 +12,9 @@ namespace OnlineQuiz.DAL.Data.Models
         public string OptionText { get; set; }
 
         // Foreign Key
-        public int QuestionId { get; set; }
-        public Questions Question { get; set; }
+
+        // for Question
+       public int QuestionsId { get; set; }
+      public Questions Questions { get; set; }
     }
 }
