@@ -62,3 +62,19 @@ C:\Users\elfaramawy\OneDrive\Desktop\Online_Quiz\Online-Quiz-Platform\OnlineQuiz
 C:\Users\elfaramawy\OneDrive\Desktop\Online_Quiz\Online-Quiz-Platform\OnlineQuiz.BLL\obj\Debug\net8.0\refint\OnlineQuiz.BLL.dll
 C:\Users\elfaramawy\OneDrive\Desktop\Online_Quiz\Online-Quiz-Platform\OnlineQuiz.BLL\obj\Debug\net8.0\OnlineQuiz.BLL.pdb
 C:\Users\elfaramawy\OneDrive\Desktop\Online_Quiz\Online-Quiz-Platform\OnlineQuiz.BLL\obj\Debug\net8.0\ref\OnlineQuiz.BLL.dll
+A:\DPI tasks\c#\Final project\OnlineQuiz.BLL\bin\Debug\net8.0\OnlineQuiz.BLL.deps.json
+A:\DPI tasks\c#\Final project\OnlineQuiz.BLL\bin\Debug\net8.0\OnlineQuiz.BLL.dll
+A:\DPI tasks\c#\Final project\OnlineQuiz.BLL\bin\Debug\net8.0\OnlineQuiz.BLL.pdb
+A:\DPI tasks\c#\Final project\OnlineQuiz.BLL\bin\Debug\net8.0\OnlineQuiz.DAL.dll
+A:\DPI tasks\c#\Final project\OnlineQuiz.BLL\bin\Debug\net8.0\OnlineQuiz.DAL.pdb
+A:\DPI tasks\c#\Final project\OnlineQuiz.BLL\obj\Debug\net8.0\OnlineQuiz.BLL.csproj.AssemblyReference.cache
+A:\DPI tasks\c#\Final project\OnlineQuiz.BLL\obj\Debug\net8.0\OnlineQuiz.BLL.GeneratedMSBuildEditorConfig.editorconfig
+A:\DPI tasks\c#\Final project\OnlineQuiz.BLL\obj\Debug\net8.0\OnlineQuiz.BLL.AssemblyInfoInputs.cache
+A:\DPI tasks\c#\Final project\OnlineQuiz.BLL\obj\Debug\net8.0\OnlineQuiz.BLL.AssemblyInfo.cs
+A:\DPI tasks\c#\Final project\OnlineQuiz.BLL\obj\Debug\net8.0\OnlineQuiz.BLL.csproj.CoreCompileInputs.cache
+A:\DPI tasks\c#\Final project\OnlineQuiz.BLL\obj\Debug\net8.0\OnlineQuiz.BLL.sourcelink.json
+A:\DPI tasks\c#\Final project\OnlineQuiz.BLL\obj\Debug\net8.0\OnlineQu.95C6C24C.Up2Date
+A:\DPI tasks\c#\Final project\OnlineQuiz.BLL\obj\Debug\net8.0\OnlineQuiz.BLL.dll
+A:\DPI tasks\c#\Final project\OnlineQuiz.BLL\obj\Debug\net8.0\refint\OnlineQuiz.BLL.dll
+A:\DPI tasks\c#\Final project\OnlineQuiz.BLL\obj\Debug\net8.0\OnlineQuiz.BLL.pdb
+A:\DPI tasks\c#\Final project\OnlineQuiz.BLL\obj\Debug\net8.0\ref\OnlineQuiz.BLL.dll

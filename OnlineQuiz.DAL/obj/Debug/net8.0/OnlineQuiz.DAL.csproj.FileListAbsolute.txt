@@ -58,3 +58,18 @@ C:\Users\elfaramawy\OneDrive\Desktop\Online_Quiz\Online-Quiz-Platform\OnlineQuiz
 C:\Users\elfaramawy\OneDrive\Desktop\Online_Quiz\Online-Quiz-Platform\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.pdb
 C:\Users\elfaramawy\OneDrive\Desktop\Online_Quiz\Online-Quiz-Platform\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.genruntimeconfig.cache
 C:\Users\elfaramawy\OneDrive\Desktop\Online_Quiz\Online-Quiz-Platform\OnlineQuiz.DAL\obj\Debug\net8.0\ref\OnlineQuiz.DAL.dll
+A:\DPI tasks\c#\Final project\OnlineQuiz.DAL\bin\Debug\net8.0\OnlineQuiz.DAL.deps.json
+A:\DPI tasks\c#\Final project\OnlineQuiz.DAL\bin\Debug\net8.0\OnlineQuiz.DAL.runtimeconfig.json
+A:\DPI tasks\c#\Final project\OnlineQuiz.DAL\bin\Debug\net8.0\OnlineQuiz.DAL.dll
+A:\DPI tasks\c#\Final project\OnlineQuiz.DAL\bin\Debug\net8.0\OnlineQuiz.DAL.pdb
+A:\DPI tasks\c#\Final project\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.csproj.AssemblyReference.cache
+A:\DPI tasks\c#\Final project\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.GeneratedMSBuildEditorConfig.editorconfig
+A:\DPI tasks\c#\Final project\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.AssemblyInfoInputs.cache
+A:\DPI tasks\c#\Final project\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.AssemblyInfo.cs
+A:\DPI tasks\c#\Final project\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.csproj.CoreCompileInputs.cache
+A:\DPI tasks\c#\Final project\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.sourcelink.json
+A:\DPI tasks\c#\Final project\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.dll
+A:\DPI tasks\c#\Final project\OnlineQuiz.DAL\obj\Debug\net8.0\refint\OnlineQuiz.DAL.dll
+A:\DPI tasks\c#\Final project\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.pdb
+A:\DPI tasks\c#\Final project\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.genruntimeconfig.cache
+A:\DPI tasks\c#\Final project\OnlineQuiz.DAL\obj\Debug\net8.0\ref\OnlineQuiz.DAL.dll

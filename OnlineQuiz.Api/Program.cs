@@ -8,6 +8,7 @@ using OnlineQuiz.DAL.Repositoryies.Base;
 using OnlineQuiz.DAL.Repositoryies.TrackRepository;
 using OnlineQuiz.BLL.AutoMapper.TrackMapper;
 using OnlineQuiz.BLL.Managers.Track;
+using OnlineQuiz.DAL.Repositoryies.AdminRepositroy;
 
 namespace OnlineQuiz.Api
 {
@@ -53,7 +54,9 @@ namespace OnlineQuiz.Api
 
 
 
-            
+            //admin services
+            builder.Services.AddScoped<IAdminRepositroy, AdminRepositroy>();
+            //admin auto mapper
 
             var app = builder.Build();
 

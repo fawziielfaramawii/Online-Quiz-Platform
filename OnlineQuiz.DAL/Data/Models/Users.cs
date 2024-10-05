@@ -17,10 +17,15 @@ namespace OnlineQuiz.DAL.Data.Models
         Instructor = 2,
         Admin = 3
     }
-        
 
 
-    
+
+    public enum ApprovalStatus
+    {
+        Pending,
+        Approved,
+        Denied
+    }
 
     public class Users : IdentityUser
     {
@@ -39,9 +44,9 @@ namespace OnlineQuiz.DAL.Data.Models
         
         public Type UserType { get; set; }
 
-      
 
-   
+        public bool IsBanned { get; set; }
+
     }
 
     public class Student:Users
@@ -59,7 +64,7 @@ namespace OnlineQuiz.DAL.Data.Models
     public class Instructor : Users
     {
 
-        public bool InstructorIsApproved { get; set; } = false;
+        public ApprovalStatus Status { get; set; } = ApprovalStatus.Pending;
         public ICollection<Student> Students { get; set; } = new HashSet<Student>();
 
         //  Instructor with Quizzes

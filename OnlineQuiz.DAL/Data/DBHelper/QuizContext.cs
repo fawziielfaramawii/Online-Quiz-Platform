@@ -23,7 +23,9 @@ namespace OnlineQuiz.DAL.Data.DBHelper
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-      
+
+
+            modelBuilder.Entity<Users>().HasData(t =>   );
 
             base.OnModelCreating(modelBuilder);
             modelBuilder.ApplyConfiguration(new AnswersEntityTypeConfiguration());
