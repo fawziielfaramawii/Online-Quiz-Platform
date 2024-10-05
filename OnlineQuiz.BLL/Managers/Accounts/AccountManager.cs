@@ -47,11 +47,16 @@ namespace OnlineQuiz.BLL.Managers.Accounts
             {
                 //user = new Admin();
             }
-       
+
 
             user.UserName = registerDto.UserName;
             user.Email = registerDto.Email;
             user.UserType = registerDto.UserType;
+            user.Gender= registerDto.Gender;
+            user.Adress = registerDto.Address;
+            user.Age = registerDto.Age;
+            
+           
 
             var result = await _userManager.CreateAsync(user, registerDto.Password);
             if (result.Succeeded)
@@ -113,7 +118,7 @@ namespace OnlineQuiz.BLL.Managers.Accounts
             response.Errors.Add("Wrong Password or Email");
             return response;
         }
-      
+
 
 
         private string GenerateToken(IList<Claim> claims)
@@ -130,7 +135,7 @@ namespace OnlineQuiz.BLL.Managers.Accounts
             SigningCredentials signingCredential = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
 
             //Token
-          
+
             JwtSecurityToken jwtSecurityToken = new JwtSecurityToken
             (
                 claims: claims,
