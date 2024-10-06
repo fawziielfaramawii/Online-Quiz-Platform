@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OnlineQuiz.DAL.Repositoryies.Base
+namespace OnlineQuiz.BLL.Managers.Base
 {
-    public interface IRepository<T, U> where T : class
+    public interface IManager<T, U> where T : class
     {
-       
         IQueryable<T> GetAll();
         T GetById(U id);
         void Add(T entity);
