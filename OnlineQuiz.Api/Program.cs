@@ -8,6 +8,7 @@ using OnlineQuiz.DAL.Repositoryies.Base;
 using OnlineQuiz.DAL.Repositoryies.TrackRepository;
 using OnlineQuiz.BLL.AutoMapper.TrackMapper;
 using OnlineQuiz.BLL.Managers.Track;
+using OnlineQuiz.BLL.Managers.Base;
 
 namespace OnlineQuiz.Api
 {
@@ -33,11 +34,13 @@ namespace OnlineQuiz.Api
 
             builder.Services.AddAutoMapper(map => map.AddProfile(new TrackMapper()));
 
-            //GenericRepository
-            builder.Services.AddScoped(typeof(IRepository<>),typeof(Repository<>));
+            //GenericRepository && GenericManager
+            builder.Services.AddScoped(typeof(IRepository<,>),typeof(Repository<,>));
+            builder.Services.AddScoped(typeof(IManager<,>), typeof(Manager<,>));
+
+            //Repositories
             builder.Services.AddScoped<ITrackRepository, TrackRepository>();
-            //TrackAutoMapper
-           
+            //Managers
             builder.Services.AddScoped<ITrackManager, TrackManager>();
 
 

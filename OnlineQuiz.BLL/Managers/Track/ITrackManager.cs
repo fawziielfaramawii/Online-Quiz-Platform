@@ -1,4 +1,5 @@
 ﻿using OnlineQuiz.BLL.Dtos.Track;
+using OnlineQuiz.BLL.Managers.Base;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,14 +8,8 @@ using System.Threading.Tasks;
 
 namespace OnlineQuiz.BLL.Managers.Track
 {
-    public interface ITrackManager
+    public interface ITrackManager : IManager<TrackDto, int>
     {
-        IEnumerable<TrackDto> GetAllTracks();
-        TrackDto GetTrackById(int id);
-        
-        TrackDto AddTrack(TrackDto trackDto); 
-     
-        void UpdateTrack(TrackDto trackDto); 
-        void DeleteTrack(int id); 
+        // No additional methods needed, as CRUD is handled by IManager
     }
 }

@@ -18,17 +18,19 @@ namespace OnlineQuiz.Api.Controllers
             _trackManager = trackManager;
         }
 
+        // GET: api/track
         [HttpGet]
-        public ActionResult<IEnumerable<TrackDto>> GetAllTracks()
+        public ActionResult<IEnumerable<TrackDto>> GetAll()
         {
-            var tracks = _trackManager.GetAllTracks();
+            var tracks = _trackManager.GetAll().ToList();
             return Ok(tracks);
         }
 
+        // GET: api/track/{id}
         [HttpGet("{id}")]
-        public ActionResult<TrackDto> GetTrackById(int id)
+        public ActionResult<TrackDto> GetById(int id)
         {
-            var track = _trackManager.GetTrackById(id);
+            var track = _trackManager.GetById(id);
             if (track == null)
             {
                 return NotFound();
@@ -36,34 +38,37 @@ namespace OnlineQuiz.Api.Controllers
             return Ok(track);
         }
 
+        // POST: api/track
         [HttpPost]
-        public ActionResult<TrackDto> AddTrack([FromBody] TrackDto trackDto)
+        public ActionResult<TrackDto> Add([FromBody] TrackDto trackDto)
         {
             if (trackDto == null)
             {
                 return BadRequest();
             }
 
-            var createdTrack = _trackManager.AddTrack(trackDto);
-            return CreatedAtAction(nameof(GetTrackById), new { id = createdTrack.Id }, createdTrack);
+            _trackManager.Add(trackDto);
+            return CreatedAtAction(nameof(GetById), new { id = trackDto.Id }, trackDto);
         }
 
+        // PUT: api/track/{id}
         [HttpPut("{id}")]
-        public IActionResult UpdateTrack(int id, [FromBody] TrackDto trackDto)
+        public IActionResult Update(int id, [FromBody] TrackDto trackDto)
         {
             if (trackDto == null || id != trackDto.Id)
             {
                 return BadRequest();
             }
 
-            _trackManager.UpdateTrack(trackDto);
+            _trackManager.Update(trackDto);
             return NoContent();
         }
 
+        // DELETE: api/track/{id}
         [HttpDelete("{id}")]
-        public IActionResult DeleteTrack(int id)
+        public IActionResult Delete(int id)
         {
-            _trackManager.DeleteTrack(id);
+            _trackManager.DeleteById(id);
             return NoContent();
         }
     }
