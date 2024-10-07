@@ -50,5 +50,6 @@ namespace OnlineQuiz.DAL.Repositoryies.TrackRepository
                 _context.SaveChanges();
             }
         }
+
     }
 }
