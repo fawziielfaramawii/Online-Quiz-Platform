@@ -714,7 +714,6 @@ A:\DPI tasks\c#\Final project\OnlineQuiz.Api\obj\Debug\net8.0\OnlineQuiz.Api.Gen
 A:\DPI tasks\c#\Final project\OnlineQuiz.Api\obj\Debug\net8.0\OnlineQuiz.Api.AssemblyInfoInputs.cache
 A:\DPI tasks\c#\Final project\OnlineQuiz.Api\obj\Debug\net8.0\OnlineQuiz.Api.AssemblyInfo.cs
 A:\DPI tasks\c#\Final project\OnlineQuiz.Api\obj\Debug\net8.0\OnlineQuiz.Api.csproj.CoreCompileInputs.cache
-A:\DPI tasks\c#\Final project\OnlineQuiz.Api\obj\Debug\net8.0\OnlineQuiz.Api.MvcApplicationPartsAssemblyInfo.cs
 A:\DPI tasks\c#\Final project\OnlineQuiz.Api\obj\Debug\net8.0\OnlineQuiz.Api.MvcApplicationPartsAssemblyInfo.cache
 A:\DPI tasks\c#\Final project\OnlineQuiz.Api\obj\Debug\net8.0\OnlineQuiz.Api.sourcelink.json
 A:\DPI tasks\c#\Final project\OnlineQuiz.Api\obj\Debug\net8.0\staticwebassets.build.json
