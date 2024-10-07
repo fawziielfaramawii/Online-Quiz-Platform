@@ -21,11 +21,13 @@ namespace OnlineQuiz.DAL.Repositoryies.AdminRepositroy
         }
         public void AddInstructor(Instructor Instructor)
         {
+            _Context.Add(Instructor);
             _Context.SaveChanges();
         }
 
         public void AddStudent(Student student)
         {
+            _Context.Add(student);
             _Context.SaveChanges();
         }
 
@@ -53,7 +55,7 @@ namespace OnlineQuiz.DAL.Repositoryies.AdminRepositroy
             return _Context.Students.ToList();
         }
 
-        public Instructor GetInstructorById(int id)
+        public Instructor GetInstructorById(string id)
         {
             return _Context.Instructors.FirstOrDefault(Key => Key.Id == id.ToString());
         }
@@ -64,9 +66,9 @@ namespace OnlineQuiz.DAL.Repositoryies.AdminRepositroy
 
         }
 
-        public Student GetStudentById(int id)
+        public Student GetStudentById(string id)
         {
-            return _Context.Students.FirstOrDefault(Key => Key.Id == id.ToString());
+            return _Context.Students.FirstOrDefault(Key => Key.Id == id);
 
         }
 
@@ -97,51 +99,51 @@ namespace OnlineQuiz.DAL.Repositoryies.AdminRepositroy
             _Context.SaveChanges();
         }
 
-        public async Task ApproveInstructorAsync(int InstructorId)
+        public void ApproveInstructorAsync(string InstructorId)
         {
-            var instructor = await _Context.Instructors.FirstOrDefaultAsync(key=> key.Id == InstructorId.ToString());
+            var instructor = _Context.Instructors.FirstOrDefault(key=> key.Id == InstructorId);
             if (instructor != null)
             {
                 instructor.Status = ApprovalStatus.Approved;
                 _Context.Update(instructor);
-                await _Context.SaveChangesAsync();
+                _Context.SaveChanges();
             }
         }
 
 
-        public async Task DenyInstructorAsync(int InstructorId)
+        public void DenyInstructorAsync(string InstructorId)
         {
-            var instructor = await _Context.Instructors.FirstOrDefaultAsync(key => key.Id == InstructorId.ToString());
+            var instructor =  _Context.Instructors.FirstOrDefault(key => key.Id == InstructorId);
             if (instructor != null)
             {
                 instructor.Status = ApprovalStatus.Denied;
                 _Context.Update(instructor);
-                await _Context.SaveChangesAsync();
+                _Context.SaveChanges();
             }
         }
 
 
 
-        public async Task BanUserAsync(int UserId)
+        public void BanUserAsync(string UserId)
         {
-            var users = await _Context.users.FirstOrDefaultAsync(key => key.Id == UserId.ToString());
-            if (users != null)
-            {
-                users.IsBanned = true;
-                _Context.Update(users);
-                await _Context.SaveChangesAsync();
-            }
+            var users = _Context.users.FirstOrDefault(key => key.Id == UserId);
+            users.IsBanned = true;
+            _Context.Update(users);
+            _Context.SaveChanges();
+
         }
 
-        public async Task UnbanUserAsync(int UserId)
+        public void UnbanUserAsync(string UserId)
         {
-            var users = await _Context.users.FirstOrDefaultAsync(key => key.Id == UserId.ToString());
-            if (users != null)
-            {
-                users.IsBanned = false;
-                _Context.Update(users);
-                await _Context.SaveChangesAsync();
-            }
+            var users =  _Context.users.FirstOrDefault(key => key.Id == UserId);
+            users.IsBanned = false;
+            _Context.Update(users);
+            _Context.SaveChanges();
+        }
+
+        public Users GetUsertById(string id)
+        {
+           return _Context.users.FirstOrDefault(key => key.Id == id);
         }
     }
 }

@@ -8,14 +8,17 @@ using System.Threading.Tasks;
 
 namespace OnlineQuiz.DAL.Repositoryies.AdminRepositroy
 {
-    public interface IAdminRepositroy //: //IRepository<Users>
+    public interface IAdminRepositroy
     {
+
+        // get user for ban and un ban method  
+        Users GetUsertById(string id);
 
         // get all instractour or student 
         IEnumerable<Student> GetAllStudent();
 
         // get by id or name  instractour or student 
-        Student GetStudentById(int id);
+        Student GetStudentById(string id);
         Student GetStudentByName(string name);
 
 
@@ -27,13 +30,13 @@ namespace OnlineQuiz.DAL.Repositoryies.AdminRepositroy
         // delete instractour or student 
         public void DeleteStudent(Student student);
 
-
+        //------------------------------------------------------------------------------------
 
         // get all instractour 
         IEnumerable<Instructor> GetAllInstructo();
 
         // get by id or name instractour) 
-        Instructor GetInstructorById(int id);
+        Instructor GetInstructorById(string id);
         Instructor GetInstructorByName(string name);
 
 
@@ -51,12 +54,12 @@ namespace OnlineQuiz.DAL.Repositoryies.AdminRepositroy
 
         // Approve and deny instractour after login only accses for admin
 
-        Task ApproveInstructorAsync(int instructorId);
-        Task DenyInstructorAsync(int instructorId);
+        void ApproveInstructorAsync(string instructorId);
+        void DenyInstructorAsync(string instructorId);
 
         // ban and un ban users accses for admin
-        Task BanUserAsync(int studentId);
-        Task UnbanUserAsync(int studentId);
+        void BanUserAsync(string studentId);
+        void UnbanUserAsync(string studentId);
 
 
         // App details instractour 

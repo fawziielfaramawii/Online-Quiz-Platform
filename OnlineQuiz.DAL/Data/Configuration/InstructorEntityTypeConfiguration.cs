@@ -14,9 +14,9 @@ namespace OnlineQuiz.DAL.Data.Configuration
         public void Configure(EntityTypeBuilder<Instructor> builder)
         {
 
-            builder.Property(i => i.InstructorIsApproved)
-                      .IsRequired()
-                      .HasDefaultValue(false);
+            //builder.Property(i => i.InstructorIsApproved)
+            //          .IsRequired()
+            //          .HasDefaultValue(false);
 
        
 

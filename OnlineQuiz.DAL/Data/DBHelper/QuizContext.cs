@@ -25,7 +25,7 @@ namespace OnlineQuiz.DAL.Data.DBHelper
         {
 
 
-            modelBuilder.Entity<Users>().HasData(t =>   );
+            
 
             base.OnModelCreating(modelBuilder);
             modelBuilder.ApplyConfiguration(new AnswersEntityTypeConfiguration());
