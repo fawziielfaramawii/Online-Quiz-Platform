@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace OnlineQuiz.BLL.Managers.Track
 {
-    public class TrackManager:ITrackManager
+    public class TrackManager : ITrackManager
     {
         private readonly ITrackRepository _trackRepository;
         private readonly IMapper _mapper;
@@ -21,33 +21,27 @@ namespace OnlineQuiz.BLL.Managers.Track
             _trackRepository = trackRepository;
             _mapper = mapper;
         }
-
-        public IEnumerable<TrackDto> GetAllTracks()
+        public IQueryable<TrackDto> GetAll()
         {
             var tracks = _trackRepository.GetAll();
-            return _mapper.Map<IEnumerable<TrackDto>>(tracks);
+            return _mapper.ProjectTo<TrackDto>(tracks);
         }
-
-        public TrackDto GetTrackById(int id)
+        public TrackDto GetById(int id)
         {
             var track = _trackRepository.GetById(id);
             return _mapper.Map<TrackDto>(track);
         }
-
-        public TrackDto AddTrack(TrackDto trackDto)
+        public void Add(TrackDto trackDto)
         {
             var track = _mapper.Map<Tracks>(trackDto);
             _trackRepository.Add(track);
-            return _mapper.Map<TrackDto>(track); // Returning the added track as TrackDto
         }
-
-        public void UpdateTrack(TrackDto trackDto)
+        public void Update(TrackDto trackDto)
         {
             var track = _mapper.Map<Tracks>(trackDto);
             _trackRepository.Update(track);
         }
-
-        public void DeleteTrack(int id)
+        public void DeleteById(int id)
         {
             _trackRepository.DeleteById(id);
         }

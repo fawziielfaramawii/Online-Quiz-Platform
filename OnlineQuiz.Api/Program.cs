@@ -8,8 +8,12 @@ using OnlineQuiz.DAL.Repositoryies.Base;
 using OnlineQuiz.DAL.Repositoryies.TrackRepository;
 using OnlineQuiz.BLL.AutoMapper.TrackMapper;
 using OnlineQuiz.BLL.Managers.Track;
+<<<<<<< HEAD
 using OnlineQuiz.DAL.Repositoryies.StudentReposatory;
 using OnlineQuiz.BLL.Managers.Student;
+=======
+using OnlineQuiz.BLL.Managers.Base;
+>>>>>>> 319a13ab30cffa39590e076416bcc03811e778b8
 
 namespace OnlineQuiz.Api
 {
@@ -35,10 +39,20 @@ namespace OnlineQuiz.Api
 
             builder.Services.AddAutoMapper(map => map.AddProfile(new TrackMapper()));
 
+<<<<<<< HEAD
             //GenericRepository
             builder.Services.AddScoped(typeof(IRepository<,>),typeof(Repository<,>));
             builder.Services.AddScoped<ITrackRepository, TrackRepository>();
             //TrackAutoMapper
+=======
+            //GenericRepository && GenericManager
+            builder.Services.AddScoped(typeof(IRepository<,>),typeof(Repository<,>));
+            builder.Services.AddScoped(typeof(IManager<,>), typeof(Manager<,>));
+
+            //Repositories
+            builder.Services.AddScoped<ITrackRepository, TrackRepository>();
+            //Managers
+>>>>>>> 319a13ab30cffa39590e076416bcc03811e778b8
             builder.Services.AddScoped<ITrackManager, TrackManager>();
             //register Student Repo
             builder.Services.AddScoped<IStudentRepo, StudentRepo>();

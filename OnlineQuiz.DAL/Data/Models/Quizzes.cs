@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OnlineQuiz.DAL.Data.Models
 {
-    public abstract class Quizzes               // Table By Concrete
+    public  class Quizzes           
     {
         public int Id { get; set; }
         public string Tittle { get; set; }
@@ -25,7 +25,10 @@ namespace OnlineQuiz.DAL.Data.Models
         public ICollection<Attempts> Attempts { get; set; } = new HashSet<Attempts>();
         //for Question
         public ICollection<Questions> Questions { get; set; } = new HashSet<Questions>();
+
+
     }
+<<<<<<< HEAD
         public class TrueAndFalseQuiz : Quizzes
         {
 
@@ -43,6 +46,8 @@ namespace OnlineQuiz.DAL.Data.Models
 
 
 
+=======
+>>>>>>> 319a13ab30cffa39590e076416bcc03811e778b8
 
 
 }
