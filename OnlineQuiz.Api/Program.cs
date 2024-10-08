@@ -14,9 +14,9 @@ using OnlineQuiz.BLL.Managers.Quiz;
 using OnlineQuiz.BLL.AutoMapper.QuizMapper;
 using OnlineQuiz.BLL.Managers;
 using OnlineQuiz.BLL.Managers.QuestionManager;
-using OnlineQuiz.BLL.Managers.Options;
+
 using OnlineQuiz.DAL.Repositoryies.QuestionRepository;
-using OnlineQuiz.DAL.Repositoryies.OptionRepository;
+
 using OnlineQuiz.BLL.AutoMapper.QuestionMapper;
 using OnlineQuiz.BLL.AutoMapper.OptionMapper;
 
@@ -55,11 +55,11 @@ namespace OnlineQuiz.Api
             builder.Services.AddScoped<ITrackRepository, TrackRepository>();
             builder.Services.AddScoped<IQuizRepository, QuizRepository>();
             builder.Services.AddScoped<IQuestionsRepository, QuestionsRepository>();
-            builder.Services.AddScoped<IOptionsRepository, OptionsRepository>();
+           
             //Managers
             builder.Services.AddScoped<IQuizManager, QuizManager>();
             builder.Services.AddScoped<IQuestionManager, QuestionManager>();
-            builder.Services.AddScoped<IOptionManager, OptionManager>();
+          
             builder.Services.AddScoped<ITrackManager, TrackManager>();
 
 

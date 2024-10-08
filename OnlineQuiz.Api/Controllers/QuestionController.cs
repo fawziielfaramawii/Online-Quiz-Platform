@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using OnlineQuiz.BLL.Dtos.Question;
-using OnlineQuiz.BLL.Managers.Options;
+
 using OnlineQuiz.BLL.Managers.QuestionManager;
 
 namespace OnlineQuiz.Api.Controllers
@@ -11,12 +11,12 @@ namespace OnlineQuiz.Api.Controllers
     public class QuestionController : ControllerBase
     {
         private readonly IQuestionManager _questionManager;
-        private readonly IOptionManager _optionManager;
+       
 
-        public QuestionController(IQuestionManager questionManager, IOptionManager optionManager)
+        public QuestionController(IQuestionManager questionManager)
         {
             _questionManager = questionManager;
-            _optionManager = optionManager;
+           
         }
 
         

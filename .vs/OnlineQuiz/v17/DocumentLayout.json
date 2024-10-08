@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1BFB8A2A-7FB4-46FC-A8A7-7DE9B20FFB38}|OnlineQuiz.BLL\\OnlineQuiz.BLL.csproj|c:\\users\\karee\\desktop\\karimbranch\\online-quiz-platform\\onlinequiz.bll\\dtos\\question\\questiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1BFB8A2A-7FB4-46FC-A8A7-7DE9B20FFB38}|OnlineQuiz.BLL\\OnlineQuiz.BLL.csproj|solutionrelative:onlinequiz.bll\\dtos\\question\\questiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1BFB8A2A-7FB4-46FC-A8A7-7DE9B20FFB38}|OnlineQuiz.BLL\\OnlineQuiz.BLL.csproj|c:\\users\\karee\\desktop\\karimbranch\\online-quiz-platform\\onlinequiz.bll\\dtos\\question\\createquestiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1BFB8A2A-7FB4-46FC-A8A7-7DE9B20FFB38}|OnlineQuiz.BLL\\OnlineQuiz.BLL.csproj|solutionrelative:onlinequiz.bll\\dtos\\question\\createquestiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{616AF085-367C-4B5C-9EBC-E0BECD3E117A}|OnlineQuiz.Api\\OnlineQuiz.Api.csproj|c:\\users\\karee\\desktop\\karimbranch\\online-quiz-platform\\onlinequiz.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{616AF085-367C-4B5C-9EBC-E0BECD3E117A}|OnlineQuiz.Api\\OnlineQuiz.Api.csproj|solutionrelative:onlinequiz.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1BFB8A2A-7FB4-46FC-A8A7-7DE9B20FFB38}|OnlineQuiz.BLL\\OnlineQuiz.BLL.csproj|c:\\users\\karee\\desktop\\karimbranch\\online-quiz-platform\\onlinequiz.bll\\managers\\questionmanager\\questionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,6 +13,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{1BFB8A2A-7FB4-46FC-A8A7-7DE9B20FFB38}|OnlineQuiz.BLL\\OnlineQuiz.BLL.csproj|c:\\users\\karee\\desktop\\karimbranch\\online-quiz-platform\\onlinequiz.bll\\managers\\questionmanager\\iquestionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1BFB8A2A-7FB4-46FC-A8A7-7DE9B20FFB38}|OnlineQuiz.BLL\\OnlineQuiz.BLL.csproj|solutionrelative:onlinequiz.bll\\managers\\questionmanager\\iquestionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{616AF085-367C-4B5C-9EBC-E0BECD3E117A}|OnlineQuiz.Api\\OnlineQuiz.Api.csproj|c:\\users\\karee\\desktop\\karimbranch\\online-quiz-platform\\onlinequiz.api\\controllers\\questioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{616AF085-367C-4B5C-9EBC-E0BECD3E117A}|OnlineQuiz.Api\\OnlineQuiz.Api.csproj|solutionrelative:onlinequiz.api\\controllers\\questioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BFB8A2A-7FB4-46FC-A8A7-7DE9B20FFB38}|OnlineQuiz.BLL\\OnlineQuiz.BLL.csproj|c:\\users\\karee\\desktop\\karimbranch\\online-quiz-platform\\onlinequiz.bll\\dtos\\question\\questiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BFB8A2A-7FB4-46FC-A8A7-7DE9B20FFB38}|OnlineQuiz.BLL\\OnlineQuiz.BLL.csproj|solutionrelative:onlinequiz.bll\\dtos\\question\\questiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BFB8A2A-7FB4-46FC-A8A7-7DE9B20FFB38}|OnlineQuiz.BLL\\OnlineQuiz.BLL.csproj|c:\\users\\karee\\desktop\\karimbranch\\online-quiz-platform\\onlinequiz.bll\\dtos\\question\\createquestiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BFB8A2A-7FB4-46FC-A8A7-7DE9B20FFB38}|OnlineQuiz.BLL\\OnlineQuiz.BLL.csproj|solutionrelative:onlinequiz.bll\\dtos\\question\\createquestiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1BFB8A2A-7FB4-46FC-A8A7-7DE9B20FFB38}|OnlineQuiz.BLL\\OnlineQuiz.BLL.csproj|c:\\users\\karee\\desktop\\karimbranch\\online-quiz-platform\\onlinequiz.bll\\dtos\\options\\createoptiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,14 +43,6 @@
       "RelativeMoniker": "D:0:0:{1BFB8A2A-7FB4-46FC-A8A7-7DE9B20FFB38}|OnlineQuiz.BLL\\OnlineQuiz.BLL.csproj|solutionrelative:onlinequiz.bll\\automapper\\quizmapper\\quizmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{616AF085-367C-4B5C-9EBC-E0BECD3E117A}|OnlineQuiz.Api\\OnlineQuiz.Api.csproj|c:\\users\\karee\\desktop\\karimbranch\\online-quiz-platform\\onlinequiz.api\\controllers\\questioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{616AF085-367C-4B5C-9EBC-E0BECD3E117A}|OnlineQuiz.Api\\OnlineQuiz.Api.csproj|solutionrelative:onlinequiz.api\\controllers\\questioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{616AF085-367C-4B5C-9EBC-E0BECD3E117A}|OnlineQuiz.Api\\OnlineQuiz.Api.csproj|c:\\users\\karee\\desktop\\karimbranch\\online-quiz-platform\\onlinequiz.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{616AF085-367C-4B5C-9EBC-E0BECD3E117A}|OnlineQuiz.Api\\OnlineQuiz.Api.csproj|solutionrelative:onlinequiz.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1BFB8A2A-7FB4-46FC-A8A7-7DE9B20FFB38}|OnlineQuiz.BLL\\OnlineQuiz.BLL.csproj|c:\\users\\karee\\desktop\\karimbranch\\online-quiz-platform\\onlinequiz.bll\\dtos\\options\\optiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1BFB8A2A-7FB4-46FC-A8A7-7DE9B20FFB38}|OnlineQuiz.BLL\\OnlineQuiz.BLL.csproj|solutionrelative:onlinequiz.bll\\dtos\\options\\optiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -53,22 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{30842FE6-4BD1-4960-8A00-398A4903C0BF}|OnlineQuiz.DAL\\OnlineQuiz.DAL.csproj|c:\\users\\karee\\desktop\\karimbranch\\online-quiz-platform\\onlinequiz.dal\\repositoryies\\questionrepository\\iquestionsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{30842FE6-4BD1-4960-8A00-398A4903C0BF}|OnlineQuiz.DAL\\OnlineQuiz.DAL.csproj|solutionrelative:onlinequiz.dal\\repositoryies\\questionrepository\\iquestionsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{30842FE6-4BD1-4960-8A00-398A4903C0BF}|OnlineQuiz.DAL\\OnlineQuiz.DAL.csproj|c:\\users\\karee\\desktop\\karimbranch\\online-quiz-platform\\onlinequiz.dal\\repositoryies\\optionrepository\\optionsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{30842FE6-4BD1-4960-8A00-398A4903C0BF}|OnlineQuiz.DAL\\OnlineQuiz.DAL.csproj|solutionrelative:onlinequiz.dal\\repositoryies\\optionrepository\\optionsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{30842FE6-4BD1-4960-8A00-398A4903C0BF}|OnlineQuiz.DAL\\OnlineQuiz.DAL.csproj|c:\\users\\karee\\desktop\\karimbranch\\online-quiz-platform\\onlinequiz.dal\\repositoryies\\optionrepository\\ioptionsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{30842FE6-4BD1-4960-8A00-398A4903C0BF}|OnlineQuiz.DAL\\OnlineQuiz.DAL.csproj|solutionrelative:onlinequiz.dal\\repositoryies\\optionrepository\\ioptionsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1BFB8A2A-7FB4-46FC-A8A7-7DE9B20FFB38}|OnlineQuiz.BLL\\OnlineQuiz.BLL.csproj|c:\\users\\karee\\desktop\\karimbranch\\online-quiz-platform\\onlinequiz.bll\\managers\\options\\ioptionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1BFB8A2A-7FB4-46FC-A8A7-7DE9B20FFB38}|OnlineQuiz.BLL\\OnlineQuiz.BLL.csproj|solutionrelative:onlinequiz.bll\\managers\\options\\ioptionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1BFB8A2A-7FB4-46FC-A8A7-7DE9B20FFB38}|OnlineQuiz.BLL\\OnlineQuiz.BLL.csproj|c:\\users\\karee\\desktop\\karimbranch\\online-quiz-platform\\onlinequiz.bll\\managers\\options\\optionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1BFB8A2A-7FB4-46FC-A8A7-7DE9B20FFB38}|OnlineQuiz.BLL\\OnlineQuiz.BLL.csproj|solutionrelative:onlinequiz.bll\\managers\\options\\optionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{616AF085-367C-4B5C-9EBC-E0BECD3E117A}|OnlineQuiz.Api\\OnlineQuiz.Api.csproj|c:\\users\\karee\\desktop\\karimbranch\\online-quiz-platform\\onlinequiz.api\\controllers\\quizcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -94,7 +78,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 17,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -122,7 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "createOptionDto.cs",
               "DocumentMoniker": "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.BLL\\Dtos\\Options\\createOptionDto.cs",
               "RelativeDocumentMoniker": "OnlineQuiz.BLL\\Dtos\\Options\\createOptionDto.cs",
@@ -130,12 +114,11 @@
               "RelativeToolTip": "OnlineQuiz.BLL\\Dtos\\Options\\createOptionDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T12:11:58.982Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-08T12:11:58.982Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "createQuestionDto.cs",
               "DocumentMoniker": "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.BLL\\Dtos\\Question\\createQuestionDto.cs",
               "RelativeDocumentMoniker": "OnlineQuiz.BLL\\Dtos\\Question\\createQuestionDto.cs",
@@ -143,64 +126,37 @@
               "RelativeToolTip": "OnlineQuiz.BLL\\Dtos\\Question\\createQuestionDto.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAABfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T12:11:21.182Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-08T12:11:21.182Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.Api\\Program.cs",
               "RelativeDocumentMoniker": "OnlineQuiz.Api\\Program.cs",
               "ToolTip": "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.Api\\Program.cs",
               "RelativeToolTip": "OnlineQuiz.Api\\Program.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAwwDUAAAAaAAAA",
+              "ViewState": "AQIAABcAAAAAAAAAAAAQwBwAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-08T11:26:27.786Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "QuestionController.cs",
               "DocumentMoniker": "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.Api\\Controllers\\QuestionController.cs",
               "RelativeDocumentMoniker": "OnlineQuiz.Api\\Controllers\\QuestionController.cs",
               "ToolTip": "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.Api\\Controllers\\QuestionController.cs",
               "RelativeToolTip": "OnlineQuiz.Api\\Controllers\\QuestionController.cs",
-              "ViewState": "AQIAACMAAAAAAAAAAAAowDMAAAApAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-08T11:25:39.87Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "OptionManager.cs",
-              "DocumentMoniker": "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.BLL\\Managers\\Options\\OptionManager.cs",
-              "RelativeDocumentMoniker": "OnlineQuiz.BLL\\Managers\\Options\\OptionManager.cs",
-              "ToolTip": "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.BLL\\Managers\\Options\\OptionManager.cs",
-              "RelativeToolTip": "OnlineQuiz.BLL\\Managers\\Options\\OptionManager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAswAgAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T11:19:03.362Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "IOptionManager.cs",
-              "DocumentMoniker": "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.BLL\\Managers\\Options\\IOptionManager.cs",
-              "RelativeDocumentMoniker": "OnlineQuiz.BLL\\Managers\\Options\\IOptionManager.cs",
-              "ToolTip": "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.BLL\\Managers\\Options\\IOptionManager.cs",
-              "RelativeToolTip": "OnlineQuiz.BLL\\Managers\\Options\\IOptionManager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T11:18:53.233Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "IQuestionManager.cs",
               "DocumentMoniker": "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.BLL\\Managers\\QuestionManager\\IQuestionManager.cs",
               "RelativeDocumentMoniker": "OnlineQuiz.BLL\\Managers\\QuestionManager\\IQuestionManager.cs",
@@ -213,7 +169,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "QuestionManager.cs",
               "DocumentMoniker": "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.BLL\\Managers\\QuestionManager\\QuestionManager.cs",
               "RelativeDocumentMoniker": "OnlineQuiz.BLL\\Managers\\QuestionManager\\QuestionManager.cs",
@@ -226,7 +182,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "OptionMapper.cs",
               "DocumentMoniker": "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.BLL\\AutoMapper\\OptionMapper\\OptionMapper.cs",
               "RelativeDocumentMoniker": "OnlineQuiz.BLL\\AutoMapper\\OptionMapper\\OptionMapper.cs",
@@ -234,12 +190,11 @@
               "RelativeToolTip": "OnlineQuiz.BLL\\AutoMapper\\OptionMapper\\OptionMapper.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T11:16:19.299Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-08T11:16:19.299Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "QuestionMapper.cs",
               "DocumentMoniker": "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.BLL\\AutoMapper\\QuestionMapper\\QuestionMapper.cs",
               "RelativeDocumentMoniker": "OnlineQuiz.BLL\\AutoMapper\\QuestionMapper\\QuestionMapper.cs",
@@ -247,8 +202,7 @@
               "RelativeToolTip": "OnlineQuiz.BLL\\AutoMapper\\QuestionMapper\\QuestionMapper.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T11:15:51.403Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-08T11:15:51.403Z"
             },
             {
               "$type": "Document",
@@ -260,12 +214,11 @@
               "RelativeToolTip": "OnlineQuiz.BLL\\Dtos\\Options\\OptionDTO.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T11:13:37.871Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-08T11:13:37.871Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "QuestionDTO.cs",
               "DocumentMoniker": "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.BLL\\Dtos\\Question\\QuestionDTO.cs",
               "RelativeDocumentMoniker": "OnlineQuiz.BLL\\Dtos\\Question\\QuestionDTO.cs",
@@ -273,34 +226,7 @@
               "RelativeToolTip": "OnlineQuiz.BLL\\Dtos\\Question\\QuestionDTO.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T11:13:13.395Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "OptionsRepository.cs",
-              "DocumentMoniker": "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.DAL\\Repositoryies\\OptionRepository\\OptionsRepository.cs",
-              "RelativeDocumentMoniker": "OnlineQuiz.DAL\\Repositoryies\\OptionRepository\\OptionsRepository.cs",
-              "ToolTip": "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.DAL\\Repositoryies\\OptionRepository\\OptionsRepository.cs",
-              "RelativeToolTip": "OnlineQuiz.DAL\\Repositoryies\\OptionRepository\\OptionsRepository.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAuwDEAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T11:05:46.053Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "IOptionsRepository.cs",
-              "DocumentMoniker": "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.DAL\\Repositoryies\\OptionRepository\\IOptionsRepository.cs",
-              "RelativeDocumentMoniker": "OnlineQuiz.DAL\\Repositoryies\\OptionRepository\\IOptionsRepository.cs",
-              "ToolTip": "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.DAL\\Repositoryies\\OptionRepository\\IOptionsRepository.cs",
-              "RelativeToolTip": "OnlineQuiz.DAL\\Repositoryies\\OptionRepository\\IOptionsRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T11:05:32.248Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-08T11:13:13.395Z"
             },
             {
               "$type": "Document",
@@ -312,8 +238,7 @@
               "RelativeToolTip": "OnlineQuiz.DAL\\Repositoryies\\QuestionRepository\\IQuestionsRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T11:03:12.489Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-08T11:03:12.489Z"
             },
             {
               "$type": "Document",
@@ -325,12 +250,11 @@
               "RelativeToolTip": "OnlineQuiz.DAL\\Repositoryies\\QuestionRepository\\QuestionsRepository.cs",
               "ViewState": "AQIAAAoAAAAAAAAAAAAAABwAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T11:02:58.699Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-08T11:02:58.699Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "QuizMapper.cs",
               "DocumentMoniker": "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.BLL\\AutoMapper\\QuizMapper\\QuizMapper.cs",
               "RelativeDocumentMoniker": "OnlineQuiz.BLL\\AutoMapper\\QuizMapper\\QuizMapper.cs",
@@ -338,12 +262,11 @@
               "RelativeToolTip": "OnlineQuiz.BLL\\AutoMapper\\QuizMapper\\QuizMapper.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T10:39:37.821Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-08T10:39:37.821Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 13,
               "Title": "QuizController.cs",
               "DocumentMoniker": "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.Api\\Controllers\\QuizController.cs",
               "RelativeDocumentMoniker": "OnlineQuiz.Api\\Controllers\\QuizController.cs",
@@ -351,12 +274,11 @@
               "RelativeToolTip": "OnlineQuiz.Api\\Controllers\\QuizController.cs",
               "ViewState": "AQIAAB4AAAAAAAAAAAAvwC4AAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T10:35:24.494Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-08T10:35:24.494Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 14,
               "Title": "QuizManager.cs",
               "DocumentMoniker": "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.BLL\\Managers\\Quiz\\QuizManager.cs",
               "RelativeDocumentMoniker": "OnlineQuiz.BLL\\Managers\\Quiz\\QuizManager.cs",
@@ -368,7 +290,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 15,
               "Title": "IQuizManager.cs",
               "DocumentMoniker": "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.BLL\\Managers\\Quiz\\IQuizManager.cs",
               "RelativeDocumentMoniker": "OnlineQuiz.BLL\\Managers\\Quiz\\IQuizManager.cs",
@@ -380,7 +302,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 16,
               "Title": "CreatQuizDTO.cs",
               "DocumentMoniker": "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.BLL\\Dtos\\Quiz\\CreatQuizDTO.cs",
               "RelativeDocumentMoniker": "OnlineQuiz.BLL\\Dtos\\Quiz\\CreatQuizDTO.cs",
