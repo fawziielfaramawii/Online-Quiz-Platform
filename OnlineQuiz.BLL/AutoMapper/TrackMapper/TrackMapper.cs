@@ -15,7 +15,8 @@ namespace OnlineQuiz.BLL.AutoMapper.TrackMapper
         {
            
                 CreateMap<Tracks, TrackDto>().ReverseMap();
-            
+            CreateMap<Tracks, CreateTrackDTO>().ReverseMap();
+
         }
     }
 }

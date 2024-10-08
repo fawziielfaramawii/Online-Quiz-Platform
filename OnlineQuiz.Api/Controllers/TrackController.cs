@@ -40,7 +40,7 @@ namespace OnlineQuiz.Api.Controllers
 
         // POST: api/track
         [HttpPost]
-        public ActionResult<TrackDto> Add([FromBody] TrackDto trackDto)
+        public ActionResult<CreateTrackDTO> Add([FromBody] CreateTrackDTO trackDto)
         {
             if (trackDto == null)
             {
@@ -48,7 +48,7 @@ namespace OnlineQuiz.Api.Controllers
             }
 
             _trackManager.Add(trackDto);
-            return CreatedAtAction(nameof(GetById), new { id = trackDto.Id }, trackDto);
+            return Ok(trackDto);
         }
 
         // PUT: api/track/{id}

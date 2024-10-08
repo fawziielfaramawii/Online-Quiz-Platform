@@ -65,5 +65,19 @@ namespace OnlineQuiz.DAL.Repositoryies.QuizRepository
         {
             return _context.Set<Quizzes>().Where(q => q.IsAvailable);
         }
+        public IQueryable<Quizzes> GetQuizzesWithQuestions()
+        {
+            return _context.Set<Quizzes>()
+                .Include(q => q.Questions) 
+                    .ThenInclude(q => q.Options) 
+                .AsQueryable();
+        }
+        public Quizzes GetQuizByIdWithQuestions(int quizId)
+        {
+            return _context.quizzes
+                .Include(q => q.Questions) 
+                .ThenInclude(q => q.Options)
+                .FirstOrDefault(q => q.Id == quizId); // Get the quiz by ID
+        }
     }
 }

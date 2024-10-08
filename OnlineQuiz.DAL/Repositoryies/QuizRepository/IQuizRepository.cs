@@ -12,5 +12,8 @@ namespace OnlineQuiz.DAL.Repositoryies.QuizRepository
     {
         IQueryable<Quizzes> GetByTrackId(int trackId);
         IQueryable<Quizzes> GetAvailableQuizzes();
+        IQueryable<Quizzes> GetQuizzesWithQuestions();
+        Quizzes GetQuizByIdWithQuestions(int quizId);
+
     }
 }

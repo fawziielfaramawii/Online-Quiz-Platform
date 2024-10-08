@@ -14,5 +14,6 @@ namespace OnlineQuiz.DAL.Repositoryies.Base
         void Add(T entity);
         void Update(T entity);
         void DeleteById(U id);
+    
     }
 }

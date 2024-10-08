@@ -78,5 +78,6 @@ namespace OnlineQuiz.Api.Controllers
             _questionManager.DeleteQuestion(id);
             return NoContent(); 
         }
+
     }
 }

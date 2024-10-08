@@ -72,5 +72,21 @@ namespace OnlineQuiz.Api.Controllers
             var quizzes = _quizManager.GetQuizzesByTrackId(trackId);
             return Ok(quizzes.ToList());
         }
+         [HttpGet("withQuestionsAndOptions")]
+        public IActionResult GetQuizzesWithQuestionsAndOptions()
+        {
+            var quizzes = _quizManager.GetQuizzesWithQuestionsAndOptions();
+            return Ok(quizzes);
+        }
+        [HttpGet("withQuestionsAndOptions/{id}")]
+        public ActionResult<FinalQuizDTO> GetQuizByIdWithQuestions(int id)
+        {
+            var quizDto = _quizManager.GetQuizByIdWithQuestions(id);
+            if (quizDto == null)
+            {
+                return NotFound(); // Return 404 if the quiz is not found
+            }
+            return Ok(quizDto); // Return the quiz DTO with questions and options
+        }
     }
 }

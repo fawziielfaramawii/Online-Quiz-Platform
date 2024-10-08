@@ -1,4 +1,5 @@
 ﻿using OnlineQuiz.BLL.Dtos.Quiz;
+using OnlineQuiz.DAL.Data.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,5 +17,7 @@ namespace OnlineQuiz.BLL.Managers.Quiz
         void UpdateQuiz(QuizDto quizDto);
         void DeleteQuiz(int id);
         IQueryable<QuizDto> GetQuizzesByTrackId(int trackId);
+        IQueryable<FinalQuizDTO> GetQuizzesWithQuestionsAndOptions();
+        FinalQuizDTO GetQuizByIdWithQuestions(int quizId);
     }
 }
