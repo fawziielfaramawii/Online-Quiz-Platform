@@ -14,9 +14,4 @@
     <ProjectReference Include="..\OnlineQuiz.DAL\OnlineQuiz.DAL.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Dtos\Options\" />
-    <Folder Include="Dtos\Question\" />
-  </ItemGroup>
-
 </Project>

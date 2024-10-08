@@ -16,6 +16,7 @@ namespace OnlineQuiz.BLL.AutoMapper.QuizMapper
         {
             CreateMap<Quizzes, QuizDto>().ReverseMap();
             CreateMap<Quizzes,CreatQuizDTO>().ReverseMap();
+            
         }
     }
 }
