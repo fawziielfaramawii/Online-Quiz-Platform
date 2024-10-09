@@ -23,9 +23,21 @@ namespace OnlineQuiz.DAL.Data.DBHelper
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            // ins with students
+            modelBuilder.Entity<StudentInstructor>()
+           .HasKey(si => new { si.StudentId, si.InstructorId }); // Composite key
 
+            modelBuilder.Entity<StudentInstructor>()
+                .HasOne(si => si.Student)
+                .WithMany(s => s.StudentInstructors)
+                .HasForeignKey(si => si.StudentId);
 
-            
+            modelBuilder.Entity<StudentInstructor>()
+                .HasOne(si => si.Instructor)
+                .WithMany(i => i.StudentInstructors)
+                .HasForeignKey(si => si.InstructorId);
+            ///---------------------
+
 
             base.OnModelCreating(modelBuilder);
             modelBuilder.ApplyConfiguration(new AnswersEntityTypeConfiguration());
@@ -49,6 +61,7 @@ namespace OnlineQuiz.DAL.Data.DBHelper
         public DbSet<Attempts> attempts { get; set; }
         public DbSet<Tracks> tracks { get; set; }
         public DbSet<Option> Options { get; set; }
+        public DbSet<StudentInstructor> StudentInstructors { get; set; }
 
 
     }
