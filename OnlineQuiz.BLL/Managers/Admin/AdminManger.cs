@@ -172,5 +172,25 @@ namespace OnlineQuiz.BLL.Managers.Admin
 
              _IAdminRepositroy.UnbanUserAsync(userId);
         }
+
+        public string NumOfStudent()
+        {
+            return _IAdminRepositroy.NumOfStudent();
+        }
+
+        public string NumOfInstructor()
+        {
+            return _IAdminRepositroy.NumOfInstructor();
+        }
+
+        public string NumOfQuizes()
+        {
+            return _IAdminRepositroy.NumOfQuizes();
+        }
+
+        public string NumOfAttempes()
+        {
+            return _IAdminRepositroy.NumOfAttempes();
+        }
     }
 }

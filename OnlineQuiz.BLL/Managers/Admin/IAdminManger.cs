@@ -62,6 +62,11 @@ namespace OnlineQuiz.BLL.Managers.Admin
 
         // App details instractour 
 
+        string NumOfStudent();
+        string NumOfInstructor();
+        string NumOfQuizes();
+        string NumOfAttempes();
+
 
         // role admin only acsses
 
