@@ -62,8 +62,12 @@ namespace OnlineQuiz.DAL.Repositoryies.AdminRepositroy
         void UnbanUserAsync(string studentId);
 
 
-        // App details instractour 
+        // App details some details
 
+        string NumOfStudent();
+        string NumOfInstructor();
+        string NumOfQuizes();
+        string NumOfAttempes();
 
         // role admin only acsses
 

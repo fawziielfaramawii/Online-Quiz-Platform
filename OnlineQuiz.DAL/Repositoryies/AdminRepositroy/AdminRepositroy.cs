@@ -145,5 +145,25 @@ namespace OnlineQuiz.DAL.Repositoryies.AdminRepositroy
         {
            return _Context.users.FirstOrDefault(key => key.Id == id);
         }
+
+        public string NumOfStudent()
+        {
+            return _Context.Students.Count().ToString();
+        }
+
+        public string NumOfInstructor()
+        {
+            return  _Context.Instructors.Count().ToString();
+        }
+
+        public string NumOfQuizes()
+        {
+            return _Context.quizzes.Count().ToString();
+        }
+
+        public string NumOfAttempes()
+        {
+             return _Context.attempts.Count().ToString();
+        }
     }
 }
