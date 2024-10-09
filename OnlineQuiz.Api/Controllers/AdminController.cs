@@ -159,6 +159,40 @@ namespace OnlineQuiz.Api.Controllers
             return Ok( x);
         }
 
+        //---------------------------
+
+        [HttpGet]
+        [Route("GetNumOfStudent")]
+        public IActionResult GetNumOfStudent()
+        {
+            return Ok(_iAdminManger.NumOfStudent());
+        }
+
+
+        [HttpGet]
+        [Route("GetNumOfInstructor")]
+        public IActionResult GetNumOfInstructor()
+        {
+            return Ok(_iAdminManger.NumOfInstructor());
+        }
+
+
+        [HttpGet]
+        [Route("GetNumOfQuzies")]
+        public IActionResult GetNumOfQuzies()
+        {
+            return Ok(_iAdminManger.NumOfQuizes());
+        }
+
+
+        [HttpGet]
+        [Route("GetNumOfAttempes")]
+        public IActionResult GetNumOfAttempes()
+        {
+            return Ok(_iAdminManger.NumOfAttempes());
+        }
+
+        
 
     }
 }
