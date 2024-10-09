@@ -18,6 +18,7 @@ using OnlineQuiz.DAL.Repositoryies.QuestionRepository;
 
 using OnlineQuiz.BLL.AutoMapper.QuestionMapper;
 using OnlineQuiz.BLL.AutoMapper.OptionMapper;
+using OnlineQuiz.BLL.Managers.Student;
 
 namespace OnlineQuiz.Api
 {
@@ -54,12 +55,13 @@ namespace OnlineQuiz.Api
             builder.Services.AddScoped<ITrackRepository, TrackRepository>();
             builder.Services.AddScoped<IQuizRepository, QuizRepository>();
             builder.Services.AddScoped<IQuestionsRepository, QuestionsRepository>();
-           
+            builder.Services.AddScoped<IStudentRepo, StudentRepo>();
+
             //Managers
             builder.Services.AddScoped<IQuizManager, QuizManager>();
             builder.Services.AddScoped<IQuestionManager, QuestionManager>();
-          
             builder.Services.AddScoped<ITrackManager, TrackManager>();
+            builder.Services.AddScoped<IStudentManager, StudentManager>();
 
 
             //Identity

@@ -1,6 +1,9 @@
 ﻿using AutoMapper;
 using OnlineQuiz.BLL.Dtos.StudentDtos;
 using OnlineQuiz.DAL.Data.Models;
+using OnlineQuiz.BLL.AutoMapper;
+using OnlineQuiz.BLL.Dtos.StudentDtos;
+using OnlineQuiz.DAL.Data.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;

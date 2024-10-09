@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.Api\\OnlineQuiz.Api.csproj": {}
+    "A:\\MvcProjecct\\Online-Quiz-Platform\\OnlineQuiz.Api\\OnlineQuiz.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.Api\\OnlineQuiz.Api.csproj": {
+    "A:\\MvcProjecct\\Online-Quiz-Platform\\OnlineQuiz.Api\\OnlineQuiz.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.Api\\OnlineQuiz.Api.csproj",
+        "projectUniqueName": "A:\\MvcProjecct\\Online-Quiz-Platform\\OnlineQuiz.Api\\OnlineQuiz.Api.csproj",
         "projectName": "OnlineQuiz.Api",
-        "projectPath": "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.Api\\OnlineQuiz.Api.csproj",
-        "packagesPath": "C:\\Users\\karee\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.Api\\obj\\",
+        "projectPath": "A:\\MvcProjecct\\Online-Quiz-Platform\\OnlineQuiz.Api\\OnlineQuiz.Api.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "A:\\MvcProjecct\\Online-Quiz-Platform\\OnlineQuiz.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\karee\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -29,8 +29,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.BLL\\OnlineQuiz.BLL.csproj": {
-                "projectPath": "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.BLL\\OnlineQuiz.BLL.csproj"
+              "A:\\MvcProjecct\\Online-Quiz-Platform\\OnlineQuiz.BLL\\OnlineQuiz.BLL.csproj": {
+                "projectPath": "A:\\MvcProjecct\\Online-Quiz-Platform\\OnlineQuiz.BLL\\OnlineQuiz.BLL.csproj"
               }
             }
           }
@@ -84,21 +84,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.BLL\\OnlineQuiz.BLL.csproj": {
+    "A:\\MvcProjecct\\Online-Quiz-Platform\\OnlineQuiz.BLL\\OnlineQuiz.BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.BLL\\OnlineQuiz.BLL.csproj",
+        "projectUniqueName": "A:\\MvcProjecct\\Online-Quiz-Platform\\OnlineQuiz.BLL\\OnlineQuiz.BLL.csproj",
         "projectName": "OnlineQuiz.BLL",
-        "projectPath": "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.BLL\\OnlineQuiz.BLL.csproj",
-        "packagesPath": "C:\\Users\\karee\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.BLL\\obj\\",
+        "projectPath": "A:\\MvcProjecct\\Online-Quiz-Platform\\OnlineQuiz.BLL\\OnlineQuiz.BLL.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "A:\\MvcProjecct\\Online-Quiz-Platform\\OnlineQuiz.BLL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\karee\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -113,8 +113,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.DAL\\OnlineQuiz.DAL.csproj": {
-                "projectPath": "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.DAL\\OnlineQuiz.DAL.csproj"
+              "A:\\MvcProjecct\\Online-Quiz-Platform\\OnlineQuiz.DAL\\OnlineQuiz.DAL.csproj": {
+                "projectPath": "A:\\MvcProjecct\\Online-Quiz-Platform\\OnlineQuiz.DAL\\OnlineQuiz.DAL.csproj"
               }
             }
           }
@@ -155,21 +155,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.DAL\\OnlineQuiz.DAL.csproj": {
+    "A:\\MvcProjecct\\Online-Quiz-Platform\\OnlineQuiz.DAL\\OnlineQuiz.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.DAL\\OnlineQuiz.DAL.csproj",
+        "projectUniqueName": "A:\\MvcProjecct\\Online-Quiz-Platform\\OnlineQuiz.DAL\\OnlineQuiz.DAL.csproj",
         "projectName": "OnlineQuiz.DAL",
-        "projectPath": "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.DAL\\OnlineQuiz.DAL.csproj",
-        "packagesPath": "C:\\Users\\karee\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.DAL\\obj\\",
+        "projectPath": "A:\\MvcProjecct\\Online-Quiz-Platform\\OnlineQuiz.DAL\\OnlineQuiz.DAL.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "A:\\MvcProjecct\\Online-Quiz-Platform\\OnlineQuiz.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\karee\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -244,7 +244,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
