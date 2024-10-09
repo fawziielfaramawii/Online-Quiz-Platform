@@ -1,7 +1,8 @@
-﻿using OnlineQuiz.DAL.Data.DBHelper;
+﻿using Microsoft.EntityFrameworkCore;
+using OnlineQuiz.DAL.Data.DBHelper;
 using System;
 using System.Collections.Generic;
-using System.Data.Entity;
+
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -41,7 +42,14 @@ namespace OnlineQuiz.DAL.Repositoryies.Base
         // Update an existing entity
         public void Update(T entity)
         {
-      
+
+            // Attach the entity to the context
+            _context.Set<T>().Attach(entity);
+
+            // Mark the entity as modified
+            _context.Entry(entity).State = EntityState.Modified;
+
+            // Save changes to the database
             _context.SaveChanges();
         }
 

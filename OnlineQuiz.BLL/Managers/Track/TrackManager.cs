@@ -31,7 +31,7 @@ namespace OnlineQuiz.BLL.Managers.Track
             var track = _trackRepository.GetById(id);
             return _mapper.Map<TrackDto>(track);
         }
-        public void Add(TrackDto trackDto)
+        public void Add(CreateTrackDTO trackDto)
         {
             var track = _mapper.Map<Tracks>(trackDto);
             _trackRepository.Add(track);
@@ -45,5 +45,7 @@ namespace OnlineQuiz.BLL.Managers.Track
         {
             _trackRepository.DeleteById(id);
         }
+
+    
     }
 }
