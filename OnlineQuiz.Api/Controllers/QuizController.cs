@@ -88,5 +88,18 @@ namespace OnlineQuiz.Api.Controllers
             }
             return Ok(quizDto); // Return the quiz DTO with questions and options
         }
+        [HttpGet("{id}/shuffled")]
+        public IActionResult GetQuizWithShuffledQuestions(int id)
+        {
+            var finalQuizDto = _quizManager.GetQuizWithShuffledQuestions(id);
+
+            if (finalQuizDto == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(finalQuizDto);
+        }
+
     }
 }

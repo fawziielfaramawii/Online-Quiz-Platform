@@ -40,7 +40,7 @@ namespace OnlineQuiz.BLL.Managers.Quiz
         {
             var quiz = _mapper.Map<Quizzes>(quizDto);
             _quizRepository.Add(quiz);
-            return _mapper.Map<CreatQuizDTO>(quiz); // Return the mapped QuizDto
+            return _mapper.Map<CreatQuizDTO>(quiz); 
         }
 
         public void UpdateQuiz(QuizDto quizDto)
@@ -62,13 +62,28 @@ namespace OnlineQuiz.BLL.Managers.Quiz
         }
         public IQueryable<FinalQuizDTO> GetQuizzesWithQuestionsAndOptions()
         {
-            return quizRepository1.GetQuizzesWithQuestions() // Use the new method
+            return quizRepository1.GetQuizzesWithQuestions() 
                        .Select(quiz => _mapper.Map<FinalQuizDTO>(quiz));
         }
         public FinalQuizDTO GetQuizByIdWithQuestions(int id)
         {
             var quiz = quizRepository1.GetQuizByIdWithQuestions(id);
             return _mapper.Map<FinalQuizDTO>(quiz);
+        }
+        public FinalQuizDTO GetQuizWithShuffledQuestions(int quizId)
+        {
+            var quiz = quizRepository1.GetQuizzesWithQuestions()
+                                      .FirstOrDefault(q => q.Id == quizId);
+
+            if (quiz != null && quiz.Questions.Any())
+            {
+                // Shuffle the questions
+                quiz.Questions = quiz.Questions.OrderBy(q => Guid.NewGuid()).ToList();
+            }
+
+          
+            var finalQuizDto = _mapper.Map<FinalQuizDTO>(quiz);
+            return finalQuizDto;
         }
     }
 }
