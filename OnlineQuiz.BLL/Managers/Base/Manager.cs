@@ -22,7 +22,7 @@ namespace OnlineQuiz.BLL.Managers.Base
         // Get all entities as IQueryable, applying AutoMapper for DTO mapping if needed
         public IQueryable<T> GetAll()
         {
-            return _repository.GetAll();
+            return (IQueryable<T>)_repository.GetAll();
         }
 
         // Get a single entity by ID, mapping to DTO if necessary

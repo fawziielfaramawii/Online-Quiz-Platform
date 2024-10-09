@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace OnlineQuiz.BLL.Managers.Student
 {
-    public interface IStudentManager
+    public interface IStudentManager 
     {
         IEnumerable<StudentReadDto> GetAll();
         StudentReadDto GetById(string id);

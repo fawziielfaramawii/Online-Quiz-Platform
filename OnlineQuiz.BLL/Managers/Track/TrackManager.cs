@@ -24,7 +24,7 @@ namespace OnlineQuiz.BLL.Managers.Track
         public IQueryable<TrackDto> GetAll()
         {
             var tracks = _trackRepository.GetAll();
-            return _mapper.ProjectTo<TrackDto>(tracks);
+            return _mapper.ProjectTo<TrackDto>((IQueryable)tracks);
         }
         public TrackDto GetById(int id)
         {
