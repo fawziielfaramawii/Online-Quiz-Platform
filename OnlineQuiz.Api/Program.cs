@@ -44,9 +44,15 @@ namespace OnlineQuiz.Api
             //GenericRepository
             builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             builder.Services.AddScoped<ITrackRepository, TrackRepository>();
-            //TrackAutoMapper
 
+            //Register
+            builder.Services.AddScoped<IAccountManager, AccountManager>();
             builder.Services.AddScoped<ITrackManager, TrackManager>();
+            builder.Services.AddScoped<IEmailService, EmailService>();
+
+
+
+
 
 
             //Identity
@@ -56,11 +62,12 @@ namespace OnlineQuiz.Api
                 options.Password.RequireLowercase = true;
                 options.Password.RequireUppercase = true;
                 options.Password.RequiredLength = 5;
+                options.SignIn.RequireConfirmedEmail = true;
             })
-               .AddEntityFrameworkStores<QuizContext>();
+               .AddEntityFrameworkStores<QuizContext>()
+               .AddDefaultTokenProviders();
 
-            //Register
-            builder.Services.AddScoped<IAccountManager, AccountManager>();
+        
 
             // Add JWT Authentication
             builder.Services.AddAuthentication(option =>

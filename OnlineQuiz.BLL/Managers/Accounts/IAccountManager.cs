@@ -1,4 +1,5 @@
-﻿using OnlineQuiz.BLL.Dtos.Accounts;
+﻿using Microsoft.AspNetCore.Mvc;
+using OnlineQuiz.BLL.Dtos.Accounts;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,11 @@ namespace OnlineQuiz.BLL.Managers.Accounts
 {
     public interface IAccountManager
     {
-        Task<GeneralRespnose> Login(LoginDto loginDto);
-        Task<GeneralRespnose> Register(RegisterDto registerDto);
+        Task<LoginResponce> Login(LoginDto loginDto);
+        Task<GeneralRespnose> Register(RegisterDto registerDto , IUrlHelper urlHelper);
+        Task<GeneralRespnose> ConfirmEmail(string userId, string token);
+        Task<GeneralRespnose> ForgotPassword(ForgotPasswordDto forgotPasswordDto, IUrlHelper urlHelper);
+        Task<GeneralRespnose> ResetPassword(ResetPasswordDto resetPasswordDto);
+
     }
 }

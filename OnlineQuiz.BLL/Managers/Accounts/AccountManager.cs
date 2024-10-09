@@ -1,5 +1,8 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Azure;
+using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
@@ -10,8 +13,10 @@ using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 
 namespace OnlineQuiz.BLL.Managers.Accounts
 {
@@ -20,33 +25,52 @@ namespace OnlineQuiz.BLL.Managers.Accounts
         private readonly UserManager<Users> _userManager;
         private readonly IConfiguration _configuration;
         private readonly RoleManager<IdentityRole> _roleManager;
+        private readonly IEmailService _emailService;
 
-        public AccountManager(UserManager<Users> userManager, IConfiguration configuration, RoleManager<IdentityRole> roleManager)
+        public AccountManager(UserManager<Users> userManager, IConfiguration configuration, RoleManager<IdentityRole> roleManager
+            ,IEmailService emailService )
         {
             _userManager = userManager;
             _configuration = configuration;
             _roleManager = roleManager;
+             _emailService = emailService;
         }
 
 
-        public async Task<GeneralRespnose> Register(RegisterDto registerDto)
+     public async Task<GeneralRespnose> Register(RegisterDto registerDto, IUrlHelper urlHelper)
         {
+         
             var response = new GeneralRespnose();
-            Users user = null;
+            if (_userManager.Users.Any(s => s.UserName == registerDto.UserName))
+            {
+                response.Errors.Add("Username is already taken. Please choose another one.");
+                return response;
+
+            }
+            if (_userManager.Users.Any(s => s.Email == registerDto.Email))
+            {
+                response.Errors.Add("Email Is Already Exist");
+                return response;
+
+            }
+
+            //  if the user is registering as an Admin
+            if (registerDto.UserType == UserTypeEnum.Admin)
+            {
+                response.Errors.Add("Super admin has not agreed to create an admin account.");
+                return response;
+            }
+
+            if (registerDto.Password != registerDto.ConfirmedPassword)
+            {
+                response.Errors.Add("Password and confirmation password do not match.");
+                return response;
+            }
+
 
             // Determine user type
-            if (registerDto.UserType == UserTypeEnum.Student)
-            {
-                user = new Student();
-            }
-            else if (registerDto.UserType == UserTypeEnum.Instructor)
-            {
-                user = new Instructor();
-            }
-            else if (registerDto.UserType == UserTypeEnum.Admin)
-            {
-                //user = new Admin();
-            }
+            Users user = registerDto.UserType == UserTypeEnum.Student ? new Student() :
+                    (registerDto.UserType == UserTypeEnum.Instructor ? new Instructor() : new Users());
 
 
             user.UserName = registerDto.UserName;
@@ -61,19 +85,42 @@ namespace OnlineQuiz.BLL.Managers.Accounts
             var result = await _userManager.CreateAsync(user, registerDto.Password);
             if (result.Succeeded)
             {
+
+
+                #region VerifyEmail
+                // Generate the email confirmation token
+                var emailConfirmationToken = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+
+                //  Generate the email confirmation link using UrlHelper
+                var confirmationLink = urlHelper.Action("ConfirmEmail", "Accounts",
+                    new { userId = user.Id, token = emailConfirmationToken }, "https");
+
+                // Send  confirmation link  
+                var confirmationEmailBody = $"Dear {user.UserName},\n\n" +
+                               "Thank you for registering with us!\n\n" +
+                               "To complete your registration, please confirm your email address by clicking the link below:\n" +
+                               $"{confirmationLink}\n\n" +
+                               "If you did not create an account, please ignore this email.\n\n" +
+                               "Best regards,\n" +
+                               "[Online Quiz Platform]\n" +
+                               "[+20 155 134 9812]";
+
+              var res =  await _emailService.SendEmailAsync(user.Email, "Confirm Your Email Address", confirmationEmailBody);
+                if (!res.successed)
+                {
+                    response.Errors.AddRange(res.Errors);
+                    return response;
+                }
+
+                
+
+                #endregion
+
                 // Assign the role 
-                if (registerDto.UserType == UserTypeEnum.Admin)
-                {
-                    await _userManager.AddToRoleAsync(user, Roles.Admin);
-                }
-                else if (registerDto.UserType == UserTypeEnum.Instructor)
-                {
-                    await _userManager.AddToRoleAsync(user, Roles.Instructor);
-                }
-                else
-                {
-                    await _userManager.AddToRoleAsync(user, Roles.Student);
-                }
+                await _userManager.AddToRoleAsync(user, registerDto.UserType == UserTypeEnum.Student ? Roles.Student :
+                          (registerDto.UserType == UserTypeEnum.Instructor ? Roles.Instructor : Roles.Admin));
+
+
 
                 response.successed = true;
                 return response;
@@ -83,16 +130,18 @@ namespace OnlineQuiz.BLL.Managers.Accounts
             return response;
         }
 
-
-        public async Task<GeneralRespnose> Login(LoginDto loginDto)
+     public async Task<LoginResponce> Login(LoginDto loginDto)
         {
-            var response = new GeneralRespnose();
+            var response = new LoginResponce();
             var user = await _userManager.FindByEmailAsync(loginDto.Email);
-            if (user == null)
+            if (user == null || !await _userManager.IsEmailConfirmedAsync(user))
             {
-                response.Errors.Add("Email not found. Please make sure the email is correct.");
+                response.Errors.Add(user == null ? "Email not found. Please make sure the email is correct." :
+                   "Email not confirmed. Please check your inbox.");
                 return response;
             }
+       
+
             var result = await _userManager.CheckPasswordAsync(user, loginDto.Password);
             if (result)
             {
@@ -118,6 +167,108 @@ namespace OnlineQuiz.BLL.Managers.Accounts
             response.Errors.Add("Wrong Password or Email");
             return response;
         }
+
+     public async Task <GeneralRespnose> ConfirmEmail(string userId, string token)
+        {
+            GeneralRespnose response = new GeneralRespnose();   
+            if (string.IsNullOrWhiteSpace(userId) || string.IsNullOrWhiteSpace(token))
+            {
+                response.Errors.Add("UserId and Token are required.");
+                return response;
+            }
+
+            var user = await _userManager.FindByIdAsync(userId);
+            if (user == null)
+            {
+                response.Errors.Add("User not found.");
+                return response; 
+            }
+
+            var result = await _userManager.ConfirmEmailAsync(user, token);
+            if (result.Succeeded)
+            {
+                response.successed = true;
+                return response;
+              
+            }
+            response.Errors.Add("Email confirmation failed."); ;
+            return response;
+       
+        }
+
+     public async Task<GeneralRespnose> ForgotPassword( ForgotPasswordDto forgotPasswordDto , IUrlHelper urlHelper)
+        {
+            var response = new GeneralRespnose();   
+            var user = await _userManager.FindByEmailAsync(forgotPasswordDto.Email);
+            if(user == null)
+            {
+                response.Errors.Add("Email not found. Please make sure the email is correct.");
+                return (response);
+            }
+
+            #region ResetPaswword
+
+            //  reset password token
+            var token = await _userManager.GeneratePasswordResetTokenAsync(user);
+
+            //  password reset link
+            var resetLink = urlHelper.Action("ResetPassword", "Accounts",
+                new { token, email = user.Email }, "https");
+
+            // Send email
+            var resetEmailBody = $"Dear {user.UserName},\n\n" +
+                         "We received a request to reset your password.\n\n" +
+                         $"Please click the link below to set a new password:\n" +
+                         $"{resetLink}\n\n" +
+                         "If you did not request a password reset, please ignore this email or contact support if you have concerns.\n\n" +
+                         "Best regards,\n" +
+                          "[Online Quiz Platform]\n" +
+                          "[+20 155 134 9812]";
+
+            var result = await _emailService.SendEmailAsync(user.Email, "Reset Your Password", resetEmailBody); 
+           
+
+            if (result.successed)
+            {
+                response.successed = result.successed;
+                return response;
+            }
+
+            response.Errors.AddRange(result.Errors);
+            return response;
+            #endregion
+        }
+
+        public async Task<GeneralRespnose> ResetPassword(ResetPasswordDto resetPasswordDto)
+        {
+            var response = new GeneralRespnose();
+            if(resetPasswordDto.NewPassword != resetPasswordDto.ConfirmedNewPassword)
+            {
+                response.Errors.Add("New password and confirmation password do not match.");
+                return response;
+            }
+            var user = await _userManager.FindByEmailAsync(resetPasswordDto.Email);
+            if (user == null)
+            {
+                response.Errors.Add("Email not found. Please make sure the email is correct.");
+                return response;
+            }
+            var decodedToken = HttpUtility.UrlDecode(resetPasswordDto.Token);
+            var resetpaswword = await _userManager.ResetPasswordAsync(user, decodedToken, resetPasswordDto.NewPassword);
+            if(resetpaswword.Succeeded)
+            {
+                response.successed= resetpaswword.Succeeded;
+                return response;
+            }
+            response.Errors =resetpaswword.Errors.Select(e=>e.Description).ToList();
+            return response;
+        }
+
+
+
+
+
+
 
 
 
@@ -150,5 +301,7 @@ namespace OnlineQuiz.BLL.Managers.Accounts
 
             return token;
         }
+
+     
     }
 }

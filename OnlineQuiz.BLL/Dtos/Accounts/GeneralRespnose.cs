@@ -8,7 +8,6 @@ namespace OnlineQuiz.BLL.Dtos.Accounts
 {
     public class GeneralRespnose
     {
-        public string Token { get; set; }
         public bool successed { get; set; } = false;
         public List<string> Errors { get; set; }
     }
