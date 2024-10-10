@@ -39,7 +39,6 @@ namespace OnlineQuiz.BLL.Managers.Accounts
 
      public async Task<GeneralRespnose> Register(RegisterDto registerDto, IUrlHelper urlHelper)
         {
-         
             var response = new GeneralRespnose();
             if (_userManager.Users.Any(s => s.UserName == registerDto.UserName))
             {
@@ -70,7 +69,7 @@ namespace OnlineQuiz.BLL.Managers.Accounts
 
             // Determine user type
             Users user = registerDto.UserType == UserTypeEnum.Student ? new Student() :
-                    (registerDto.UserType == UserTypeEnum.Instructor ? new Instructor() : new Users());
+                    (registerDto.UserType == UserTypeEnum.Instructor ? new Instructor() : new Student());
 
 
             user.UserName = registerDto.UserName;
@@ -85,7 +84,6 @@ namespace OnlineQuiz.BLL.Managers.Accounts
             var result = await _userManager.CreateAsync(user, registerDto.Password);
             if (result.Succeeded)
             {
-
 
                 #region VerifyEmail
                 // Generate the email confirmation token
@@ -159,7 +157,7 @@ namespace OnlineQuiz.BLL.Managers.Accounts
                 }
                 #endregion
                 await _userManager.AddClaimsAsync(user, claims);
-                response.Token = GenerateToken(claims);
+                response.Token = GenerateToken(claims , loginDto.RememberMe);
                 response.successed = true;
                 return response;
 
@@ -239,7 +237,7 @@ namespace OnlineQuiz.BLL.Managers.Accounts
             #endregion
         }
 
-        public async Task<GeneralRespnose> ResetPassword(ResetPasswordDto resetPasswordDto)
+     public async Task<GeneralRespnose> ResetPassword(ResetPasswordDto resetPasswordDto)
         {
             var response = new GeneralRespnose();
             if(resetPasswordDto.NewPassword != resetPasswordDto.ConfirmedNewPassword)
@@ -268,11 +266,7 @@ namespace OnlineQuiz.BLL.Managers.Accounts
 
 
 
-
-
-
-
-        private string GenerateToken(IList<Claim> claims)
+        private string GenerateToken(IList<Claim> claims , bool RememberMe)
         {
 
             #region Token
@@ -285,13 +279,16 @@ namespace OnlineQuiz.BLL.Managers.Accounts
             //Combind SecretKey , HasingAlgorithm (SigningCredentials)
             SigningCredentials signingCredential = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
 
+            //Determine Expiration
+            DateTime tokenExpiration = RememberMe ? DateTime.Now.AddDays(30) : DateTime.Now.AddHours(2);
+
             //Token
 
             JwtSecurityToken jwtSecurityToken = new JwtSecurityToken
             (
                 claims: claims,
                 signingCredentials: signingCredential,
-                expires: DateTime.Now.AddDays(10)
+                expires: tokenExpiration
             );
             //To convert Token To String
             JwtSecurityTokenHandler handler = new JwtSecurityTokenHandler();
@@ -304,4 +301,9 @@ namespace OnlineQuiz.BLL.Managers.Accounts
 
      
     }
+
+
+
+
+
 }
