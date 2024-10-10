@@ -8,7 +8,6 @@ namespace OnlineQuiz.DAL.Repositoryies.Base
 {
     public interface IRepository<T, U> where T : class
     {
-       
         IQueryable<T> GetAll();
         T GetById(U id);
         void Add(T entity);

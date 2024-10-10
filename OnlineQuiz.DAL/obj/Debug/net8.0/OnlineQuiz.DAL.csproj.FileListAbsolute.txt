@@ -73,3 +73,18 @@ C:\Users\karee\Desktop\KarimBranch\Online-Quiz-Platform\OnlineQuiz.DAL\obj\Debug
 C:\Users\karee\Desktop\KarimBranch\Online-Quiz-Platform\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.pdb
 C:\Users\karee\Desktop\KarimBranch\Online-Quiz-Platform\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.genruntimeconfig.cache
 C:\Users\karee\Desktop\KarimBranch\Online-Quiz-Platform\OnlineQuiz.DAL\obj\Debug\net8.0\ref\OnlineQuiz.DAL.dll
+C:\Users\kirol\Downloads\Documents\Quiz Online\OnlineQuiz.DAL\bin\Debug\net8.0\OnlineQuiz.DAL.deps.json
+C:\Users\kirol\Downloads\Documents\Quiz Online\OnlineQuiz.DAL\bin\Debug\net8.0\OnlineQuiz.DAL.runtimeconfig.json
+C:\Users\kirol\Downloads\Documents\Quiz Online\OnlineQuiz.DAL\bin\Debug\net8.0\OnlineQuiz.DAL.dll
+C:\Users\kirol\Downloads\Documents\Quiz Online\OnlineQuiz.DAL\bin\Debug\net8.0\OnlineQuiz.DAL.pdb
+C:\Users\kirol\Downloads\Documents\Quiz Online\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.csproj.AssemblyReference.cache
+C:\Users\kirol\Downloads\Documents\Quiz Online\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kirol\Downloads\Documents\Quiz Online\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.AssemblyInfoInputs.cache
+C:\Users\kirol\Downloads\Documents\Quiz Online\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.AssemblyInfo.cs
+C:\Users\kirol\Downloads\Documents\Quiz Online\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.csproj.CoreCompileInputs.cache
+C:\Users\kirol\Downloads\Documents\Quiz Online\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.sourcelink.json
+C:\Users\kirol\Downloads\Documents\Quiz Online\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.dll
+C:\Users\kirol\Downloads\Documents\Quiz Online\OnlineQuiz.DAL\obj\Debug\net8.0\refint\OnlineQuiz.DAL.dll
+C:\Users\kirol\Downloads\Documents\Quiz Online\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.pdb
+C:\Users\kirol\Downloads\Documents\Quiz Online\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.genruntimeconfig.cache
+C:\Users\kirol\Downloads\Documents\Quiz Online\OnlineQuiz.DAL\obj\Debug\net8.0\ref\OnlineQuiz.DAL.dll

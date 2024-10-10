@@ -5522,19 +5522,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\karee\\.nuget\\packages\\": {}
+    "C:\\Users\\kirol\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.Api\\OnlineQuiz.Api.csproj",
+      "projectUniqueName": "C:\\Users\\kirol\\Downloads\\Documents\\Quiz online\\OnlineQuiz.Api\\OnlineQuiz.Api.csproj",
       "projectName": "OnlineQuiz.Api",
-      "projectPath": "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.Api\\OnlineQuiz.Api.csproj",
-      "packagesPath": "C:\\Users\\karee\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.Api\\obj\\",
+      "projectPath": "C:\\Users\\kirol\\Downloads\\Documents\\Quiz online\\OnlineQuiz.Api\\OnlineQuiz.Api.csproj",
+      "packagesPath": "C:\\Users\\kirol\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\kirol\\Downloads\\Documents\\Quiz Online\\OnlineQuiz.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\karee\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\kirol\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5549,8 +5549,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.BLL\\OnlineQuiz.BLL.csproj": {
-              "projectPath": "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.BLL\\OnlineQuiz.BLL.csproj"
+            "C:\\Users\\kirol\\Downloads\\Documents\\Quiz online\\OnlineQuiz.BLL\\OnlineQuiz.BLL.csproj": {
+              "projectPath": "C:\\Users\\kirol\\Downloads\\Documents\\Quiz online\\OnlineQuiz.BLL\\OnlineQuiz.BLL.csproj"
             }
           }
         }
@@ -5604,7 +5604,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   },

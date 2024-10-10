@@ -9,6 +9,7 @@ using OnlineQuiz.DAL.Repositoryies.TrackRepository;
 using OnlineQuiz.BLL.AutoMapper.TrackMapper;
 using OnlineQuiz.BLL.Managers.Track;
 using OnlineQuiz.BLL.Managers.Base;
+using OnlineQuiz.DAL.Repositoryies.AnswerRepository;
 
 namespace OnlineQuiz.Api
 {
@@ -24,7 +25,6 @@ namespace OnlineQuiz.Api
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-
             //QuicContext
             builder.Services.AddDbContext<QuizContext>(options =>
             {
@@ -42,6 +42,8 @@ namespace OnlineQuiz.Api
             builder.Services.AddScoped<ITrackRepository, TrackRepository>();
             //Managers
             builder.Services.AddScoped<ITrackManager, TrackManager>();
+            // Answer Service 
+            builder.Services.AddScoped<IAnswerRepository, AnswerRepository>();
 
 
             //Identity

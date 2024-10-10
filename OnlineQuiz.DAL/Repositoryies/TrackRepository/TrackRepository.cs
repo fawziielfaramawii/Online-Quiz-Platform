@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace OnlineQuiz.DAL.Repositoryies.TrackRepository
 {
-    public class TrackRepository : IRepository<Tracks, int>, ITrackRepository
+    public class TrackRepository : IRepository<Tracks, int> , ITrackRepository
     {
         private readonly QuizContext _context;
 
