@@ -1,5 +1,8 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using OnlineQuiz.BLL.Dtos.Attempt;
+using OnlineQuiz.BLL.Managers.Attempt;
 using OnlineQuiz.DAL.Data.Models;
 using OnlineQuiz.DAL.Repositoryies.AttemptRepository;
 namespace OnlineQuiz.Api.Controllers
@@ -8,78 +11,77 @@ namespace OnlineQuiz.Api.Controllers
     [ApiController]
     public class AttemptController : ControllerBase
     {
-        private readonly IAttemptRepository _attemptRepository;
-
-        public AttemptController(IAttemptRepository attemptRepository)
+       
+        private readonly IAttemptManager _attemptManager;
+        private readonly IMapper _mapper;
+        public AttemptController(IAttemptManager attemptManager, IMapper mapper)
         {
-            _attemptRepository = attemptRepository;
+            _attemptManager = attemptManager;
+            _mapper = mapper;
+            
         }
 
+
         [HttpPost("StartQuizAttempt")]
-        public IActionResult StartQuizAttempt(int quizId, string studID)
+        public IActionResult StartQuizAttempt([FromBody]StartQuizAttemptDto attemptDto)
         {
-            Quizzes quizzes = _attemptRepository.GetQuizzes(quizId);
-            Student student = _attemptRepository.GetStudent(studID);
-
-            if (quizzes != null && student != null)
+            try
             {
-                Attempts attempt = new Attempts
-                {
-                    QuizId = quizId,
-                    StartTime = DateTime.Now,
-                    StateForExam = "Started",
-                    StudentId = studID
-                };
-
-                _attemptRepository.StartQuizAttempt(attempt);
-
-                return Ok(new { attempt.Id, message = "Quiz attempt started successfully" });
+                _attemptManager.StartQuizAttempt(attemptDto);
+                return Ok(new { message = "Quiz attempt started successfully" });
             }
-
-            else
+            catch (Exception ex)
             {
-                return BadRequest("Erorr");
+                return BadRequest(ex.Message);
             }
         }
 
         [HttpPost("SubmitQuizAttempt")]
-        public IActionResult SubmitQuizAttempt(int attemptId, List<Answers> submittedAnswers)
+        public IActionResult SubmitQuizAttempt(int attemptId, List<AnswerDto> submittedAnswers)
         {
-            _attemptRepository.SubmitQuizAttempt(attemptId, submittedAnswers);
-            return Ok(new { message = "Quiz attempt submitted successfully" });
+
+            try
+            {
+                var submittedAnswer = _mapper.Map<List<Answers>>(submittedAnswers);
+                _attemptManager.SubmitQuizAttempt(attemptId, submittedAnswers);
+                return Ok(new { message = "Quiz attempt submitted successfully" });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
         [HttpGet("GetResults")]
         public IActionResult GetResults(int attemptId)
         {
-            Attempts result = _attemptRepository.GetResults(attemptId);
-
-            if (result == null)
-                return NotFound("Attempt not found");
-
-            return Ok(new
+            
+            try
             {
-                result.Quiz.Tittle,
-                result.StartTime,
-                result.EndTime,
-                result.Score,
-                Answers = result.Answers.Select(a => new
-                {
-                    a.SubmittedAnswer,
-                    a.IsCorrect,
-                })
-            });
+                var result = _attemptManager.GetResults(attemptId);
+
+                return Ok(result); 
+            }
+            catch (Exception ex)
+            {
+                return NotFound(ex.Message);
+            }
         }
 
         [HttpGet("GetUserAttempts")]
         public IActionResult GetUserAttempts(string studentId)
         {
-            IEnumerable<Attempts> attempts = _attemptRepository.GetUserAttempts(studentId);
+            try
+            {
+                var attempts = _attemptManager.GetUserAttempts(studentId);
 
-            if (attempts == null || !attempts.Any())
-                return NotFound("No attempts found for the user");
+                return Ok(attempts);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
 
-            return Ok(attempts);
         }
     }
 }
