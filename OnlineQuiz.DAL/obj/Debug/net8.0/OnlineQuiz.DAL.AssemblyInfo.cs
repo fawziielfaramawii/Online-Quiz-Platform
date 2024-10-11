@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OnlineQuiz.DAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+666b408237ddc2f02cac869923eb5270dc4344e9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a4b00f8b3ce4bef081e51be90fefcf981175b890")]
 [assembly: System.Reflection.AssemblyProductAttribute("OnlineQuiz.DAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OnlineQuiz.DAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
