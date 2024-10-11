@@ -85,6 +85,70 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "OnlineQuiz.Api.Controllers.AnswersController",
+    "Method": "GetUserAnswers",
+    "RelativePath": "api/Answers/{attemptId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "attemptId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OnlineQuiz.Api.Controllers.AnswersController",
+    "Method": "AnswerExist",
+    "RelativePath": "api/Answers/AnswerIfExist/{AnswerId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "answerId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OnlineQuiz.Api.Controllers.AnswersController",
+    "Method": "GetCorrectAnswers",
+    "RelativePath": "api/Answers/CorrectAnswers/{quizId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "quizId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OnlineQuiz.Api.Controllers.AnswersController",
+    "Method": "SubmitAnswer",
+    "RelativePath": "api/Answers/submit",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "OnlineQuiz.Api.Controllers.SubmitAnswerRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "OnlineQuiz.Api.Controllers.QuestionController",
     "Method": "GetAllQuestions",
     "RelativePath": "api/Question",

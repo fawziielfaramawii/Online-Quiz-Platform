@@ -1,9 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\elfaramawy\\OneDrive\\Desktop\\Final\\Online-Quiz-Platform\\",
+  "WorkspaceRootPath": "C:\\Users\\kirol\\Downloads\\newww onlin quiz\\Online-Quiz-Platform\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{616AF085-367C-4B5C-9EBC-E0BECD3E117A}|OnlineQuiz.Api\\OnlineQuiz.Api.csproj|c:\\users\\elfaramawy\\onedrive\\desktop\\final\\online-quiz-platform\\onlinequiz.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1BFB8A2A-7FB4-46FC-A8A7-7DE9B20FFB38}|OnlineQuiz.BLL\\OnlineQuiz.BLL.csproj|c:\\users\\kirol\\downloads\\newww onlin quiz\\online-quiz-platform\\onlinequiz.bll\\managers\\answer\\answersmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BFB8A2A-7FB4-46FC-A8A7-7DE9B20FFB38}|OnlineQuiz.BLL\\OnlineQuiz.BLL.csproj|solutionrelative:onlinequiz.bll\\managers\\answer\\answersmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{616AF085-367C-4B5C-9EBC-E0BECD3E117A}|OnlineQuiz.Api\\OnlineQuiz.Api.csproj|c:\\users\\kirol\\downloads\\newww onlin quiz\\online-quiz-platform\\onlinequiz.api\\controllers\\answerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{616AF085-367C-4B5C-9EBC-E0BECD3E117A}|OnlineQuiz.Api\\OnlineQuiz.Api.csproj|solutionrelative:onlinequiz.api\\controllers\\answerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30842FE6-4BD1-4960-8A00-398A4903C0BF}|OnlineQuiz.DAL\\OnlineQuiz.DAL.csproj|c:\\users\\kirol\\downloads\\newww onlin quiz\\online-quiz-platform\\onlinequiz.dal\\repositoryies\\answerrepository\\answerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30842FE6-4BD1-4960-8A00-398A4903C0BF}|OnlineQuiz.DAL\\OnlineQuiz.DAL.csproj|solutionrelative:onlinequiz.dal\\repositoryies\\answerrepository\\answerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30842FE6-4BD1-4960-8A00-398A4903C0BF}|OnlineQuiz.DAL\\OnlineQuiz.DAL.csproj|c:\\users\\kirol\\downloads\\newww onlin quiz\\online-quiz-platform\\onlinequiz.dal\\repositoryies\\answerrepository\\ianswerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30842FE6-4BD1-4960-8A00-398A4903C0BF}|OnlineQuiz.DAL\\OnlineQuiz.DAL.csproj|solutionrelative:onlinequiz.dal\\repositoryies\\answerrepository\\ianswerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BFB8A2A-7FB4-46FC-A8A7-7DE9B20FFB38}|OnlineQuiz.BLL\\OnlineQuiz.BLL.csproj|c:\\users\\kirol\\downloads\\newww onlin quiz\\online-quiz-platform\\onlinequiz.bll\\managers\\answer\\ianswersmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BFB8A2A-7FB4-46FC-A8A7-7DE9B20FFB38}|OnlineQuiz.BLL\\OnlineQuiz.BLL.csproj|solutionrelative:onlinequiz.bll\\managers\\answer\\ianswersmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30842FE6-4BD1-4960-8A00-398A4903C0BF}|OnlineQuiz.DAL\\OnlineQuiz.DAL.csproj|c:\\users\\kirol\\downloads\\newww onlin quiz\\online-quiz-platform\\onlinequiz.dal\\data\\models\\attempts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30842FE6-4BD1-4960-8A00-398A4903C0BF}|OnlineQuiz.DAL\\OnlineQuiz.DAL.csproj|solutionrelative:onlinequiz.dal\\data\\models\\attempts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{616AF085-367C-4B5C-9EBC-E0BECD3E117A}|OnlineQuiz.Api\\OnlineQuiz.Api.csproj|c:\\users\\kirol\\downloads\\newww onlin quiz\\online-quiz-platform\\onlinequiz.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{616AF085-367C-4B5C-9EBC-E0BECD3E117A}|OnlineQuiz.Api\\OnlineQuiz.Api.csproj|solutionrelative:onlinequiz.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -14,20 +38,127 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 9,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Attempts.cs",
+              "DocumentMoniker": "C:\\Users\\kirol\\Downloads\\newww onlin quiz\\Online-Quiz-Platform\\OnlineQuiz.DAL\\Data\\Models\\Attempts.cs",
+              "RelativeDocumentMoniker": "OnlineQuiz.DAL\\Data\\Models\\Attempts.cs",
+              "ToolTip": "C:\\Users\\kirol\\Downloads\\newww onlin quiz\\Online-Quiz-Platform\\OnlineQuiz.DAL\\Data\\Models\\Attempts.cs",
+              "RelativeToolTip": "OnlineQuiz.DAL\\Data\\Models\\Attempts.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T02:39:41.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IAnswersManager.cs",
+              "DocumentMoniker": "C:\\Users\\kirol\\Downloads\\newww onlin quiz\\Online-Quiz-Platform\\OnlineQuiz.BLL\\Managers\\Answer\\IAnswersManager.cs",
+              "RelativeDocumentMoniker": "OnlineQuiz.BLL\\Managers\\Answer\\IAnswersManager.cs",
+              "ToolTip": "C:\\Users\\kirol\\Downloads\\newww onlin quiz\\Online-Quiz-Platform\\OnlineQuiz.BLL\\Managers\\Answer\\IAnswersManager.cs",
+              "RelativeToolTip": "OnlineQuiz.BLL\\Managers\\Answer\\IAnswersManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T01:15:50.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IAnswerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\kirol\\Downloads\\newww onlin quiz\\Online-Quiz-Platform\\OnlineQuiz.DAL\\Repositoryies\\AnswerRepository\\IAnswerRepository.cs",
+              "RelativeDocumentMoniker": "OnlineQuiz.DAL\\Repositoryies\\AnswerRepository\\IAnswerRepository.cs",
+              "ToolTip": "C:\\Users\\kirol\\Downloads\\newww onlin quiz\\Online-Quiz-Platform\\OnlineQuiz.DAL\\Repositoryies\\AnswerRepository\\IAnswerRepository.cs",
+              "RelativeToolTip": "OnlineQuiz.DAL\\Repositoryies\\AnswerRepository\\IAnswerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T01:15:05.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AnswerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\kirol\\Downloads\\newww onlin quiz\\Online-Quiz-Platform\\OnlineQuiz.DAL\\Repositoryies\\AnswerRepository\\AnswerRepository.cs",
+              "RelativeDocumentMoniker": "OnlineQuiz.DAL\\Repositoryies\\AnswerRepository\\AnswerRepository.cs",
+              "ToolTip": "C:\\Users\\kirol\\Downloads\\newww onlin quiz\\Online-Quiz-Platform\\OnlineQuiz.DAL\\Repositoryies\\AnswerRepository\\AnswerRepository.cs",
+              "RelativeToolTip": "OnlineQuiz.DAL\\Repositoryies\\AnswerRepository\\AnswerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T01:13:29.827Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\elfaramawy\\OneDrive\\Desktop\\Final\\Online-Quiz-Platform\\OnlineQuiz.Api\\Program.cs",
-              "RelativeDocumentMoniker": "OnlineQuiz.Api\\Program.cs",
-              "ToolTip": "C:\\Users\\elfaramawy\\OneDrive\\Desktop\\Final\\Online-Quiz-Platform\\OnlineQuiz.Api\\Program.cs",
-              "RelativeToolTip": "OnlineQuiz.Api\\Program.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAwwB8AAAAYAAAAAAAAAA==",
+              "Title": "AnswersManager.cs",
+              "DocumentMoniker": "C:\\Users\\kirol\\Downloads\\newww onlin quiz\\Online-Quiz-Platform\\OnlineQuiz.BLL\\Managers\\Answer\\AnswersManager.cs",
+              "RelativeDocumentMoniker": "OnlineQuiz.BLL\\Managers\\Answer\\AnswersManager.cs",
+              "ToolTip": "C:\\Users\\kirol\\Downloads\\newww onlin quiz\\Online-Quiz-Platform\\OnlineQuiz.BLL\\Managers\\Answer\\AnswersManager.cs",
+              "RelativeToolTip": "OnlineQuiz.BLL\\Managers\\Answer\\AnswersManager.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAcwCMAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T00:08:38.777Z",
+              "WhenOpened": "2024-10-11T01:13:06.441Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AnswersController.cs",
+              "DocumentMoniker": "C:\\Users\\kirol\\Downloads\\newww onlin quiz\\Online-Quiz-Platform\\OnlineQuiz.Api\\Controllers\\AnswersController.cs",
+              "RelativeDocumentMoniker": "OnlineQuiz.Api\\Controllers\\AnswersController.cs",
+              "ToolTip": "C:\\Users\\kirol\\Downloads\\newww onlin quiz\\Online-Quiz-Platform\\OnlineQuiz.Api\\Controllers\\AnswersController.cs",
+              "RelativeToolTip": "OnlineQuiz.Api\\Controllers\\AnswersController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAADwvzcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T01:11:47.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\kirol\\Downloads\\newww onlin quiz\\Online-Quiz-Platform\\OnlineQuiz.Api\\Program.cs",
+              "RelativeDocumentMoniker": "OnlineQuiz.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\kirol\\Downloads\\newww onlin quiz\\Online-Quiz-Platform\\OnlineQuiz.Api\\Program.cs",
+              "RelativeToolTip": "OnlineQuiz.Api\\Program.cs",
+              "ViewState": "AgIAAH8AAAAAAAAAAAAQwFMAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T00:08:38.777Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             }
           ]
         }
