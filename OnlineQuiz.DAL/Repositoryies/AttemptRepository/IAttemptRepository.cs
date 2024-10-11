@@ -14,7 +14,7 @@ namespace OnlineQuiz.DAL.Repositoryies.AttemptRepository
         void SubmitQuizAttempt(int attemptId, List<Answers> submittedAnswers);
         Attempts GetResults(int attemptId);
         IEnumerable<Attempts> GetUserAttempts(string studentId);
-        Student GetStudent(string studID);
-        Quizzes GetQuizzes(int quizId);
+        Student GetStudentById(string studID);
+        Quizzes GetQuizById(int quizId);
     }
 }
