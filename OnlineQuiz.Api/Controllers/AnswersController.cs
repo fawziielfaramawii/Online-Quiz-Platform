@@ -40,7 +40,7 @@ namespace OnlineQuiz.Api.Controllers
             return Ok(correctAnswers);
         }
 
-        [HttpGet("AnswerIfExist/{AnswerId}")]
+        [HttpGet("GetAnswer/{answerId}")]
         public IActionResult AnswerExist(int answerId)
         {
 
