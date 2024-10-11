@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Microsoft.AspNet.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using OnlineQuiz.DAL.Data.Configuration;
 using OnlineQuiz.DAL.Data.Models;
@@ -7,6 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Type = OnlineQuiz.DAL.Data.Models.Type;
 
 namespace OnlineQuiz.DAL.Data.DBHelper
 {
@@ -20,11 +22,29 @@ namespace OnlineQuiz.DAL.Data.DBHelper
         {
             base.OnConfiguring(optionsBuilder);
         }
+        // this method hash pass for admin add by admin - note better use fazwy algrothim for hash password
+        private string HashPassword(string password)
+        {
+            return Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes(password));
+        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            // Seeding the admin 
+            modelBuilder.Entity<Users>().HasData(
+                new Users
+                {
+                    Id = Guid.NewGuid().ToString(),
+                    UserName = "Yossif Farouk",
+                    Email = "yossif155farouk@gmail.com",
+                    PasswordHash = HashPassword("ZX12zx12#"),
+                    Adress = "Mansura",
+                    Gender = "Male",
+                    UserType = Type.Admin ,
+                });
+    
             // ins with students
-            modelBuilder.Entity<StudentInstructor>()
+                modelBuilder.Entity<StudentInstructor>()
            .HasKey(si => new { si.StudentId, si.InstructorId }); // Composite key
 
             modelBuilder.Entity<StudentInstructor>()

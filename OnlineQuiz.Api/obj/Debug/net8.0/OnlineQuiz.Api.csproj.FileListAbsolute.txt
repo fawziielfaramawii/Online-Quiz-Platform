@@ -730,3 +730,4 @@ A:\DPI tasks\c#\Final project\OnlineQuiz.Api\obj\Debug\net8.0\refint\OnlineQuiz.
 A:\DPI tasks\c#\Final project\OnlineQuiz.Api\obj\Debug\net8.0\OnlineQuiz.Api.pdb
 A:\DPI tasks\c#\Final project\OnlineQuiz.Api\obj\Debug\net8.0\OnlineQuiz.Api.genruntimeconfig.cache
 A:\DPI tasks\c#\Final project\OnlineQuiz.Api\obj\Debug\net8.0\ref\OnlineQuiz.Api.dll
+A:\DPI tasks\c#\Final project\OnlineQuiz.Api\obj\Debug\net8.0\OnlineQuiz.Api.MvcApplicationPartsAssemblyInfo.cs

@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNet.Identity;
+using Microsoft.EntityFrameworkCore;
 using OnlineQuiz.DAL.Data.DBHelper;
 using OnlineQuiz.DAL.Data.Models;
 using System;
@@ -18,74 +19,11 @@ namespace OnlineQuiz.DAL.Repositoryies.InstructorRepository
             _context = context;
         }
 
+       
 
 
-
-        public void AddQuizzes(Quizzes Quizzes)
-        {
-            _context.Add(Quizzes);
-            savechanges();
-
-        }
-
-        public void DeleteQuizzes(Quizzes Quizzes)
-        {
-            _context.Remove(Quizzes);
-            savechanges();
-        }
-
-        public IEnumerable<Quizzes> GetAllQuizzes(string id)
-        {
-            return _context.quizzes.Where(x => x.InstructorId == id);
-        }
-
-        public IEnumerable<Quizzes> GetQuizzesName(string name)
-        {
-            return _context.quizzes.Where(x => x.Tittle == name);
-        }
-
-        
-
-        public void UpdateQuizzes(Quizzes Quizzes)
-        {
-
-            savechanges();
-        }
-        // ------------------------------------------------------------------------------
-
-
-
-        public IEnumerable<Questions> GetAllQuestionsOfQuiz(int id)
-        {
-            return _context.questions.Where(x => x.QuizId == id);
-        }
-
-        public async Task AddQuestionAsync(int quizId, Questions question)
-        {
-            var quiz = await _context.Set<Quizzes>().Include(q => q.Questions)
-                                                .FirstOrDefaultAsync(q => q.Id == quizId);
-
-            if (quiz == null)
-            {
-                throw new Exception("Quiz not found");
-            }
-
-            quiz.Questions.Add(question); // Add the new question to the quiz
-            await _context.SaveChangesAsync(); // Save changes to the database
-        }
-
-
-        public void UpdateQuestions(Questions Question)
-        {
-            savechanges();
-        }
-
-        public void DeleteQuestions(Questions Question)
-        {
-            _context.Remove(Question);
-            savechanges();
-        }
         //---------------------------
+        // Add student to instructor
         public async Task AddStudentToInstructorAsync(string studentId, string instructorId)
         {
             var student = await _context.Students.FindAsync(studentId);
@@ -104,18 +42,43 @@ namespace OnlineQuiz.DAL.Repositoryies.InstructorRepository
             await _context.SaveChangesAsync();
         }
 
+        // Remove student from instructor
         public async Task RemoveStudentFromInstructorAsync(string studentId, string instructorId)
         {
             var studentInstructor = await _context.StudentInstructors
                 .FirstOrDefaultAsync(si => si.StudentId == studentId && si.InstructorId == instructorId);
 
             if (studentInstructor == null)
-            {
                 throw new Exception("The relationship does not exist");
-            }
 
             _context.StudentInstructors.Remove(studentInstructor);
-            await _context.SaveChangesAsync(); 
+            await _context.SaveChangesAsync();
+        }
+
+
+
+
+        // ------------------------------------------------------------------------------
+
+
+        //get score(attempts) of quiz by id
+        public IEnumerable<Attempts> showAttempts(int quiz)
+        {
+
+            return _context.attempts.Where(x => x.QuizId == quiz).OrderBy(x=>x.Score);
+        }
+
+
+
+        public Instructor GetInstructorById(string id)
+        {
+           return _context.Instructors.FirstOrDefault(x => x.Id == id);
+        }
+
+        public void UpdateInstructorProfile(Instructor Instructor)
+        {
+            _context.Instructors.Update(Instructor);
+            savechanges();
         }
 
 
@@ -127,10 +90,6 @@ namespace OnlineQuiz.DAL.Repositoryies.InstructorRepository
             _context.SaveChanges();
         }
 
-      
-
-
-
- 
+  
     }
 }

@@ -37,10 +37,10 @@ namespace OnlineQuiz.DAL.Data.Models
 
         public string Gender { get; set; }
 
-        public string Adress { get; set; }
+        public string? Adress { get; set; }
 
         [DataType(DataType.ImageUrl)]
-        public string ImgUrl { get; set; }
+        public string?ImgUrl { get; set; }
         
         public Type UserType { get; set; }
 
@@ -57,14 +57,13 @@ namespace OnlineQuiz.DAL.Data.Models
         //Student With Attempts
         public ICollection<Attempts> Attempts { get; set; } = new HashSet<Attempts>();
 
-
     }
 
 
     public class Instructor : Users
     {
 
-        public ApprovalStatus Status { get; set; } = ApprovalStatus.Pending;
+        public ApprovalStatus? Status { get; set; } = ApprovalStatus.Pending;
         public ICollection<StudentInstructor> StudentInstructors { get; set; }  // Navigation property
 
         //  Instructor with Quizzes

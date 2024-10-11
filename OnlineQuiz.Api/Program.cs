@@ -11,6 +11,9 @@ using OnlineQuiz.BLL.Managers.Track;
 using OnlineQuiz.DAL.Repositoryies.AdminRepositroy;
 using OnlineQuiz.BLL.AutoMapper.AdminAutoMapper;
 using OnlineQuiz.BLL.Managers.Admin;
+using OnlineQuiz.BLL.Managers.Instructor;
+using OnlineQuiz.DAL.Repositoryies.InstructorRepository;
+using OnlineQuiz.BLL.AutoMapper.InstructorMapper;
 
 namespace OnlineQuiz.Api
 {
@@ -61,6 +64,14 @@ namespace OnlineQuiz.Api
             builder.Services.AddScoped<IAdminManger, AdminManger>();
             //admin auto mapper
             builder.Services.AddAutoMapper(map => map.AddProfile(new AdminMapper()));
+
+            // instructor mapper
+            builder.Services.AddAutoMapper(map => map.AddProfile(new InstructorMapper()));
+
+
+            // instructor services
+            builder.Services.AddScoped<IInstructorManger,InstructorManger>();
+            builder.Services.AddScoped<IInstructorRepository,InstructorRepository>();
 
             var app = builder.Build();
 

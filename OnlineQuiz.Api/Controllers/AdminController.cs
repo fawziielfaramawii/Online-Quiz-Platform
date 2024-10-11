@@ -121,7 +121,7 @@ namespace OnlineQuiz.Api.Controllers
         {
 
             _iAdminManger.UpdateInstructor(IstrurctorUpdateDto);
-            return Ok(new { message = "Student updated succefuly" });
+            return Ok(new { message = "Instructor updated succefuly" });
         }
         //-------------------------------------------------------------------------------------------
         [HttpGet]

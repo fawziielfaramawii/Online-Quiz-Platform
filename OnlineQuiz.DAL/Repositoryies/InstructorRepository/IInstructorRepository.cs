@@ -1,4 +1,5 @@
-﻿using OnlineQuiz.DAL.Data.Models;
+﻿using Microsoft.AspNet.Identity;
+using OnlineQuiz.DAL.Data.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,40 +11,22 @@ namespace OnlineQuiz.DAL.Repositoryies.InstructorRepository
     public interface IInstructorRepository
     {
 
-        // crud opreation on quiz (add - delete - edit - get)
-        IEnumerable<Quizzes> GetAllQuizzes(string id);
-
-        // get by  name  Quizzes 
-        IEnumerable<Quizzes> GetQuizzesName(string name);
 
 
-        // add Quizzes
-        public void AddQuizzes(Quizzes Quizzes);
-        // edit Quizzes
-        public void UpdateQuizzes(Quizzes Quizzes);
+        // pls edit this 
+        //Task<Instructor> GetInstructorByIdAsync(string userId);
+        //Task UpdateInstructorProfileAsync(Instructor Instructor);
 
-        // delete Quizzes
-        public void DeleteQuizzes(Quizzes Quizzes);
-
-
-
-        // crud opreation on qustion on quiz (add - delete - edit - get)
-
-        IEnumerable<Questions> GetAllQuestionsOfQuiz(int id);
-
-        // add Quizzes
-        //public void AddQuestions(Questions Question);
-        Task AddQuestionAsync(int quizId, Questions question); // Method to add question to quiz
-        // edit Quizzes
-        public void UpdateQuestions(Questions Question);
-
-        // delete Quizzes
-        public void DeleteQuestions(Questions Question);
-
-        // add student and delete to  quiz like sup 
+        Instructor GetInstructorById(string id);
+        void UpdateInstructorProfile(Instructor Instructor);
 
         Task AddStudentToInstructorAsync(string studentId, string instructorId); // add student from instructor
         Task RemoveStudentFromInstructorAsync(string studentId, string instructorId); // Remove student from instructor
+
+
+        // method get attemmpts to show student id and score scerch by quiz
+
+        IEnumerable<Attempts> showAttempts(int quiz);
 
         // save in database
         void savechanges();

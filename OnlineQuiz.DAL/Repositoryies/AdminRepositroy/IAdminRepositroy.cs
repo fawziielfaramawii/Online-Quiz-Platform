@@ -14,6 +14,8 @@ namespace OnlineQuiz.DAL.Repositoryies.AdminRepositroy
         // get user for ban and un ban method  
         Users GetUsertById(string id);
 
+        //------------------------------------------------------------------------------------
+
         // get all instractour or student 
         IEnumerable<Student> GetAllStudent();
 
@@ -72,5 +74,6 @@ namespace OnlineQuiz.DAL.Repositoryies.AdminRepositroy
         // role admin only acsses
 
         void SaveChanges();
+       
     }
 }

@@ -14,6 +14,9 @@ namespace OnlineQuiz.DAL.Data.Models
 
             public string InstructorId { get; set; }
             public Instructor Instructor { get; set; }
+
+
+     //   public DateTime
         
 
     }

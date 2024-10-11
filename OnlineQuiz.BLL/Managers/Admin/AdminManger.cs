@@ -3,6 +3,7 @@ using Microsoft.AspNet.Identity;
 using OnlineQuiz.BLL.Dtos.Admin.InstructorDtos;
 using OnlineQuiz.BLL.Dtos.Admin.StudentDtos;
 using OnlineQuiz.DAL.Data.Models;
+using OnlineQuiz.DAL.Data.Models;
 using OnlineQuiz.DAL.Repositoryies.AdminRepositroy;
 using System;
 using System.Collections.Generic;
@@ -96,7 +97,7 @@ namespace OnlineQuiz.BLL.Managers.Admin
 
         public void AddInstructor(InstructorAddDto InstructorAddDto)
         {
-            _IAdminRepositroy.AddInstructor(_IMapper.Map<Instructor>(InstructorAddDto));
+            _IAdminRepositroy.AddInstructor(_IMapper.Map<OnlineQuiz.DAL.Data.Models.Instructor>(InstructorAddDto));
             SaveChanges();
         }
 
