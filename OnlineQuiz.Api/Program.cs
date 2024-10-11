@@ -8,6 +8,9 @@ using OnlineQuiz.DAL.Repositoryies.TrackRepository;
 using OnlineQuiz.BLL.AutoMapper.TrackMapper;
 using OnlineQuiz.BLL.Managers.Track;
 using OnlineQuiz.BLL.Managers.Base;
+using OnlineQuiz.DAL.Repositoryies.AttemptRepository;
+using OnlineQuiz.BLL.Managers.Attempt;
+using OnlineQuiz.BLL.AutoMapper.Attempt;
 
 namespace OnlineQuiz.Api
 {
@@ -32,6 +35,9 @@ namespace OnlineQuiz.Api
             });
 
             builder.Services.AddAutoMapper(map => map.AddProfile(new TrackMapper()));
+            builder.Services.AddAutoMapper(map => map.AddProfile(new AttemptMapping()));
+            
+
 
             //GenericRepository && GenericManager
             builder.Services.AddScoped(typeof(IRepository<,>),typeof(Repository<,>));
@@ -39,9 +45,10 @@ namespace OnlineQuiz.Api
 
             //Repositories
             builder.Services.AddScoped<ITrackRepository, TrackRepository>();
+            builder.Services.AddScoped<IAttemptRepository, AttemptRepository>();
             //Managers
             builder.Services.AddScoped<ITrackManager, TrackManager>();
-
+            builder.Services.AddScoped<IAttemptManager, AttemptManager>();
 
             //Identity
             builder.Services.AddIdentity<Users, Microsoft.AspNetCore.Identity.IdentityRole>(options =>
