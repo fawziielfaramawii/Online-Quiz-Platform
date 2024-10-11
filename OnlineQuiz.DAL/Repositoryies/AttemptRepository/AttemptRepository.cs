@@ -22,8 +22,8 @@ namespace OnlineQuiz.DAL.Repositoryies.AttemptRepository
 
         public void DeleteById(int id)
         {
-            Attempts attempts = _context.attempts.FirstOrDefault(a => a.Id == id);
-            _context.attempts.Remove(attempts);
+            Attempts? attempts = _context.attempts.FirstOrDefault(a => a.Id == id);
+            _context.attempts.Remove(attempts!);
             _context.SaveChanges();
         }
 
@@ -34,8 +34,8 @@ namespace OnlineQuiz.DAL.Repositoryies.AttemptRepository
 
         public Attempts GetById(int id)
         {
-            Attempts attempts = _context.attempts.FirstOrDefault(a => a.Id == id);
-            return attempts;
+            Attempts? attempts = _context.attempts.FirstOrDefault(a => a.Id == id);
+            return attempts!;
         }
 
         public void Add(Attempts attempt)
@@ -57,8 +57,9 @@ namespace OnlineQuiz.DAL.Repositoryies.AttemptRepository
         public void SubmitQuizAttempt(int attemptId, List<Answers> submittedAnswers)
         {
             Attempts? attempt = _context.attempts.FirstOrDefault(a => a.Id == attemptId);
+            
 
-            if (attempt == null)
+            if (attempt == null && attempt!.EndTime > DateTime.Now)
                 throw new Exception("Attempt not found");
 
             foreach (Answers answer in submittedAnswers)
@@ -74,6 +75,7 @@ namespace OnlineQuiz.DAL.Repositoryies.AttemptRepository
 
                 _context.answers.Add(answers);
             }
+
             attempt.EndTime = DateTime.Now;
             attempt.Score = CalculateScore(attemptId);
             _context.SaveChanges();
@@ -114,16 +116,16 @@ namespace OnlineQuiz.DAL.Repositoryies.AttemptRepository
             return (double)correctAnswers / totalQuestions * 100;
         }
 
-        public Student GetStudent(string studID)
+        public Student GetStudentById(string studID)
         {
-            Student student = _context.Students.Find(studID);
-            return student;
+            Student? student = _context.Students.Find(studID);
+            return student!;
         }
 
-        public Quizzes GetQuizzes(int quizID)
+        public Quizzes GetQuizById(int quizID)
         {
-            Quizzes quizzes = _context.quizzes.FirstOrDefault(q => q.Id == quizID);
-            return quizzes;
+            Quizzes? quizzes = _context.quizzes.FirstOrDefault(q => q.Id == quizID);
+            return quizzes!;
         }
     }
 }
