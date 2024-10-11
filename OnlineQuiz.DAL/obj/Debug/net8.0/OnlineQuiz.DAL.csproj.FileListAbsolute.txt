@@ -88,3 +88,18 @@ C:\Users\elfaramawy\OneDrive\Desktop\Final\Online-Quiz-Platform\OnlineQuiz.DAL\o
 C:\Users\elfaramawy\OneDrive\Desktop\Final\Online-Quiz-Platform\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.pdb
 C:\Users\elfaramawy\OneDrive\Desktop\Final\Online-Quiz-Platform\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.genruntimeconfig.cache
 C:\Users\elfaramawy\OneDrive\Desktop\Final\Online-Quiz-Platform\OnlineQuiz.DAL\obj\Debug\net8.0\ref\OnlineQuiz.DAL.dll
+C:\Users\kirol\Downloads\newww onlin quiz\Online-Quiz-Platform\OnlineQuiz.DAL\bin\Debug\net8.0\OnlineQuiz.DAL.deps.json
+C:\Users\kirol\Downloads\newww onlin quiz\Online-Quiz-Platform\OnlineQuiz.DAL\bin\Debug\net8.0\OnlineQuiz.DAL.runtimeconfig.json
+C:\Users\kirol\Downloads\newww onlin quiz\Online-Quiz-Platform\OnlineQuiz.DAL\bin\Debug\net8.0\OnlineQuiz.DAL.dll
+C:\Users\kirol\Downloads\newww onlin quiz\Online-Quiz-Platform\OnlineQuiz.DAL\bin\Debug\net8.0\OnlineQuiz.DAL.pdb
+C:\Users\kirol\Downloads\newww onlin quiz\Online-Quiz-Platform\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.csproj.AssemblyReference.cache
+C:\Users\kirol\Downloads\newww onlin quiz\Online-Quiz-Platform\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kirol\Downloads\newww onlin quiz\Online-Quiz-Platform\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.AssemblyInfoInputs.cache
+C:\Users\kirol\Downloads\newww onlin quiz\Online-Quiz-Platform\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.AssemblyInfo.cs
+C:\Users\kirol\Downloads\newww onlin quiz\Online-Quiz-Platform\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.csproj.CoreCompileInputs.cache
+C:\Users\kirol\Downloads\newww onlin quiz\Online-Quiz-Platform\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.sourcelink.json
+C:\Users\kirol\Downloads\newww onlin quiz\Online-Quiz-Platform\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.dll
+C:\Users\kirol\Downloads\newww onlin quiz\Online-Quiz-Platform\OnlineQuiz.DAL\obj\Debug\net8.0\refint\OnlineQuiz.DAL.dll
+C:\Users\kirol\Downloads\newww onlin quiz\Online-Quiz-Platform\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.pdb
+C:\Users\kirol\Downloads\newww onlin quiz\Online-Quiz-Platform\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.genruntimeconfig.cache
+C:\Users\kirol\Downloads\newww onlin quiz\Online-Quiz-Platform\OnlineQuiz.DAL\obj\Debug\net8.0\ref\OnlineQuiz.DAL.dll

@@ -27,6 +27,8 @@ using OnlineQuiz.BLL.Dtos.Accounts;
 using System.Text;
 using OnlineQuiz.BLL.AutoMapper.StudentMapper;
 using OnlineQuiz.DAL.Repositoryies.AttemptRepository;
+using OnlineQuiz.DAL.Repositoryies.AnswerRepository;
+using OnlineQuiz.BLL.Managers.Answer;
 
 
 namespace OnlineQuiz.Api
@@ -70,7 +72,7 @@ namespace OnlineQuiz.Api
             builder.Services.AddScoped<IQuizRepository, QuizRepository>();
             builder.Services.AddScoped<IQuestionsRepository, QuestionsRepository>();
             builder.Services.AddScoped<IStudentRepo, StudentRepo>();
-        
+            builder.Services.AddScoped<IAnswerRepository, AnswerRepository>();
 
             //Managers
             builder.Services.AddScoped<IQuizManager, QuizManager>();
@@ -79,7 +81,7 @@ namespace OnlineQuiz.Api
             builder.Services.AddScoped<IStudentManager, StudentManager>();
             builder.Services.AddScoped<IAccountManager, AccountManager>();
             builder.Services.AddScoped<IEmailService, EmailService>();
-         
+            builder.Services.AddScoped<IAnswersManager, AnswersManager>();
 
             //Identity
             builder.Services.AddIdentity<Users, Microsoft.AspNetCore.Identity.IdentityRole>(options =>

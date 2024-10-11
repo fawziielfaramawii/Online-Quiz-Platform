@@ -94,3 +94,19 @@ C:\Users\elfaramawy\OneDrive\Desktop\Final\Online-Quiz-Platform\OnlineQuiz.BLL\o
 C:\Users\elfaramawy\OneDrive\Desktop\Final\Online-Quiz-Platform\OnlineQuiz.BLL\obj\Debug\net8.0\refint\OnlineQuiz.BLL.dll
 C:\Users\elfaramawy\OneDrive\Desktop\Final\Online-Quiz-Platform\OnlineQuiz.BLL\obj\Debug\net8.0\OnlineQuiz.BLL.pdb
 C:\Users\elfaramawy\OneDrive\Desktop\Final\Online-Quiz-Platform\OnlineQuiz.BLL\obj\Debug\net8.0\ref\OnlineQuiz.BLL.dll
+C:\Users\kirol\Downloads\newww onlin quiz\Online-Quiz-Platform\OnlineQuiz.BLL\bin\Debug\net8.0\OnlineQuiz.BLL.deps.json
+C:\Users\kirol\Downloads\newww onlin quiz\Online-Quiz-Platform\OnlineQuiz.BLL\bin\Debug\net8.0\OnlineQuiz.BLL.dll
+C:\Users\kirol\Downloads\newww onlin quiz\Online-Quiz-Platform\OnlineQuiz.BLL\bin\Debug\net8.0\OnlineQuiz.BLL.pdb
+C:\Users\kirol\Downloads\newww onlin quiz\Online-Quiz-Platform\OnlineQuiz.BLL\bin\Debug\net8.0\OnlineQuiz.DAL.dll
+C:\Users\kirol\Downloads\newww onlin quiz\Online-Quiz-Platform\OnlineQuiz.BLL\bin\Debug\net8.0\OnlineQuiz.DAL.pdb
+C:\Users\kirol\Downloads\newww onlin quiz\Online-Quiz-Platform\OnlineQuiz.BLL\obj\Debug\net8.0\OnlineQuiz.BLL.csproj.AssemblyReference.cache
+C:\Users\kirol\Downloads\newww onlin quiz\Online-Quiz-Platform\OnlineQuiz.BLL\obj\Debug\net8.0\OnlineQuiz.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kirol\Downloads\newww onlin quiz\Online-Quiz-Platform\OnlineQuiz.BLL\obj\Debug\net8.0\OnlineQuiz.BLL.AssemblyInfoInputs.cache
+C:\Users\kirol\Downloads\newww onlin quiz\Online-Quiz-Platform\OnlineQuiz.BLL\obj\Debug\net8.0\OnlineQuiz.BLL.AssemblyInfo.cs
+C:\Users\kirol\Downloads\newww onlin quiz\Online-Quiz-Platform\OnlineQuiz.BLL\obj\Debug\net8.0\OnlineQuiz.BLL.csproj.CoreCompileInputs.cache
+C:\Users\kirol\Downloads\newww onlin quiz\Online-Quiz-Platform\OnlineQuiz.BLL\obj\Debug\net8.0\OnlineQuiz.BLL.sourcelink.json
+C:\Users\kirol\Downloads\newww onlin quiz\Online-Quiz-Platform\OnlineQuiz.BLL\obj\Debug\net8.0\OnlineQu.95C6C24C.Up2Date
+C:\Users\kirol\Downloads\newww onlin quiz\Online-Quiz-Platform\OnlineQuiz.BLL\obj\Debug\net8.0\OnlineQuiz.BLL.dll
+C:\Users\kirol\Downloads\newww onlin quiz\Online-Quiz-Platform\OnlineQuiz.BLL\obj\Debug\net8.0\refint\OnlineQuiz.BLL.dll
+C:\Users\kirol\Downloads\newww onlin quiz\Online-Quiz-Platform\OnlineQuiz.BLL\obj\Debug\net8.0\OnlineQuiz.BLL.pdb
+C:\Users\kirol\Downloads\newww onlin quiz\Online-Quiz-Platform\OnlineQuiz.BLL\obj\Debug\net8.0\ref\OnlineQuiz.BLL.dll
