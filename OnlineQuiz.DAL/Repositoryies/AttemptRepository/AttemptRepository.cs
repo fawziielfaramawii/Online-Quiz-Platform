@@ -1,4 +1,5 @@
-﻿using OnlineQuiz.DAL.Data.DBHelper;
+﻿using OnlineQuiz.BLL.Dtos.Attempt;
+using OnlineQuiz.DAL.Data.DBHelper;
 using OnlineQuiz.DAL.Data.Models;
 using OnlineQuiz.DAL.Repositoryies.Base;
 using System;
@@ -53,8 +54,6 @@ namespace OnlineQuiz.DAL.Repositoryies.AttemptRepository
             _context.SaveChanges();
         }
 
-       
-
         public void SubmitQuizAttempt(int attemptId, List<Answers> submittedAnswers)
         {
             Attempts? attempt = _context.attempts.FirstOrDefault(a => a.Id == attemptId);
@@ -65,21 +64,24 @@ namespace OnlineQuiz.DAL.Repositoryies.AttemptRepository
 
             foreach (Answers answer in submittedAnswers)
             {
+              
                 var answers = new Answers
                 {
                     AttemptId = attemptId,
                     QuestionId = answer.QuestionId,
                     SubmittedAnswer = answer.SubmittedAnswer,
-                    IsCorrect = _context.questions.FirstOrDefault(q => q.Id == answer.QuestionId)
-                    ?.CorrectAnswer == answer.SubmittedAnswer,
-                    
+                    IsCorrect =   _context.questions.FirstOrDefault(q => q.Id == answer.QuestionId)
+                    ?.CorrectAnswer == answer.SubmittedAnswer
                 };
 
                 _context.answers.Add(answers);
+                if (answers.IsCorrect == true)
+                {
+                    attempt.Score =+1;
+                }
             }
 
             attempt.EndTime = DateTime.Now;
-            attempt.Score = CalculateScore(attemptId);
             _context.SaveChanges();
         }
 
@@ -134,6 +136,19 @@ namespace OnlineQuiz.DAL.Repositoryies.AttemptRepository
         {
             Quizzes? quizzes = _context.quizzes.FirstOrDefault(q => q.Id == quizID);
             return quizzes!;
+        }
+
+        public IEnumerable<Questions> questions(int quizId)
+        {
+            return _context.questions.Where(q => q.QuizId == quizId).Include(q => q.Options).ToList();
+        }
+
+        public IEnumerable<Attempts> GetAttemptsByStudentId(string studentId)
+        {
+            return _context.attempts
+                  .Where(a => a.StudentId == studentId)
+                  .Include(a => a.Quiz)  
+                  .ToList();
         }
     }
 }

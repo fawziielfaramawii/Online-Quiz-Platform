@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.DAL\\OnlineQuiz.DAL.csproj": {}
+    "C:\\Users\\LAPTOP WORLD\\Online-Quiz-Platform\\OnlineQuiz.DAL\\OnlineQuiz.DAL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.DAL\\OnlineQuiz.DAL.csproj": {
+    "C:\\Users\\LAPTOP WORLD\\Online-Quiz-Platform\\OnlineQuiz.DAL\\OnlineQuiz.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.DAL\\OnlineQuiz.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\LAPTOP WORLD\\Online-Quiz-Platform\\OnlineQuiz.DAL\\OnlineQuiz.DAL.csproj",
         "projectName": "OnlineQuiz.DAL",
-        "projectPath": "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.DAL\\OnlineQuiz.DAL.csproj",
-        "packagesPath": "C:\\Users\\karee\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\karee\\Desktop\\KarimBranch\\Online-Quiz-Platform\\OnlineQuiz.DAL\\obj\\",
+        "projectPath": "C:\\Users\\LAPTOP WORLD\\Online-Quiz-Platform\\OnlineQuiz.DAL\\OnlineQuiz.DAL.csproj",
+        "packagesPath": "C:\\Users\\LAPTOP WORLD\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\LAPTOP WORLD\\Online-Quiz-Platform\\OnlineQuiz.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\karee\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LAPTOP WORLD\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -35,11 +34,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -59,6 +53,10 @@
               "version": "[8.0.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Proxies": {
               "target": "Package",
               "version": "[8.0.0, )"
             },
@@ -89,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

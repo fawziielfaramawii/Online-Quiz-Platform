@@ -73,3 +73,21 @@ C:\Users\karee\Desktop\KarimBranch\Online-Quiz-Platform\OnlineQuiz.DAL\obj\Debug
 C:\Users\karee\Desktop\KarimBranch\Online-Quiz-Platform\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.pdb
 C:\Users\karee\Desktop\KarimBranch\Online-Quiz-Platform\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.genruntimeconfig.cache
 C:\Users\karee\Desktop\KarimBranch\Online-Quiz-Platform\OnlineQuiz.DAL\obj\Debug\net8.0\ref\OnlineQuiz.DAL.dll
+C:\Users\LAPTOP WORLD\Online-Quiz-Platform\OnlineQuiz.DAL\bin\Debug\net8.0\OnlineQuiz.DAL.deps.json
+C:\Users\LAPTOP WORLD\Online-Quiz-Platform\OnlineQuiz.DAL\bin\Debug\net8.0\OnlineQuiz.DAL.runtimeconfig.json
+C:\Users\LAPTOP WORLD\Online-Quiz-Platform\OnlineQuiz.DAL\bin\Debug\net8.0\OnlineQuiz.DAL.dll
+C:\Users\LAPTOP WORLD\Online-Quiz-Platform\OnlineQuiz.DAL\bin\Debug\net8.0\OnlineQuiz.DAL.pdb
+C:\Users\LAPTOP WORLD\Online-Quiz-Platform\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.csproj.AssemblyReference.cache
+C:\Users\LAPTOP WORLD\Online-Quiz-Platform\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LAPTOP WORLD\Online-Quiz-Platform\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.AssemblyInfoInputs.cache
+C:\Users\LAPTOP WORLD\Online-Quiz-Platform\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.AssemblyInfo.cs
+C:\Users\LAPTOP WORLD\Online-Quiz-Platform\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.csproj.CoreCompileInputs.cache
+C:\Users\LAPTOP WORLD\Online-Quiz-Platform\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.sourcelink.json
+C:\Users\LAPTOP WORLD\Online-Quiz-Platform\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.dll
+C:\Users\LAPTOP WORLD\Online-Quiz-Platform\OnlineQuiz.DAL\obj\Debug\net8.0\refint\OnlineQuiz.DAL.dll
+C:\Users\LAPTOP WORLD\Online-Quiz-Platform\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.pdb
+C:\Users\LAPTOP WORLD\Online-Quiz-Platform\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.genruntimeconfig.cache
+C:\Users\LAPTOP WORLD\Online-Quiz-Platform\OnlineQuiz.DAL\obj\Debug\net8.0\ref\OnlineQuiz.DAL.dll
+C:\Users\LAPTOP WORLD\Online-Quiz-Platform\OnlineQuiz.DAL\bin\Debug\net8.0\OnlineQuiz.BLL.dll
+C:\Users\LAPTOP WORLD\Online-Quiz-Platform\OnlineQuiz.DAL\bin\Debug\net8.0\OnlineQuiz.BLL.pdb
+C:\Users\LAPTOP WORLD\Online-Quiz-Platform\OnlineQuiz.DAL\obj\Debug\net8.0\OnlineQuiz.DAL.csproj.CopyComplete

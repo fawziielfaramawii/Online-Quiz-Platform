@@ -47,10 +47,10 @@ namespace OnlineQuiz.DAL.Data.Models
     public class Student:Users
     {
         public string  Grade { get; set; }
-        public ICollection<Instructor> Instructors { get; set; } = new HashSet<Instructor>();
+        public virtual ICollection<Instructor> Instructors { get; set; } = new HashSet<Instructor>();
 
         //Student With Attempts
-        public ICollection<Attempts> Attempts { get; set; } = new HashSet<Attempts>();
+        public virtual ICollection<Attempts> Attempts { get; set; } = new HashSet<Attempts>();
 
 
     }
@@ -60,10 +60,10 @@ namespace OnlineQuiz.DAL.Data.Models
     {
 
         public bool InstructorIsApproved { get; set; } = false;
-        public ICollection<Student> Students { get; set; } = new HashSet<Student>();
+        public virtual ICollection<Student> Students { get; set; } = new HashSet<Student>();
 
         //  Instructor with Quizzes
-        public ICollection<Quizzes> quizzes { get; set; } = new HashSet<Quizzes>();
+        public virtual ICollection<Quizzes> quizzes { get; set; } = new HashSet<Quizzes>();
 
     }
 

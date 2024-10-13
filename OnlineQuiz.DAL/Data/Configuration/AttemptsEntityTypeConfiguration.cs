@@ -31,6 +31,7 @@ namespace OnlineQuiz.DAL.Data.Configuration
              .HasForeignKey(a => a.StudentId)
              .OnDelete(DeleteBehavior.Cascade);
 
+            
 
         }
             
