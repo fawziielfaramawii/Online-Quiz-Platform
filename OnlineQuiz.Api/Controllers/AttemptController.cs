@@ -11,24 +11,23 @@ namespace OnlineQuiz.Api.Controllers
     [ApiController]
     public class AttemptController : ControllerBase
     {
-       
+
         private readonly IAttemptManager _attemptManager;
         private readonly IMapper _mapper;
         public AttemptController(IAttemptManager attemptManager, IMapper mapper)
         {
             _attemptManager = attemptManager;
             _mapper = mapper;
-            
+
         }
 
 
         [HttpPost("StartQuizAttempt")]
-        public IActionResult StartQuizAttempt([FromBody]StartQuizAttemptDto attemptDto)
+        public IActionResult StartQuizAttempt([FromBody] StartQuizAttemptDto attemptDto)
         {
             try
             {
-                _attemptManager.StartQuizAttempt(attemptDto);
-                return Ok(new { message = "Quiz attempt started successfully" });
+                return Ok(_attemptManager.StartQuizAttempt(attemptDto));
             }
             catch (Exception ex)
             {
@@ -55,12 +54,12 @@ namespace OnlineQuiz.Api.Controllers
         [HttpGet("GetResults")]
         public IActionResult GetResults(int attemptId)
         {
-            
+
             try
             {
                 var result = _attemptManager.GetResults(attemptId);
 
-                return Ok(result); 
+                return Ok(result);
             }
             catch (Exception ex)
             {
@@ -81,7 +80,20 @@ namespace OnlineQuiz.Api.Controllers
             {
                 return BadRequest(ex.Message);
             }
-
         }
+        [HttpGet("GetTotalScoreByStudent/{studentId}")]
+        public IActionResult GetTotalScoreByStudent(string studentId)
+        {
+            try
+            {
+                var quizScores = _attemptManager.GetTotalScoresByStudentId(studentId);
+                return Ok(quizScores);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
     }
 }

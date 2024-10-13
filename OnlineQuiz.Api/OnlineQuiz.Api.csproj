@@ -8,7 +8,10 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="13.0.1" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0">
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
@@ -17,6 +20,16 @@
 
   <ItemGroup>
     <ProjectReference Include="..\OnlineQuiz.BLL\OnlineQuiz.BLL.csproj" />
+    <ProjectReference Include="..\OnlineQuiz.DAL\OnlineQuiz.DAL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="OnlineQuiz.BLL">
+      <HintPath>..\OnlineQuiz.BLL\bin\Debug\net8.0\OnlineQuiz.BLL.dll</HintPath>
+    </Reference>
+    <Reference Include="OnlineQuiz.DAL">
+      <HintPath>..\OnlineQuiz.BLL\bin\Debug\net8.0\OnlineQuiz.DAL.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
