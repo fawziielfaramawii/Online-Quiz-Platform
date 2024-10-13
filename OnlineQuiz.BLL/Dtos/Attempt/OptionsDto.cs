@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace OnlineQuiz.BLL.Dtos.Attempt
 {
-    public class AnswerDto
+    public class OptionsDto
     {
-        public int QuestionId { get; set; }
-        public string SubmittedAnswer { get; set; }
-        //public bool IsCorrect { get; set; } 
+        public string Text { get; set; }
     }
 }

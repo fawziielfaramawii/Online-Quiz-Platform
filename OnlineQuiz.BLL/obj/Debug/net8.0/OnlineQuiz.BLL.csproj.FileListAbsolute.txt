@@ -78,3 +78,21 @@ C:\Users\karee\Desktop\KarimBranch\Online-Quiz-Platform\OnlineQuiz.BLL\obj\Debug
 C:\Users\karee\Desktop\KarimBranch\Online-Quiz-Platform\OnlineQuiz.BLL\obj\Debug\net8.0\refint\OnlineQuiz.BLL.dll
 C:\Users\karee\Desktop\KarimBranch\Online-Quiz-Platform\OnlineQuiz.BLL\obj\Debug\net8.0\OnlineQuiz.BLL.pdb
 C:\Users\karee\Desktop\KarimBranch\Online-Quiz-Platform\OnlineQuiz.BLL\obj\Debug\net8.0\ref\OnlineQuiz.BLL.dll
+C:\Users\LAPTOP WORLD\Online-Quiz-Platform\OnlineQuiz.BLL\bin\Debug\net8.0\OnlineQuiz.BLL.deps.json
+C:\Users\LAPTOP WORLD\Online-Quiz-Platform\OnlineQuiz.BLL\bin\Debug\net8.0\OnlineQuiz.BLL.runtimeconfig.json
+C:\Users\LAPTOP WORLD\Online-Quiz-Platform\OnlineQuiz.BLL\bin\Debug\net8.0\OnlineQuiz.BLL.dll
+C:\Users\LAPTOP WORLD\Online-Quiz-Platform\OnlineQuiz.BLL\bin\Debug\net8.0\OnlineQuiz.BLL.pdb
+C:\Users\LAPTOP WORLD\Online-Quiz-Platform\OnlineQuiz.BLL\bin\Debug\net8.0\OnlineQuiz.DAL.dll
+C:\Users\LAPTOP WORLD\Online-Quiz-Platform\OnlineQuiz.BLL\bin\Debug\net8.0\OnlineQuiz.DAL.pdb
+C:\Users\LAPTOP WORLD\Online-Quiz-Platform\OnlineQuiz.BLL\obj\Debug\net8.0\OnlineQuiz.BLL.csproj.AssemblyReference.cache
+C:\Users\LAPTOP WORLD\Online-Quiz-Platform\OnlineQuiz.BLL\obj\Debug\net8.0\OnlineQuiz.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LAPTOP WORLD\Online-Quiz-Platform\OnlineQuiz.BLL\obj\Debug\net8.0\OnlineQuiz.BLL.AssemblyInfoInputs.cache
+C:\Users\LAPTOP WORLD\Online-Quiz-Platform\OnlineQuiz.BLL\obj\Debug\net8.0\OnlineQuiz.BLL.AssemblyInfo.cs
+C:\Users\LAPTOP WORLD\Online-Quiz-Platform\OnlineQuiz.BLL\obj\Debug\net8.0\OnlineQuiz.BLL.csproj.CoreCompileInputs.cache
+C:\Users\LAPTOP WORLD\Online-Quiz-Platform\OnlineQuiz.BLL\obj\Debug\net8.0\OnlineQuiz.BLL.sourcelink.json
+C:\Users\LAPTOP WORLD\Online-Quiz-Platform\OnlineQuiz.BLL\obj\Debug\net8.0\OnlineQuiz.BLL.csproj.CopyComplete
+C:\Users\LAPTOP WORLD\Online-Quiz-Platform\OnlineQuiz.BLL\obj\Debug\net8.0\OnlineQuiz.BLL.dll
+C:\Users\LAPTOP WORLD\Online-Quiz-Platform\OnlineQuiz.BLL\obj\Debug\net8.0\refint\OnlineQuiz.BLL.dll
+C:\Users\LAPTOP WORLD\Online-Quiz-Platform\OnlineQuiz.BLL\obj\Debug\net8.0\OnlineQuiz.BLL.pdb
+C:\Users\LAPTOP WORLD\Online-Quiz-Platform\OnlineQuiz.BLL\obj\Debug\net8.0\OnlineQuiz.BLL.genruntimeconfig.cache
+C:\Users\LAPTOP WORLD\Online-Quiz-Platform\OnlineQuiz.BLL\obj\Debug\net8.0\ref\OnlineQuiz.BLL.dll
